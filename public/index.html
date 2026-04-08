@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#1a1a2e" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Filtros" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+  <title>Identificador de Filtros</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: #f0f2f5;
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      width: 100%;
+      background: #1a1a2e;
+      color: #fff;
+      padding: max(env(safe-area-inset-top), 14px) 20px 14px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    header h1 { font-size: 1.2rem; }
+    header p { font-size: 0.78rem; color: #9ab; margin-top: 3px; }
+
+    .container {
+      width: 100%;
+      max-width: 540px;
+      padding: 16px 14px max(env(safe-area-inset-bottom), 24px);
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 18px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+      margin-bottom: 14px;
+    }
+
+    /* Foto */
+    .area-foto {
+      border: 2px dashed #d0d5dd;
+      border-radius: 12px;
+      min-height: 200px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      overflow: hidden;
+      background: #fafafa;
+      transition: border-color 0.2s;
+      position: relative;
+    }
+    .area-foto:active { border-color: #e63946; }
+    .area-foto.tem-foto { border-style: solid; border-color: #1a1a2e; }
+    .area-foto img { width: 100%; max-height: 280px; object-fit: contain; display: none; }
+    .area-foto.tem-foto img { display: block; }
+
+    .placeholder {
+      text-align: center;
+      color: #bbb;
+      padding: 30px 16px;
+      pointer-events: none;
+    }
+    .area-foto.tem-foto .placeholder { display: none; }
+    .placeholder .ico { font-size: 3rem; line-height: 1; }
+    .placeholder p { font-size: 0.85rem; margin-top: 10px; line-height: 1.5; }
+
+    input[type="file"] { display: none; }
+
+    .botoes-foto {
+      display: flex;
+      gap: 10px;
+      margin-top: 12px;
+    }
+    .btn {
+      flex: 1;
+      padding: 14px 8px;
+      border: none;
+      border-radius: 12px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform 0.1s, opacity 0.15s;
+    }
+    .btn:active { transform: scale(0.97); }
+    .btn:disabled { opacity: 0.35; cursor: not-allowed; }
+    .btn-camera  { background: #1a1a2e; color: #fff; }
+    .btn-galeria { background: #2d6a4f; color: #fff; }
+    .btn-ler     { background: #4a90d9; color: #fff; width: 100%; margin-top: 10px; padding: 15px; border-radius: 12px; border: none; font-size: 1rem; font-weight: 700; cursor: pointer; transition: transform 0.1s, opacity 0.15s; }
+    .btn-ler:active { transform: scale(0.98); }
+    .btn-ler:disabled { opacity: 0.35; cursor: not-allowed; }
+
+    /* Etapa 2: confirmar código */
+    .confirmar { display: none; }
+
+    .label-campo {
+      font-size: 0.8rem;
+      color: #888;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+    }
+
+    .campo-codigo {
+      display: flex;
+      align-items: center;
+      border: 2px solid #e0e0e0;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 12px;
+      transition: border-color 0.2s;
+    }
+    .campo-codigo:focus-within { border-color: #4a90d9; }
+
+    .campo-codigo input {
+      flex: 1;
+      border: none;
+      outline: none;
+      padding: 13px 14px;
+      font-size: 1.1rem;
+      font-family: monospace;
+      font-weight: 700;
+      color: #1a1a2e;
+      background: transparent;
+      text-transform: uppercase;
+    }
+
+    .campo-codigo .marca-tag {
+      background: #f5f5f5;
+      color: #888;
+      padding: 13px 12px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      white-space: nowrap;
+      border-left: 1px solid #eee;
+    }
+
+    .aviso-leitura {
+      font-size: 0.82rem;
+      color: #888;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: flex-start;
+      gap: 6px;
+      line-height: 1.4;
+    }
+
+    .btn-buscar {
+      width: 100%;
+      padding: 16px;
+      border: none;
+      border-radius: 12px;
+      background: #e63946;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform 0.1s, opacity 0.15s;
+    }
+    .btn-buscar:active { transform: scale(0.98); }
+    .btn-buscar:disabled { opacity: 0.35; cursor: not-allowed; }
+
+    /* Busca manual */
+    .busca-manual { margin-top: 6px; }
+    .busca-manual-titulo {
+      font-size: 0.78rem;
+      color: #aaa;
+      text-align: center;
+      margin: 14px 0 10px;
+      position: relative;
+    }
+    .busca-manual-titulo::before, .busca-manual-titulo::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      width: 38%;
+      height: 1px;
+      background: #eee;
+    }
+    .busca-manual-titulo::before { left: 0; }
+    .busca-manual-titulo::after  { right: 0; }
+
+    /* Loading */
+    .loading {
+      display: none;
+      text-align: center;
+      padding: 28px;
+      color: #666;
+    }
+    .spinner {
+      width: 42px; height: 42px;
+      border: 4px solid #eee;
+      border-top-color: #4a90d9;
+      border-radius: 50%;
+      animation: spin 0.75s linear infinite;
+      margin: 0 auto 14px;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* Mensagens */
+    .msg-erro {
+      display: none;
+      background: #fff5f5;
+      border-left: 4px solid #e63946;
+      padding: 12px 14px;
+      border-radius: 0 10px 10px 0;
+      color: #c0392b;
+      font-size: 0.88rem;
+      line-height: 1.5;
+      margin-bottom: 14px;
+    }
+    .msg-nao-encontrado {
+      display: none;
+      background: #fff8e6;
+      border-left: 4px solid #f5a623;
+      padding: 14px;
+      border-radius: 0 10px 10px 0;
+      font-size: 0.88rem;
+      color: #7a5500;
+      line-height: 1.6;
+      margin-bottom: 14px;
+    }
+
+    /* Resultado */
+    .resultado { display: none; }
+
+    .resultado-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+    .codigo-destaque {
+      font-family: monospace;
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: #1a1a2e;
+    }
+    .tipo-badge {
+      background: #eef4fb;
+      color: #1a6ab0;
+      border-radius: 20px;
+      padding: 4px 12px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .verificado-badge {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      background: #e8f5e9;
+      color: #2d6a4f;
+      border-radius: 8px;
+      padding: 8px 12px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+
+    .info-linha {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px solid #f2f2f2;
+    }
+    .info-linha:last-child { border-bottom: none; }
+    .info-label { font-size: 0.82rem; color: #999; }
+    .info-valor { font-size: 0.9rem; font-weight: 600; color: #1a1a2e; text-align: right; }
+
+    h3 {
+      font-size: 0.78rem;
+      color: #888;
+      margin: 16px 0 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      font-weight: 700;
+    }
+
+    .tabela-equiv { width: 100%; border-collapse: collapse; }
+    .tabela-equiv th {
+      background: #f7f8fa;
+      padding: 9px 12px;
+      text-align: left;
+      font-size: 0.78rem;
+      color: #888;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .tabela-equiv th:first-child { border-radius: 8px 0 0 8px; }
+    .tabela-equiv th:last-child  { border-radius: 0 8px 8px 0; }
+    .tabela-equiv td { padding: 12px; border-bottom: 1px solid #f2f2f2; font-size: 0.9rem; }
+    .tabela-equiv tr:last-child td { border-bottom: none; }
+    .codigo-cell { font-family: monospace; font-weight: 700; color: #e63946; font-size: 1rem; }
+
+    .btn-similar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      width: 100%;
+      background: #f7f9fc;
+      border: 1.5px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 11px 14px;
+      margin-bottom: 8px;
+      cursor: pointer;
+      text-align: left;
+      transition: background 0.15s, border-color 0.15s;
+    }
+    .btn-similar:hover, .btn-similar:active { background: #eef2ff; border-color: #6366f1; }
+    .similar-cod  { font-family: monospace; font-weight: 700; color: #e63946; font-size: 1rem; flex: 0 0 auto; }
+    .similar-marca { color: #444; font-size: 0.88rem; flex: 1; }
+    .similar-tipo { font-size: 0.75rem; color: #888; background: #eef2ff; padding: 2px 8px; border-radius: 99px; }
+
+    #install-banner {
+      display: none;
+      align-items: center;
+      gap: 10px;
+      background: #1a1a2e;
+      color: #fff;
+      padding: 12px 16px;
+      border-radius: 12px;
+      margin-bottom: 14px;
+      font-size: 0.85rem;
+    }
+    #install-banner button {
+      margin-left: auto;
+      background: #e63946;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 8px 14px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🔧 Identificador de Filtros</h1>
+    <p>Busca 100% verificada por código</p>
+  </header>
+
+  <div class="container">
+
+    <div id="install-banner">
+      <span>📲 Instale como app</span>
+      <button id="btn-instalar">Instalar</button>
+    </div>
+
+    <!-- ETAPA 1: foto -->
+    <div class="card" id="cardFoto">
+      <div class="area-foto" id="areaFoto" onclick="document.getElementById('inputCamera').click()">
+        <div class="placeholder">
+          <div class="ico">📸</div>
+          <p>Tire uma foto do filtro<br>para ler o código automaticamente</p>
+        </div>
+        <img id="previewImg" alt="filtro" />
+      </div>
+
+      <input type="file" id="inputCamera"  accept="image/*" capture="environment" />
+      <input type="file" id="inputGaleria" accept="image/*" />
+
+      <div class="botoes-foto">
+        <button class="btn btn-camera"  onclick="document.getElementById('inputCamera').click()">📷 Câmera</button>
+        <button class="btn btn-galeria" onclick="document.getElementById('inputGaleria').click()">🖼️ Galeria</button>
+      </div>
+      <button class="btn-ler" id="btnLer" onclick="lerCodigo()" disabled>🔍 Ler código do filtro</button>
+    </div>
+
+    <!-- ETAPA 2: confirmar código -->
+    <div class="card confirmar" id="cardConfirmar">
+      <div class="label-campo">Código identificado — confirme ou corrija:</div>
+      <div class="campo-codigo">
+        <input type="text" id="inputCodigo" placeholder="ex: W712/75" autocomplete="off" autocorrect="off" spellcheck="false" />
+        <div class="marca-tag" id="marcaTag">—</div>
+      </div>
+      <div class="aviso-leitura">
+        ℹ️ Verifique se o código está igual ao impresso no filtro antes de buscar.
+      </div>
+      <button class="btn-buscar" id="btnBuscar" onclick="buscar()">✔ Buscar equivalentes</button>
+
+      <div class="busca-manual-titulo">ou busque manualmente</div>
+      <div class="busca-manual">
+        <div class="label-campo">Digite o código</div>
+        <div class="campo-codigo">
+          <input type="text" id="inputManual" placeholder="ex: PSL204" autocomplete="off" autocorrect="off" spellcheck="false" onkeydown="if(event.key==='Enter')buscarManual()" />
+        </div>
+        <button class="btn-buscar" onclick="buscarManual()">🔍 Buscar código digitado</button>
+      </div>
+    </div>
+
+    <!-- Loading -->
+    <div class="card loading" id="loading">
+      <div class="spinner"></div>
+      <p id="loadingMsg">Lendo o código...</p>
+    </div>
+
+    <!-- Mensagens -->
+    <div class="msg-erro" id="msgErro"></div>
+    <div class="msg-nao-encontrado" id="msgNaoEncontrado"></div>
+
+    <!-- Sugestões quando não encontrado -->
+    <div class="card" id="cardSimilares" style="display:none">
+      <div class="label-campo" style="margin-bottom:10px">Você quis dizer um destes?</div>
+      <div id="listaSimilares"></div>
+    </div>
+
+    <!-- Resultado -->
+    <div class="card resultado" id="resultado">
+      <div class="resultado-header">
+        <span class="codigo-destaque" id="resCodigoDestaque">—</span>
+        <span class="tipo-badge" id="resTipo">—</span>
+      </div>
+      <div class="verificado-badge">✔ Resultado 100% verificado — dados do banco de referência</div>
+      <div class="info-linha">
+        <span class="info-label">Marca original</span>
+        <span class="info-valor" id="resMarca">—</span>
+      </div>
+      <h3>Filtros equivalentes</h3>
+      <table class="tabela-equiv">
+        <thead><tr><th>Marca</th><th>Código</th></tr></thead>
+        <tbody id="tabelaEquiv"></tbody>
+      </table>
+    </div>
+
+  </div>
+
+  <script>
+    if ('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js');
+
+    let deferredPrompt;
+    window.addEventListener('beforeinstallprompt', e => {
+      e.preventDefault(); deferredPrompt = e;
+      document.getElementById('install-banner').style.display = 'flex';
+    });
+    document.getElementById('btn-instalar').addEventListener('click', async () => {
+      if (!deferredPrompt) return;
+      deferredPrompt.prompt();
+      const { outcome } = await deferredPrompt.userChoice;
+      if (outcome === 'accepted') document.getElementById('install-banner').style.display = 'none';
+      deferredPrompt = null;
+    });
+
+    let arquivoAtual = null;
+
+    function aoEscolher(e) {
+      const file = e.target.files[0];
+      e.target.value = '';
+      if (!file) return;
+      arquivoAtual = file;
+      const url = URL.createObjectURL(file);
+      const img = document.getElementById('previewImg');
+      img.src = url;
+      const area = document.getElementById('areaFoto');
+      area.classList.add('tem-foto');
+      document.getElementById('btnLer').disabled = false;
+      limparResultados();
+    }
+    document.getElementById('inputCamera').addEventListener('change', aoEscolher);
+    document.getElementById('inputGaleria').addEventListener('change', aoEscolher);
+
+    function limparResultados() {
+      document.getElementById('msgErro').style.display = 'none';
+      document.getElementById('msgNaoEncontrado').style.display = 'none';
+      document.getElementById('resultado').style.display = 'none';
+      document.getElementById('cardSimilares').style.display = 'none';
+    }
+
+    function mostrarLoading(msg) {
+      document.getElementById('loadingMsg').textContent = msg;
+      document.getElementById('loading').style.display = 'block';
+      limparResultados();
+    }
+    function esconderLoading() {
+      document.getElementById('loading').style.display = 'none';
+    }
+
+    async function lerCodigo() {
+      if (!arquivoAtual) return;
+      mostrarLoading('Lendo o código do filtro...');
+      document.getElementById('btnLer').disabled = true;
+
+      const formData = new FormData();
+      formData.append('foto', arquivoAtual);
+
+      try {
+        const resp = await fetch('/ler-codigo', { method: 'POST', body: formData });
+        const dados = await resp.json();
+        esconderLoading();
+        document.getElementById('btnLer').disabled = false;
+
+        if (dados.erro) {
+          const el = document.getElementById('msgErro');
+          el.textContent = dados.erro;
+          el.style.display = 'block';
+          return;
+        }
+
+        // Mostra etapa 2
+        document.getElementById('inputCodigo').value = dados.codigo || '';
+        document.getElementById('marcaTag').textContent = dados.marca || '—';
+        document.getElementById('cardConfirmar').style.display = 'block';
+        document.getElementById('cardConfirmar').scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+        if (!dados.codigo) {
+          const el = document.getElementById('msgErro');
+          el.textContent = 'Não foi possível ler o código. Verifique a foto ou digite o código manualmente abaixo.';
+          el.style.display = 'block';
+        }
+      } catch {
+        esconderLoading();
+        document.getElementById('btnLer').disabled = false;
+        const el = document.getElementById('msgErro');
+        el.textContent = 'Erro de conexão com o servidor.';
+        el.style.display = 'block';
+      }
+    }
+
+    async function buscar() {
+      const codigo = document.getElementById('inputCodigo').value.trim();
+      const marca  = document.getElementById('marcaTag').textContent.trim();
+      if (!codigo) return;
+      await executarBusca(codigo, marca === '—' ? '' : marca);
+    }
+
+    async function buscarManual() {
+      const codigo = document.getElementById('inputManual').value.trim();
+      if (!codigo) return;
+      await executarBusca(codigo, '');
+    }
+
+    async function executarBusca(codigo, marca) {
+      mostrarLoading('Buscando equivalentes...');
+      try {
+        const resp = await fetch('/buscar', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ codigo, marca }),
+        });
+        const dados = await resp.json();
+        esconderLoading();
+
+        if (dados.erro) {
+          const el = document.getElementById('msgErro');
+          el.textContent = dados.erro;
+          el.style.display = 'block';
+          return;
+        }
+
+        if (!dados.encontrado) {
+          const el = document.getElementById('msgNaoEncontrado');
+          el.innerHTML = `⚠️ ${dados.mensagem}<br><small>Confirme se o código está correto e tente novamente.</small>`;
+          el.style.display = 'block';
+
+          const cardSim = document.getElementById('cardSimilares');
+          const listaSim = document.getElementById('listaSimilares');
+          if (dados.similares && dados.similares.length > 0) {
+            listaSim.innerHTML = '';
+            dados.similares.forEach(s => {
+              const btn = document.createElement('button');
+              btn.className = 'btn-similar';
+              btn.innerHTML = `<span class="similar-cod">${s.codigo}</span> <span class="similar-marca">${s.marca}</span> <span class="similar-tipo">${s.tipo_filtro}</span>`;
+              btn.onclick = () => executarBusca(s.codigo, s.marca);
+              listaSim.appendChild(btn);
+            });
+            cardSim.style.display = 'block';
+          } else {
+            cardSim.style.display = 'none';
+          }
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          return;
+        }
+
+        mostrarResultado(dados);
+      } catch {
+        esconderLoading();
+        const el = document.getElementById('msgErro');
+        el.textContent = 'Erro de conexão com o servidor.';
+        el.style.display = 'block';
+      }
+    }
+
+    function mostrarResultado(d) {
+      document.getElementById('resCodigoDestaque').textContent = d.codigo_original || '—';
+      document.getElementById('resTipo').textContent = d.tipo_filtro || '—';
+      document.getElementById('resMarca').textContent = d.marca_original || '—';
+
+      const tbody = document.getElementById('tabelaEquiv');
+      tbody.innerHTML = '';
+      (d.equivalentes || []).forEach(eq => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `<td>${eq.marca}</td><td class="codigo-cell">${eq.codigo}</td>`;
+        tbody.appendChild(tr);
+      });
+
+      document.getElementById('resultado').style.display = 'block';
+      document.getElementById('resultado').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  </script>
+</body>
+</html>
