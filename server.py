@@ -3,13 +3,62 @@ import re
 import json
 import base64
 import io
+from functools import wraps
 from difflib import SequenceMatcher
 from PIL import Image
-from flask import Flask, request, jsonify, send_from_directory
-from groq import Groq
+from flask import Flask, request, jsonify, send_from_directory, session, redirect, url_for, render_template_string
+import google.genai as genai
+from google.genai import types
 
 app = Flask(__name__, static_folder="public")
-client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
+app.secret_key = os.environ.get("SECRET_KEY", "adamanto-secret-2026")
+gemini = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
+
+LOGIN_USER = os.environ.get("APP_USER", "adamanto.ismo")
+LOGIN_PASS = os.environ.get("APP_PASS", "titanomachia")
+
+LOGIN_HTML = """<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+  <meta name="theme-color" content="#1a1a2e"/>
+  <title>ADAMANTO — Login</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Segoe UI',system-ui,sans-serif;background:#1a1a2e;min-height:100dvh;display:flex;align-items:center;justify-content:center}
+    .box{background:#fff;border-radius:20px;padding:40px 32px;width:100%;max-width:360px;margin:16px;text-align:center;box-shadow:0 8px 40px rgba(0,0,0,0.4)}
+    h1{font-size:1.8rem;color:#1a1a2e;letter-spacing:2px;margin-bottom:6px}
+    p{color:#888;font-size:0.85rem;margin-bottom:28px}
+    input{width:100%;border:1.5px solid #e2e8f0;border-radius:10px;padding:13px 14px;font-size:1rem;margin-bottom:12px;outline:none;transition:border-color .2s}
+    input:focus{border-color:#1a1a2e}
+    button{width:100%;background:#1a1a2e;color:#fff;border:none;border-radius:10px;padding:14px;font-size:1rem;font-weight:700;cursor:pointer;margin-top:4px;letter-spacing:1px}
+    button:hover{background:#e63946}
+    .erro{color:#e63946;font-size:0.85rem;margin-bottom:12px;display:{% if erro %}block{% else %}none{% endif %}}
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>ADAMANTO</h1>
+    <p>Sistema de identificação de filtros</p>
+    <div class="erro">{{ erro }}</div>
+    <form method="POST" action="/login">
+      <input type="text" name="usuario" placeholder="Usuário" autocomplete="username" required/>
+      <input type="password" name="senha" placeholder="Senha" autocomplete="current-password" required/>
+      <button type="submit">ENTRAR</button>
+    </form>
+  </div>
+</body>
+</html>"""
+
+
+def login_required(f):
+    @wraps(f)
+    def decorated(*args, **kwargs):
+        if not session.get("autenticado"):
+            return redirect("/login")
+        return f(*args, **kwargs)
+    return decorated
 
 with open(os.path.join(os.path.dirname(__file__), "cross_reference.json"), encoding="utf-8") as f:
     DB = json.load(f)
@@ -88,12 +137,33 @@ Retorne APENAS este JSON:
 Se não conseguir ler com clareza, use null nos campos. Não invente nada."""
 
 
+@app.route("/login", methods=["GET", "POST"])
+def login():
+    erro = ""
+    if request.method == "POST":
+        usuario = request.form.get("usuario", "").strip()
+        senha = request.form.get("senha", "").strip()
+        if usuario == LOGIN_USER and senha == LOGIN_PASS:
+            session["autenticado"] = True
+            return redirect("/")
+        erro = "Usuário ou senha incorretos."
+    return render_template_string(LOGIN_HTML, erro=erro)
+
+
+@app.route("/logout")
+def logout():
+    session.clear()
+    return redirect("/login")
+
+
 @app.route("/")
+@login_required
 def index():
     return send_from_directory("public", "index.html")
 
 
 @app.route("/ler-codigo", methods=["POST"])
+@login_required
 def ler_codigo():
     """Etapa 1: lê o código da foto via OCR."""
     if "foto" not in request.files:
@@ -114,16 +184,16 @@ def ler_codigo():
         return jsonify({"erro": "Imagem inválida.", "detalhes": str(e)}), 400
 
     try:
-        resp = client.chat.completions.create(
-            model="meta-llama/llama-4-scout-17b-16e-instruct",
-            messages=[{"role": "user", "content": [
-                {"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{b64}"}},
-                {"type": "text", "text": PROMPT_OCR},
-            ]}],
-            max_tokens=200,
-            temperature=0.0,
+        imagem_part = types.Part.from_bytes(data=buf.getvalue(), mime_type="image/jpeg")
+        resp = gemini.models.generate_content(
+            model="gemini-2.0-flash",
+            contents=[imagem_part, PROMPT_OCR],
+            config=types.GenerateContentConfig(
+                temperature=0.0,
+                max_output_tokens=200,
+            ),
         )
-        texto = resp.choices[0].message.content or ""
+        texto = resp.text or ""
         match = re.search(r"\{[\s\S]*?\}", texto)
         if not match:
             return jsonify({"codigo": None, "marca": None})
@@ -137,6 +207,7 @@ def ler_codigo():
 
 
 @app.route("/buscar", methods=["POST"])
+@login_required
 def buscar():
     """Etapa 2: busca no banco de dados pelo código confirmado."""
     body = request.get_json(force=True) or {}
