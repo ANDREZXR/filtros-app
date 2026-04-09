@@ -31,6 +31,7 @@
       position: sticky;
       top: 0;
       z-index: 10;
+      position: relative;
     }
     header h1 { font-size: 1.2rem; }
     header p { font-size: 0.78rem; color: #9ab; margin-top: 3px; }
@@ -354,14 +355,21 @@
 </head>
 <body>
   <header>
-    <h1>⚙️ ADAMANTO</h1>
+    <button onclick="location.reload()" title="Atualizar" style="position:absolute;left:14px;top:50%;transform:translateY(-50%);background:none;border:none;color:#fff;font-size:1.3rem;cursor:pointer;padding:6px;border-radius:8px;line-height:1;">↺</button>
+    <h1>ADAMANTO</h1>
     <p>Busca 100% verificada por código</p>
+    <div style="position:absolute;right:14px;top:50%;transform:translateY(-50%);display:flex;gap:6px">
+      <button onclick="location.href='/veiculo'" title="Busca por veículo" style="background:none;border:none;color:#fff;font-size:0.75rem;cursor:pointer;padding:6px 8px;border-radius:8px;line-height:1;letter-spacing:.02em;font-weight:600;">Veículo</button>
+      <button onclick="location.href='/pesquisa'" title="Pesquisa inteligente" style="background:none;border:none;color:#fff;font-size:0.75rem;cursor:pointer;padding:6px 8px;border-radius:8px;line-height:1;letter-spacing:.02em;font-weight:600;">Pesquisa</button>
+      <button onclick="location.href='/admin'" title="Cadastrar filtros" style="background:none;border:none;color:#fff;font-size:0.75rem;cursor:pointer;padding:6px 8px;border-radius:8px;line-height:1;letter-spacing:.02em;font-weight:600;">Admin</button>
+      <button onclick="location.href='/logout'" title="Sair" style="background:none;border:none;color:#fff;font-size:0.75rem;cursor:pointer;padding:6px 8px;border-radius:8px;line-height:1;letter-spacing:.02em;font-weight:600;">Sair</button>
+    </div>
   </header>
 
   <div class="container">
 
     <div id="install-banner">
-      <span>📲 Instale como app</span>
+      <span>Instale como app</span>
       <button id="btn-instalar">Instalar</button>
     </div>
 
@@ -369,7 +377,7 @@
     <div class="card" id="cardFoto">
       <div class="area-foto" id="areaFoto" onclick="document.getElementById('inputCamera').click()">
         <div class="placeholder">
-          <div class="ico">📸</div>
+          <div class="ico"></div>
           <p>Tire uma foto do filtro<br>para ler o código automaticamente</p>
         </div>
         <img id="previewImg" alt="filtro" />
@@ -379,10 +387,10 @@
       <input type="file" id="inputGaleria" accept="image/*" />
 
       <div class="botoes-foto">
-        <button class="btn btn-camera"  onclick="document.getElementById('inputCamera').click()">📷 Câmera</button>
-        <button class="btn btn-galeria" onclick="document.getElementById('inputGaleria').click()">🖼️ Galeria</button>
+        <button class="btn btn-camera"  onclick="document.getElementById('inputCamera').click()">Câmera</button>
+        <button class="btn btn-galeria" onclick="document.getElementById('inputGaleria').click()">Galeria</button>
       </div>
-      <button class="btn-ler" id="btnLer" onclick="lerCodigo()" disabled>🔍 Ler código do filtro</button>
+      <button class="btn-ler" id="btnLer" onclick="lerCodigo()" disabled>Ler código do filtro</button>
     </div>
 
     <!-- ETAPA 2: confirmar código -->
@@ -393,9 +401,9 @@
         <div class="marca-tag" id="marcaTag">—</div>
       </div>
       <div class="aviso-leitura">
-        ℹ️ Verifique se o código está igual ao impresso no filtro antes de buscar.
+        Verifique se o código está igual ao impresso no filtro antes de buscar.
       </div>
-      <button class="btn-buscar" id="btnBuscar" onclick="buscar()">✔ Buscar equivalentes</button>
+      <button class="btn-buscar" id="btnBuscar" onclick="buscar()">Buscar equivalentes</button>
 
       <div class="busca-manual-titulo">ou busque manualmente</div>
       <div class="busca-manual">
@@ -403,7 +411,7 @@
         <div class="campo-codigo">
           <input type="text" id="inputManual" placeholder="ex: PSL204" autocomplete="off" autocorrect="off" spellcheck="false" onkeydown="if(event.key==='Enter')buscarManual()" />
         </div>
-        <button class="btn-buscar" onclick="buscarManual()">🔍 Buscar código digitado</button>
+        <button class="btn-buscar" onclick="buscarManual()">Buscar código digitado</button>
       </div>
     </div>
 
@@ -429,7 +437,7 @@
         <span class="codigo-destaque" id="resCodigoDestaque">—</span>
         <span class="tipo-badge" id="resTipo">—</span>
       </div>
-      <div class="verificado-badge">✔ Resultado 100% verificado — dados do banco de referência</div>
+      <div class="verificado-badge">Resultado 100% verificado — dados do banco de referência</div>
       <div class="info-linha">
         <span class="info-label">Marca original</span>
         <span class="info-valor" id="resMarca">—</span>
@@ -567,7 +575,7 @@
 
         if (!dados.encontrado) {
           const el = document.getElementById('msgNaoEncontrado');
-          el.innerHTML = `⚠️ ${dados.mensagem}<br><small>Confirme se o código está correto e tente novamente.</small>`;
+          el.innerHTML = `${dados.mensagem}<br><small>Confirme se o código está correto e tente novamente.</small>`;
           el.style.display = 'block';
 
           const cardSim = document.getElementById('cardSimilares');

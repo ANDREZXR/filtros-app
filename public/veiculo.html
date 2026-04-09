@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <meta name="theme-color" content="#1a1a2e"/>
+  <title>ADAMANTO — Busca por Veículo</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+    body{font-family:'Segoe UI',system-ui,sans-serif;background:#f0f2f5;min-height:100dvh}
+    header{background:#1a1a2e;color:#fff;padding:14px 16px;display:flex;align-items:center;gap:10px;position:sticky;top:0;z-index:10}
+    header a{color:#fff;text-decoration:none;font-size:1.3rem;padding:4px 8px}
+    header h1{font-size:0.95rem;font-weight:700;letter-spacing:1px;flex:1}
+    header span{font-size:0.72rem;color:#9ab;white-space:nowrap}
+
+    .container{max-width:700px;margin:0 auto;padding:14px 12px 40px}
+    .card{background:#fff;border-radius:16px;padding:18px;box-shadow:0 2px 16px rgba(0,0,0,0.07);margin-bottom:14px}
+
+    label{display:block;font-size:0.72rem;font-weight:700;color:#888;text-transform:uppercase;margin-bottom:5px;margin-top:12px}
+    label:first-of-type{margin-top:0}
+    select{width:100%;border:1.5px solid #e2e8f0;border-radius:10px;padding:11px 12px;font-size:0.95rem;outline:none;transition:border-color .2s;background:#fff;appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23666' d='M6 8L1 3h10z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center}
+    select:focus{border-color:#1a1a2e}
+    select:disabled{background-color:#f8fafc;color:#aaa}
+
+    .btn{width:100%;background:#1a1a2e;color:#fff;border:none;border-radius:12px;padding:14px;font-size:1rem;font-weight:700;cursor:pointer;margin-top:14px;letter-spacing:1px;transition:background .2s}
+    .btn:hover{background:#e63946}
+    .btn:disabled{background:#ccc;cursor:not-allowed}
+
+    .spinner{display:none;text-align:center;padding:30px;color:#888;font-size:0.9rem}
+    .spinner.ativo{display:block}
+
+    .resultado{display:none}
+    .resultado.ativo{display:block}
+
+    .veiculo-titulo{font-size:1.1rem;font-weight:700;color:#1a1a2e;margin-bottom:4px}
+    .veiculo-sub{font-size:0.82rem;color:#888;margin-bottom:16px}
+
+    .variante{border:1.5px solid #e2e8f0;border-radius:14px;padding:14px;margin-bottom:12px}
+    .variante-header{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px;align-items:center}
+    .badge{display:inline-flex;align-items:center;gap:4px;background:#f0f2f5;border-radius:20px;padding:4px 10px;font-size:0.75rem;font-weight:600;color:#555}
+    .badge.combustivel{background:#fef3c7;color:#92400e}
+    .badge.ano{background:#e0e7ff;color:#3730a3}
+
+    .filtros-grid{display:grid;gap:8px}
+    .filtro-item{background:#f8fafc;border-radius:10px;padding:10px 12px}
+    .filtro-label{font-size:0.68rem;font-weight:700;color:#888;text-transform:uppercase;margin-bottom:4px}
+    .filtro-codigo{font-size:1rem;font-weight:700;color:#1a1a2e;font-family:monospace;letter-spacing:0.5px}
+    .filtro-tipo{font-size:0.72rem;color:#6366f1;font-weight:600;margin-bottom:4px}
+    .equiv-list{display:flex;flex-wrap:wrap;gap:4px;margin-top:5px}
+    .equiv-chip{background:#fff;border:1px solid #e2e8f0;border-radius:16px;padding:3px 9px;font-size:0.72rem;color:#555}
+    .equiv-chip strong{color:#1a1a2e}
+
+    .msg-nada{text-align:center;padding:32px 20px;color:#888}
+    .msg-nada strong{display:block;font-size:1rem;color:#444;margin-bottom:6px}
+
+    .info-total{font-size:0.75rem;color:#888;text-align:right;margin-bottom:10px}
+  </style>
+</head>
+<body>
+<header>
+  <a href="/">←</a>
+  <h1>Busca por Veículo</h1>
+  <span id="totalSpan"></span>
+</header>
+<div class="container">
+  <div class="card">
+    <label>Montadora</label>
+    <select id="selMontadora" onchange="onMontadoraChange()">
+      <option value="">Carregando...</option>
+    </select>
+
+    <label>Modelo</label>
+    <select id="selModelo" disabled onchange="onModeloChange()">
+      <option value="">Selecione a montadora</option>
+    </select>
+
+    <label>Motor (opcional)</label>
+    <select id="selMotor" disabled>
+      <option value="">Todos os motores</option>
+    </select>
+
+    <button class="btn" id="btnBuscar" onclick="buscar()" disabled>BUSCAR FILTROS</button>
+  </div>
+
+  <div class="spinner" id="spinner">Buscando aplicações...</div>
+
+  <div class="resultado" id="resultado"></div>
+</div>
+
+<script>
+async function carregarMontadoras() {
+  const res = await fetch("/veiculo/montadoras");
+  const lista = await res.json();
+  const sel = document.getElementById("selMontadora");
+  sel.innerHTML = '<option value="">Selecione a montadora</option>';
+  lista.forEach(m => {
+    const opt = document.createElement("option");
+    opt.value = m;
+    opt.textContent = m;
+    sel.appendChild(opt);
+  });
+  document.getElementById("totalSpan").textContent = lista.length + " marcas";
+}
+
+async function onMontadoraChange() {
+  const montadora = document.getElementById("selMontadora").value;
+  const selModelo = document.getElementById("selModelo");
+  const selMotor = document.getElementById("selMotor");
+  selModelo.disabled = true;
+  selMotor.disabled = true;
+  selMotor.innerHTML = '<option value="">Todos os motores</option>';
+  document.getElementById("btnBuscar").disabled = true;
+
+  if (!montadora) {
+    selModelo.innerHTML = '<option value="">Selecione a montadora</option>';
+    return;
+  }
+
+  selModelo.innerHTML = '<option value="">Carregando...</option>';
+  const res = await fetch("/veiculo/modelos?montadora=" + encodeURIComponent(montadora));
+  const lista = await res.json();
+  selModelo.innerHTML = '<option value="">Selecione o modelo</option>';
+  lista.forEach(m => {
+    const opt = document.createElement("option");
+    opt.value = m;
+    opt.textContent = m;
+    selModelo.appendChild(opt);
+  });
+  selModelo.disabled = false;
+}
+
+async function onModeloChange() {
+  const montadora = document.getElementById("selMontadora").value;
+  const modelo = document.getElementById("selModelo").value;
+  const selMotor = document.getElementById("selMotor");
+  const btnBuscar = document.getElementById("btnBuscar");
+
+  selMotor.disabled = true;
+  selMotor.innerHTML = '<option value="">Todos os motores</option>';
+  btnBuscar.disabled = !modelo;
+
+  if (!modelo) return;
+
+  const res = await fetch("/veiculo/motores?montadora=" + encodeURIComponent(montadora) + "&modelo=" + encodeURIComponent(modelo));
+  const lista = await res.json();
+  if (lista.length > 1) {
+    lista.forEach(m => {
+      const opt = document.createElement("option");
+      opt.value = m;
+      opt.textContent = m;
+      selMotor.appendChild(opt);
+    });
+    selMotor.disabled = false;
+  }
+}
+
+async function buscar() {
+  const montadora = document.getElementById("selMontadora").value;
+  const modelo = document.getElementById("selModelo").value;
+  const motor = document.getElementById("selMotor").value;
+
+  if (!montadora || !modelo) return;
+
+  document.getElementById("spinner").classList.add("ativo");
+  document.getElementById("resultado").classList.remove("ativo");
+  document.getElementById("resultado").innerHTML = "";
+
+  let url = "/veiculo/buscar?montadora=" + encodeURIComponent(montadora) + "&modelo=" + encodeURIComponent(modelo);
+  if (motor) url += "&motor=" + encodeURIComponent(motor);
+
+  const res = await fetch(url);
+  const data = await res.json();
+  document.getElementById("spinner").classList.remove("ativo");
+
+  const div = document.getElementById("resultado");
+  div.classList.add("ativo");
+
+  if (!data.encontrado) {
+    div.innerHTML = `<div class="msg-nada"><strong>Nenhuma aplicação encontrada</strong>Verifique a montadora, modelo e motor selecionados.</div>`;
+    return;
+  }
+
+  let html = `<div class="veiculo-titulo">${data.montadora} ${data.modelo}</div>`;
+  html += `<div class="info-total">${data.resultados.length} variante(s) encontrada(s)</div>`;
+
+  data.resultados.forEach(v => {
+    const anoStr = v.ano_de && v.ate ? `${v.ano_de} – ${v.ate}` : (v.ano_de || v.ate || "");
+    html += `<div class="variante">`;
+    html += `<div class="variante-header">`;
+    if (v.motor) html += `<span class="badge">${v.motor}</span>`;
+    if (anoStr) html += `<span class="badge ano">${anoStr}</span>`;
+    if (v.combustivel) html += `<span class="badge combustivel">${v.combustivel}</span>`;
+    if (v.descricao && v.descricao !== "-") html += `<span class="badge">${v.descricao}</span>`;
+    html += `</div>`;
+
+    const filtros = v.filtros;
+    if (Object.keys(filtros).length === 0) {
+      html += `<div style="font-size:0.8rem;color:#aaa">Sem filtros cadastrados</div>`;
+    } else {
+      html += `<div class="filtros-grid">`;
+      for (const [label, info] of Object.entries(filtros)) {
+        if (!info) continue;
+        html += `<div class="filtro-item">`;
+        html += `<div class="filtro-label">${label}</div>`;
+        if (info.tipo_filtro) html += `<div class="filtro-tipo">${info.tipo_filtro}</div>`;
+        html += `<div class="filtro-codigo">${info.codigo}</div>`;
+        if (info.equivalentes && info.equivalentes.length > 0) {
+          html += `<div class="equiv-list">`;
+          info.equivalentes.forEach(eq => {
+            html += `<span class="equiv-chip"><strong>${eq.marca}</strong> ${eq.codigo}</span>`;
+          });
+          html += `</div>`;
+        }
+        html += `</div>`;
+      }
+      html += `</div>`;
+    }
+    html += `</div>`;
+  });
+
+  div.innerHTML = html;
+}
+
+carregarMontadoras();
+</script>
+</body>
+</html>

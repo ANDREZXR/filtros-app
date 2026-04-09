@@ -1,348 +1,5864 @@
 {
   "oleo": {
     "MANN": {
-      "W712/75":   {"Bosch":"0451103316","Tecfil":"PSL204","Fram":"PH4967","Mahle":"OC217","Wix":"WL7168","Purolator":"L14459","Champion":"C117"},
-      "W7008":     {"Bosch":"0451103372","Tecfil":"PSL228","Fram":"PH10060","Mahle":"OC575","Wix":"WL7423","Champion":"C512"},
-      "W940/25":   {"Bosch":"0451103079","Tecfil":"PSL172","Fram":"PH3593A","Mahle":"OC9","Wix":"WL7036","Champion":"C118"},
-      "W719/30":   {"Bosch":"0451103141","Tecfil":"PSL154","Fram":"PH5765","Mahle":"OC53","Wix":"WL7096"},
-      "W811/80":   {"Bosch":"0451103079","Tecfil":"PSL172","Fram":"PH3614","Mahle":"OC9","Wix":"WL7036"},
-      "HU712/6X":  {"Bosch":"0451103372","Tecfil":"PSL228","Fram":"PH10060","Mahle":"OC575"},
-      "W6007":     {"Bosch":"0451103370","Tecfil":"PSL195","Fram":"PH9782","Mahle":"OC530","Wix":"WL7370"},
-      "W68/3":     {"Bosch":"0451103141","Tecfil":"PSL154","Fram":"PH5765","Mahle":"OC53"},
-      "W920/21":   {"Bosch":"0451103080","Tecfil":"PSL184","Fram":"PH3513","Mahle":"OC8"},
-      "W610/3":    {"Bosch":"0451103079","Tecfil":"PSL172","Fram":"PH3593A","Mahle":"OC9","Wix":"WL7036"},
-      "W7015":     {"Bosch":"0451103079","Tecfil":"PSL172","Fram":"PH3593A","Mahle":"OC9"},
-      "W713/16":   {"Bosch":"0451103316","Tecfil":"PSL204","Fram":"PH4967","Mahle":"OC217"},
-      "W815/80":   {"Bosch":"0451103079","Tecfil":"PSL172","Fram":"PH3614","Mahle":"OC9"},
-      "W6004":     {"Bosch":"0451103370","Tecfil":"PSL195","Fram":"PH9782","Mahle":"OC530"},
-      "HU711/51X": {"Bosch":"0451103316","Tecfil":"PSL204","Fram":"PH4967","Mahle":"OC217"},
-      "HU816X":    {"Bosch":"0451103372","Tecfil":"PSL228","Fram":"PH10060","Mahle":"OC575"},
-      "W7030":     {"Bosch":"0451103370","Tecfil":"PSL195","Fram":"PH9782","Mahle":"OC530"},
-      "W940/66":   {"Bosch":"0451103080","Tecfil":"PSL184","Fram":"PH3513","Mahle":"OC8"},
-      "W1130/5":   {"Bosch":"0451103082","Tecfil":"PSL244","Fram":"PH9688","Mahle":"OC613"},
-      "W7040":     {"Bosch":"0451103372","Tecfil":"PSL228","Fram":"PH10060","Mahle":"OC575"},
-      "W1374/5":   {"Bosch":"0451103079","Tecfil":"PSL172","Fram":"PH3593A","Mahle":"OC9"},
-      "WP928/80":  {"Bosch":"0451103361","Tecfil":"PSL254","Mahle":"OC1066","Wix":"WL7479"},
-      "HU718/5X":  {"Bosch":"0451103141","Tecfil":"PSL154","Fram":"PH5765","Mahle":"OC53"},
-      "HU612X":    {"Bosch":"0451103079","Tecfil":"PSL172","Fram":"PH3593A","Mahle":"OC9"},
-      "W8016":     {"Bosch":"0451103370","Tecfil":"PSL195","Mahle":"OC530"},
-      "W914/2":    {"Bosch":"0451103370","Tecfil":"PSL195","Fram":"PH9782","Mahle":"OC530"},
-      "WP928/80":  {"Bosch":"0451103361","Tecfil":"PSL254","Mahle":"OC1066"},
-      "HU925/4X":  {"Bosch":"0451103370","Tecfil":"PSL195","Fram":"PH9782","Mahle":"OC530"},
-      "W610/3":    {"Bosch":"0451103079","Tecfil":"PSL172","Fram":"PH3593A","Mahle":"OC9"},
-      "HU 816 X":  {"Bosch":"0451103372","Tecfil":"PSL228","Fram":"PH10060","Mahle":"OC575"}
+      "W712/75": {
+        "Bosch": "0451103316",
+        "Tecfil": "PSL204",
+        "Fram": "PH4967",
+        "Mahle": "OC217",
+        "Wix": "WL7168",
+        "Purolator": "L14459",
+        "Hengst": "H90W02",
+        "Champion": "C117"
+      },
+      "W7008": {
+        "Bosch": "0451103372",
+        "Tecfil": "PSL228",
+        "Fram": "PH10060",
+        "Mahle": "OC575",
+        "Wix": "WL7423",
+        "Hengst": "H17W03"
+      },
+      "W940/25": {
+        "Bosch": "0451103079",
+        "Tecfil": "PSL172",
+        "Fram": "PH3593A",
+        "Mahle": "OC9",
+        "Wix": "WL7036",
+        "Hengst": "H14W04"
+      },
+      "W719/30": {
+        "Bosch": "0451103141",
+        "Tecfil": "PSL154",
+        "Fram": "PH5765",
+        "Mahle": "OC53",
+        "Wix": "WL7096",
+        "Hengst": "H14W02"
+      },
+      "W811/80": {
+        "Bosch": "0451103079",
+        "Tecfil": "PSL172",
+        "Fram": "PH3614",
+        "Mahle": "OC9",
+        "Wix": "WL7036"
+      },
+      "HU712/6X": {
+        "Bosch": "0451103372",
+        "Tecfil": "PSL228",
+        "Fram": "PH10060",
+        "Mahle": "OC575",
+        "Hengst": "H17W03"
+      },
+      "W6007": {
+        "Bosch": "0451103370",
+        "Tecfil": "PSL195",
+        "Fram": "PH9782",
+        "Mahle": "OC530",
+        "Wix": "WL7370",
+        "Hengst": "H90W06"
+      },
+      "W68/3": {
+        "Bosch": "0451103141",
+        "Tecfil": "PSL154",
+        "Fram": "PH5765",
+        "Mahle": "OC53"
+      },
+      "W920/21": {
+        "Bosch": "0451103080",
+        "Tecfil": "PSL184",
+        "Fram": "PH3513",
+        "Mahle": "OC8"
+      },
+      "W610/3": {
+        "Bosch": "0451103258",
+        "Tecfil": "PSL154",
+        "Mahle": "OC53"
+      },
+      "W7015": {
+        "Bosch": "0451103079",
+        "Tecfil": "PSL172",
+        "Fram": "PH3593A",
+        "Mahle": "OC9"
+      },
+      "W715/2": {
+        "Bosch": "0451103079",
+        "Tecfil": "PSL172",
+        "Mahle": "OC9"
+      },
+      "HU711/51X": {
+        "Bosch": "0451103316",
+        "Tecfil": "PSL204",
+        "Fram": "PH4967",
+        "Mahle": "OC217"
+      },
+      "HU816X": {
+        "Bosch": "0451103372",
+        "Tecfil": "PSL228",
+        "Fram": "PH10060",
+        "Mahle": "OC575"
+      },
+      "W1130/5": {
+        "Bosch": "0451103082",
+        "Tecfil": "PSL244",
+        "Fram": "PH9688",
+        "Mahle": "OC613"
+      },
+      "WP928/80": {
+        "Bosch": "0451103361",
+        "Tecfil": "PSL254",
+        "Mahle": "OC1066",
+        "Wix": "WL7479"
+      },
+      "HU718/5X": {
+        "Bosch": "0451103141",
+        "Tecfil": "PSL154",
+        "Fram": "PH5765",
+        "Mahle": "OC53"
+      },
+      "HU612X": {
+        "Bosch": "0451103079",
+        "Tecfil": "PSL172",
+        "Fram": "PH3593A",
+        "Mahle": "OC9"
+      },
+      "W914/2": {
+        "Bosch": "0451103370",
+        "Tecfil": "PSL195",
+        "Fram": "PH9782",
+        "Mahle": "OC530"
+      },
+      "HU925/4X": {
+        "Bosch": "0451103370",
+        "Tecfil": "PSL195",
+        "Fram": "PH9782",
+        "Mahle": "OC530"
+      },
+      "W714/2": {
+        "Bosch": "0451103079",
+        "Tecfil": "PSL172",
+        "Fram": "PH3593A",
+        "Mahle": "OC9"
+      },
+      "W7040": {
+        "Bosch": "0451103372",
+        "Tecfil": "PSL228",
+        "Mahle": "OC575"
+      },
+      "W1374/5": {
+        "Bosch": "0451103079",
+        "Tecfil": "PSL172",
+        "Mahle": "OC9"
+      },
+      "W813/80": {
+        "Bosch": "0451103316",
+        "Tecfil": "PSL204",
+        "Mahle": "OC217"
+      },
+      "HU715/4X": {
+        "Bosch": "0451103372",
+        "Tecfil": "PSL228",
+        "Mahle": "OC575"
+      },
+      "W67/1": {
+        "Bosch": "0451103141",
+        "Tecfil": "PSL154",
+        "Mahle": "OC53"
+      },
+      "W713/83": {
+        "Bosch": "0451103316",
+        "Tecfil": "PSL204",
+        "Mahle": "OC217"
+      },
+      "W940/66": {
+        "Bosch": "0451103080",
+        "Tecfil": "PSL184",
+        "Mahle": "OC8"
+      },
+      "W7030": {
+        "Bosch": "0451103370",
+        "Tecfil": "PSL195",
+        "Mahle": "OC530"
+      },
+      "WP928/81": {
+        "Tecfil": "PSL254",
+        "Mahle": "OC1066"
+      },
+      "HU719/6X": {
+        "Bosch": "0451103316",
+        "Tecfil": "PSL204",
+        "Mahle": "OC217"
+      },
+      "W719/5": {
+        "Bosch": "0451103316",
+        "Tecfil": "PSL204",
+        "Mahle": "OC217"
+      },
+      "W7016": {
+        "Bosch": "0451103079",
+        "Tecfil": "PSL172",
+        "Mahle": "OC9"
+      },
+      "HU921X": {
+        "Tecfil": "PSL302",
+        "Mahle": "OC1042"
+      },
+      "HU6004X": {
+        "Tecfil": "PSL195",
+        "Mahle": "OC530"
+      },
+      "W6012": {
+        "Tecfil": "PSL172",
+        "Mahle": "OC9"
+      },
+      "W811/84": {
+        "Bosch": "0451103316",
+        "Tecfil": "PSL204",
+        "Mahle": "OC217"
+      },
+      "W1168/5": {
+        "Tecfil": "PSL244",
+        "Mahle": "OC613"
+      },
+      "HU7008Z": {
+        "Tecfil": "PSL228",
+        "Mahle": "OC575"
+      },
+      "WP1268": {
+        "Tecfil": "PSL254",
+        "Mahle": "OC1066"
+      },
+      "W67/2": {
+        "Bosch": "0451103079",
+        "Tecfil": "PSL172",
+        "Mahle": "OC9"
+      },
+      "W712/85": {
+        "Bosch": "0451103316",
+        "Tecfil": "PSL204",
+        "Mahle": "OC217"
+      },
+      "W1323": {
+        "Tecfil": "PSL340",
+        "Bosch": "0986B01016",
+        "Fram": "PH9503",
+        "Mahle": "OC404",
+        "Purolator": "L1078",
+        "Wega": "WO540",
+        "Vox": "LB340",
+        "Nissan": "1520865300",
+        "Volkswagen": "062115561A"
+      }
     },
     "BOSCH": {
-      "0451103316": {"Mann":"W712/75","Tecfil":"PSL204","Fram":"PH4967","Mahle":"OC217","Wix":"WL7168","Purolator":"L14459"},
-      "0451103372": {"Mann":"W7008","Tecfil":"PSL228","Fram":"PH10060","Mahle":"OC575","Wix":"WL7423"},
-      "0451103079": {"Mann":"W940/25","Tecfil":"PSL172","Fram":"PH3593A","Mahle":"OC9","Wix":"WL7036"},
-      "0451103141": {"Mann":"W719/30","Tecfil":"PSL154","Fram":"PH5765","Mahle":"OC53","Wix":"WL7096"},
-      "0451103370": {"Mann":"W6007","Tecfil":"PSL195","Fram":"PH9782","Mahle":"OC530","Wix":"WL7370"},
-      "0451103080": {"Mann":"W920/21","Tecfil":"PSL184","Fram":"PH3513","Mahle":"OC8"},
-      "0451103082": {"Mann":"W1130/5","Tecfil":"PSL244","Fram":"PH9688","Mahle":"OC613"},
-      "0451103361": {"Mann":"WP928/80","Tecfil":"PSL254","Mahle":"OC1066","Wix":"WL7479"},
-      "0451103369": {"Mann":"W7040","Tecfil":"PSL228","Mahle":"OC575"},
-      "0451103375": {"Tecfil":"PSL280","Fram":"PH12060","Mahle":"OC611"},
-      "0451103258": {"Mann":"W610/3","Tecfil":"PSL154","Mahle":"OC53"},
-      "0451103374": {"Tecfil":"PSL276","Mahle":"OC609","Wix":"WL7498"}
+      "0451103316": {
+        "Mann": "W712/75",
+        "Tecfil": "PSL204",
+        "Fram": "PH4967",
+        "Mahle": "OC217",
+        "Wix": "WL7168",
+        "Purolator": "L14459"
+      },
+      "0451103372": {
+        "Mann": "W7008",
+        "Tecfil": "PSL228",
+        "Fram": "PH10060",
+        "Mahle": "OC575",
+        "Wix": "WL7423"
+      },
+      "0451103079": {
+        "Mann": "W940/25",
+        "Tecfil": "PSL172",
+        "Fram": "PH3593A",
+        "Mahle": "OC9",
+        "Wix": "WL7036"
+      },
+      "0451103141": {
+        "Mann": "W719/30",
+        "Tecfil": "PSL154",
+        "Fram": "PH5765",
+        "Mahle": "OC53",
+        "Wix": "WL7096"
+      },
+      "0451103370": {
+        "Mann": "W6007",
+        "Tecfil": "PSL195",
+        "Fram": "PH9782",
+        "Mahle": "OC530",
+        "Wix": "WL7370"
+      },
+      "0451103080": {
+        "Mann": "W920/21",
+        "Tecfil": "PSL184",
+        "Fram": "PH3513",
+        "Mahle": "OC8"
+      },
+      "0451103082": {
+        "Mann": "W1130/5",
+        "Tecfil": "PSL244",
+        "Fram": "PH9688",
+        "Mahle": "OC613"
+      },
+      "0451103361": {
+        "Mann": "WP928/80",
+        "Tecfil": "PSL254",
+        "Mahle": "OC1066",
+        "Wix": "WL7479"
+      },
+      "0451103375": {
+        "Tecfil": "PSL280",
+        "Fram": "PH12060",
+        "Mahle": "OC611"
+      },
+      "0451103258": {
+        "Mann": "W610/3",
+        "Tecfil": "PSL154",
+        "Mahle": "OC53"
+      },
+      "0451103374": {
+        "Tecfil": "PSL276",
+        "Mahle": "OC609",
+        "Wix": "WL7498"
+      },
+      "0451103369": {
+        "Tecfil": "PSL228",
+        "Mahle": "OC575"
+      },
+      "0451103296": {
+        "Tecfil": "PSL204",
+        "Mahle": "OC217"
+      },
+      "0451103021": {
+        "Mann": "W68/3",
+        "Tecfil": "PSL154",
+        "Mahle": "OC53"
+      },
+      "0451103273": {
+        "Tecfil": "PSL172",
+        "Mahle": "OC9"
+      },
+      "0986452065": {
+        "Tecfil": "PSL184",
+        "Mahle": "OC8"
+      },
+      "0986B01016": {
+        "Mann": "W1323",
+        "Tecfil": "PSL340",
+        "Fram": "PH9503",
+        "Mahle": "OC404",
+        "Purolator": "L1078"
+      }
     },
     "TECFIL": {
-      "PSL204":  {"Mann":"W712/75","Bosch":"0451103316","Fram":"PH4967","Mahle":"OC217","Wix":"WL7168","Purolator":"L14459"},
-      "PSL228":  {"Mann":"W7008","Bosch":"0451103372","Fram":"PH10060","Mahle":"OC575","Wix":"WL7423"},
-      "PSL172":  {"Mann":"W940/25","Bosch":"0451103079","Fram":"PH3593A","Mahle":"OC9","Wix":"WL7036"},
-      "PSL154":  {"Mann":"W719/30","Bosch":"0451103141","Fram":"PH5765","Mahle":"OC53","Wix":"WL7096"},
-      "PSL195":  {"Mann":"W6007","Bosch":"0451103370","Fram":"PH9782","Mahle":"OC530","Wix":"WL7370"},
-      "PSL184":  {"Mann":"W920/21","Bosch":"0451103080","Fram":"PH3513","Mahle":"OC8"},
-      "PEL104":  {"Mann":"W712/75","Bosch":"0451103316","Fram":"PH4967","Wix":"WL7168"},
-      "PSL268":  {"Mann":"HU712/6X","Bosch":"0451103372","Fram":"PH10060","Mahle":"OC575"},
-      "PSL244":  {"Mann":"W1130/5","Bosch":"0451103082","Fram":"PH9688","Mahle":"OC613"},
-      "PSL254":  {"Mann":"WP928/80","Bosch":"0451103361","Mahle":"OC1066","Wix":"WL7479"},
-      "PSL280":  {"Bosch":"0451103375","Fram":"PH12060","Mahle":"OC611"},
-      "PSL276":  {"Bosch":"0451103374","Mahle":"OC609","Wix":"WL7498"},
-      "PSL302":  {"Mahle":"OC1042","Wix":"WL7516"},
-      "PSL236":  {"Mann":"W712/75","Bosch":"0451103316","Mahle":"OC217"},
-      "PEL108":  {"Mann":"W940/25","Bosch":"0451103079","Mahle":"OC9"}
+      "PSL204": {
+        "Mann": "W712/75",
+        "Bosch": "0451103316",
+        "Fram": "PH4967",
+        "Mahle": "OC217",
+        "Wix": "WL7168",
+        "Purolator": "L14459",
+        "Hengst": "H90W02"
+      },
+      "PSL228": {
+        "Mann": "W7008",
+        "Bosch": "0451103372",
+        "Fram": "PH10060",
+        "Mahle": "OC575",
+        "Wix": "WL7423",
+        "Hengst": "H17W03"
+      },
+      "PSL172": {
+        "Mann": "W940/25",
+        "Bosch": "0451103079",
+        "Fram": "PH3593A",
+        "Mahle": "OC9",
+        "Wix": "WL7036",
+        "Hengst": "H14W04"
+      },
+      "PSL154": {
+        "Mann": "W719/30",
+        "Bosch": "0451103141",
+        "Fram": "PH5765",
+        "Mahle": "OC53",
+        "Wix": "WL7096",
+        "Hengst": "H14W02"
+      },
+      "PSL195": {
+        "Mann": "W6007",
+        "Bosch": "0451103370",
+        "Fram": "PH9782",
+        "Mahle": "OC530",
+        "Wix": "WL7370",
+        "Hengst": "H90W06"
+      },
+      "PSL184": {
+        "Mann": "W920/21",
+        "Bosch": "0451103080",
+        "Fram": "PH3513",
+        "Mahle": "OC8"
+      },
+      "PEL104": {
+        "Mann": "W712/75",
+        "Bosch": "0451103316",
+        "Fram": "PH4967",
+        "Wix": "WL7168"
+      },
+      "PSL268": {
+        "Mann": "HU712/6X",
+        "Bosch": "0451103372",
+        "Fram": "PH10060",
+        "Mahle": "OC575"
+      },
+      "PSL244": {
+        "Mann": "W1130/5",
+        "Bosch": "0451103082",
+        "Fram": "PH9688",
+        "Mahle": "OC613"
+      },
+      "PSL254": {
+        "Mann": "WP928/80",
+        "Bosch": "0451103361",
+        "Mahle": "OC1066",
+        "Wix": "WL7479"
+      },
+      "PSL280": {
+        "Bosch": "0451103375",
+        "Fram": "PH12060",
+        "Mahle": "OC611"
+      },
+      "PSL276": {
+        "Bosch": "0451103374",
+        "Mahle": "OC609",
+        "Wix": "WL7498"
+      },
+      "PSL302": {
+        "Mann": "HU921X",
+        "Mahle": "OC1042",
+        "Wix": "WL7516"
+      },
+      "PSL236": {
+        "Mann": "W712/75",
+        "Bosch": "0451103316",
+        "Mahle": "OC217"
+      },
+      "PEL108": {
+        "Mann": "W940/25",
+        "Bosch": "0451103079",
+        "Mahle": "OC9"
+      },
+      "PSL269": {
+        "Mann": "HU712/6X",
+        "Mahle": "OC575"
+      },
+      "PSL262": {
+        "Mahle": "OC530"
+      },
+      "PSL316": {
+        "Mahle": "OC1107"
+      },
+      "PSL308": {
+        "Mahle": "OC1058"
+      },
+      "PSL288": {
+        "Mahle": "OC640"
+      },
+      "PSL322": {
+        "Mahle": "OC1115"
+      },
+      "PSL314": {
+        "Mahle": "OC1064"
+      },
+      "PSL340": {
+        "Mann": "W1323",
+        "Bosch": "0986B01016",
+        "Fram": "PH9503",
+        "Mahle": "OC404",
+        "Purolator": "L1078",
+        "Wega": "WO540",
+        "Vox": "LB340",
+        "Nissan": "1520865300",
+        "Volkswagen": "062115561A",
+        "Acdelco": "01FBO041",
+        "Unifilter": "USL350",
+        "Racor": "RL350",
+        "Delphi": "EFL737",
+        "Inpeca": "SLB0720",
+        "GM": "MS054102"
+      }
     },
     "FRAM": {
-      "PH4967":   {"Mann":"W712/75","Bosch":"0451103316","Tecfil":"PSL204","Mahle":"OC217","Wix":"WL7168","Purolator":"L14459"},
-      "PH10060":  {"Mann":"W7008","Bosch":"0451103372","Tecfil":"PSL228","Mahle":"OC575","Wix":"WL7423"},
-      "PH3593A":  {"Mann":"W940/25","Bosch":"0451103079","Tecfil":"PSL172","Mahle":"OC9","Wix":"WL7036"},
-      "PH5765":   {"Mann":"W719/30","Bosch":"0451103141","Tecfil":"PSL154","Mahle":"OC53","Wix":"WL7096"},
-      "PH9782":   {"Mann":"W6007","Bosch":"0451103370","Tecfil":"PSL195","Mahle":"OC530","Wix":"WL7370"},
-      "PH3513":   {"Mann":"W920/21","Bosch":"0451103080","Tecfil":"PSL184","Mahle":"OC8"},
-      "PH3614":   {"Mann":"W811/80","Bosch":"0451103079","Tecfil":"PSL172","Mahle":"OC9"},
-      "PH9688":   {"Mann":"W1130/5","Bosch":"0451103082","Tecfil":"PSL244","Mahle":"OC613"},
-      "PH12060":  {"Bosch":"0451103375","Tecfil":"PSL280","Mahle":"OC611"},
-      "PH10295":  {"Mann":"HU712/6X","Tecfil":"PSL268","Mahle":"OC575"},
-      "PH3600":   {"Mann":"W940/25","Bosch":"0451103079","Tecfil":"PSL172","Mahle":"OC9"}
+      "PH4967": {
+        "Mann": "W712/75",
+        "Bosch": "0451103316",
+        "Tecfil": "PSL204",
+        "Mahle": "OC217",
+        "Wix": "WL7168",
+        "Purolator": "L14459"
+      },
+      "PH10060": {
+        "Mann": "W7008",
+        "Bosch": "0451103372",
+        "Tecfil": "PSL228",
+        "Mahle": "OC575",
+        "Wix": "WL7423"
+      },
+      "PH3593A": {
+        "Mann": "W940/25",
+        "Bosch": "0451103079",
+        "Tecfil": "PSL172",
+        "Mahle": "OC9",
+        "Wix": "WL7036"
+      },
+      "PH5765": {
+        "Mann": "W719/30",
+        "Bosch": "0451103141",
+        "Tecfil": "PSL154",
+        "Mahle": "OC53",
+        "Wix": "WL7096"
+      },
+      "PH9782": {
+        "Mann": "W6007",
+        "Bosch": "0451103370",
+        "Tecfil": "PSL195",
+        "Mahle": "OC530",
+        "Wix": "WL7370"
+      },
+      "PH3513": {
+        "Mann": "W920/21",
+        "Bosch": "0451103080",
+        "Tecfil": "PSL184",
+        "Mahle": "OC8"
+      },
+      "PH3614": {
+        "Mann": "W811/80",
+        "Bosch": "0451103079",
+        "Tecfil": "PSL172",
+        "Mahle": "OC9"
+      },
+      "PH9688": {
+        "Mann": "W1130/5",
+        "Bosch": "0451103082",
+        "Tecfil": "PSL244",
+        "Mahle": "OC613"
+      },
+      "PH12060": {
+        "Bosch": "0451103375",
+        "Tecfil": "PSL280",
+        "Mahle": "OC611"
+      },
+      "PH10295": {
+        "Mann": "HU712/6X",
+        "Tecfil": "PSL268",
+        "Mahle": "OC575"
+      },
+      "PH3600": {
+        "Mann": "W940/25",
+        "Bosch": "0451103079",
+        "Tecfil": "PSL172",
+        "Mahle": "OC9"
+      },
+      "PH3506": {
+        "Tecfil": "PSL172",
+        "Mahle": "OC9"
+      },
+      "PH3563A": {
+        "Mann": "W67/1",
+        "Tecfil": "PSL154",
+        "Mahle": "OC53"
+      },
+      "PH2819": {
+        "Tecfil": "PSL184",
+        "Mahle": "OC8"
+      },
+      "PH9503": {
+        "Mann": "W1323",
+        "Bosch": "0986B01016",
+        "Tecfil": "PSL340",
+        "Mahle": "OC404",
+        "Purolator": "L1078"
+      }
     },
     "MAHLE": {
-      "OC217":  {"Mann":"W712/75","Bosch":"0451103316","Tecfil":"PSL204","Fram":"PH4967","Wix":"WL7168","Purolator":"L14459"},
-      "OC575":  {"Mann":"W7008","Bosch":"0451103372","Tecfil":"PSL228","Fram":"PH10060","Wix":"WL7423"},
-      "OC9":    {"Mann":"W940/25","Bosch":"0451103079","Tecfil":"PSL172","Fram":"PH3593A","Wix":"WL7036"},
-      "OC53":   {"Mann":"W719/30","Bosch":"0451103141","Tecfil":"PSL154","Fram":"PH5765","Wix":"WL7096"},
-      "OC530":  {"Mann":"W6007","Bosch":"0451103370","Tecfil":"PSL195","Fram":"PH9782","Wix":"WL7370"},
-      "OC8":    {"Mann":"W920/21","Bosch":"0451103080","Tecfil":"PSL184","Fram":"PH3513"},
-      "OC613":  {"Mann":"W1130/5","Bosch":"0451103082","Tecfil":"PSL244","Fram":"PH9688"},
-      "OC1066": {"Mann":"WP928/80","Bosch":"0451103361","Tecfil":"PSL254","Wix":"WL7479"},
-      "OC611":  {"Bosch":"0451103375","Tecfil":"PSL280","Fram":"PH12060"},
-      "OC609":  {"Bosch":"0451103374","Tecfil":"PSL276","Wix":"WL7498"},
-      "OC1042": {"Tecfil":"PSL302","Wix":"WL7516"},
-      "OC116":  {"Mann":"W712/75","Bosch":"0451103316","Tecfil":"PSL204","Fram":"PH4967"},
-      "OC667":  {"Mann":"HU716/2X","Bosch":"0451103370","Tecfil":"PSL195"}
+      "OC217": {
+        "Mann": "W712/75",
+        "Bosch": "0451103316",
+        "Tecfil": "PSL204",
+        "Fram": "PH4967",
+        "Wix": "WL7168",
+        "Purolator": "L14459",
+        "Hengst": "H90W02"
+      },
+      "OC575": {
+        "Mann": "W7008",
+        "Bosch": "0451103372",
+        "Tecfil": "PSL228",
+        "Fram": "PH10060",
+        "Wix": "WL7423",
+        "Hengst": "H17W03"
+      },
+      "OC9": {
+        "Mann": "W940/25",
+        "Bosch": "0451103079",
+        "Tecfil": "PSL172",
+        "Fram": "PH3593A",
+        "Wix": "WL7036",
+        "Hengst": "H14W04"
+      },
+      "OC53": {
+        "Mann": "W719/30",
+        "Bosch": "0451103141",
+        "Tecfil": "PSL154",
+        "Fram": "PH5765",
+        "Wix": "WL7096",
+        "Hengst": "H14W02"
+      },
+      "OC530": {
+        "Mann": "W6007",
+        "Bosch": "0451103370",
+        "Tecfil": "PSL195",
+        "Fram": "PH9782",
+        "Wix": "WL7370",
+        "Hengst": "H90W06"
+      },
+      "OC8": {
+        "Mann": "W920/21",
+        "Bosch": "0451103080",
+        "Tecfil": "PSL184",
+        "Fram": "PH3513"
+      },
+      "OC613": {
+        "Mann": "W1130/5",
+        "Bosch": "0451103082",
+        "Tecfil": "PSL244",
+        "Fram": "PH9688"
+      },
+      "OC1066": {
+        "Mann": "WP928/80",
+        "Bosch": "0451103361",
+        "Tecfil": "PSL254",
+        "Wix": "WL7479"
+      },
+      "OC611": {
+        "Bosch": "0451103375",
+        "Tecfil": "PSL280",
+        "Fram": "PH12060"
+      },
+      "OC609": {
+        "Bosch": "0451103374",
+        "Tecfil": "PSL276",
+        "Wix": "WL7498"
+      },
+      "OC1042": {
+        "Mann": "HU921X",
+        "Tecfil": "PSL302",
+        "Wix": "WL7516"
+      },
+      "OC116": {
+        "Mann": "W712/75",
+        "Bosch": "0451103316",
+        "Tecfil": "PSL204",
+        "Fram": "PH4967"
+      },
+      "OC667": {
+        "Mann": "HU716/2X",
+        "Bosch": "0451103370",
+        "Tecfil": "PSL195"
+      },
+      "OC1107": {
+        "Tecfil": "PSL316"
+      },
+      "OC1058": {
+        "Tecfil": "PSL308"
+      },
+      "OC640": {
+        "Tecfil": "PSL288"
+      },
+      "OC1115": {
+        "Tecfil": "PSL322"
+      },
+      "OC1064": {
+        "Tecfil": "PSL314"
+      },
+      "OC196": {
+        "Mann": "W712/75",
+        "Tecfil": "PSL204",
+        "Fram": "PH4967"
+      },
+      "OC404": {
+        "Mann": "W1323",
+        "Bosch": "0986B01016",
+        "Tecfil": "PSL340",
+        "Fram": "PH9503",
+        "Purolator": "L1078",
+        "Wega": "WO540",
+        "Vox": "LB340"
+      }
     },
     "WIX": {
-      "WL7168": {"Mann":"W712/75","Bosch":"0451103316","Tecfil":"PSL204","Fram":"PH4967","Mahle":"OC217","Purolator":"L14459"},
-      "WL7423": {"Mann":"W7008","Bosch":"0451103372","Tecfil":"PSL228","Fram":"PH10060","Mahle":"OC575"},
-      "WL7036": {"Mann":"W940/25","Bosch":"0451103079","Tecfil":"PSL172","Fram":"PH3593A","Mahle":"OC9"},
-      "WL7096": {"Mann":"W719/30","Bosch":"0451103141","Tecfil":"PSL154","Fram":"PH5765","Mahle":"OC53"},
-      "WL7370": {"Mann":"W6007","Bosch":"0451103370","Tecfil":"PSL195","Fram":"PH9782","Mahle":"OC530"},
-      "WL7479": {"Mann":"WP928/80","Bosch":"0451103361","Tecfil":"PSL254","Mahle":"OC1066"},
-      "WL7498": {"Bosch":"0451103374","Tecfil":"PSL276","Mahle":"OC609"},
-      "WL7516": {"Tecfil":"PSL302","Mahle":"OC1042"},
-      "WL10232":{"Mann":"HU712/6X","Bosch":"0451103372","Tecfil":"PSL228","Mahle":"OC575"}
+      "WL7168": {
+        "Mann": "W712/75",
+        "Bosch": "0451103316",
+        "Tecfil": "PSL204",
+        "Fram": "PH4967",
+        "Mahle": "OC217",
+        "Purolator": "L14459"
+      },
+      "WL7423": {
+        "Mann": "W7008",
+        "Bosch": "0451103372",
+        "Tecfil": "PSL228",
+        "Fram": "PH10060",
+        "Mahle": "OC575"
+      },
+      "WL7036": {
+        "Mann": "W940/25",
+        "Bosch": "0451103079",
+        "Tecfil": "PSL172",
+        "Fram": "PH3593A",
+        "Mahle": "OC9"
+      },
+      "WL7096": {
+        "Mann": "W719/30",
+        "Bosch": "0451103141",
+        "Tecfil": "PSL154",
+        "Fram": "PH5765",
+        "Mahle": "OC53"
+      },
+      "WL7370": {
+        "Mann": "W6007",
+        "Bosch": "0451103370",
+        "Tecfil": "PSL195",
+        "Fram": "PH9782",
+        "Mahle": "OC530"
+      },
+      "WL7479": {
+        "Mann": "WP928/80",
+        "Bosch": "0451103361",
+        "Tecfil": "PSL254",
+        "Mahle": "OC1066"
+      },
+      "WL7498": {
+        "Bosch": "0451103374",
+        "Tecfil": "PSL276",
+        "Mahle": "OC609"
+      },
+      "WL7516": {
+        "Mann": "HU921X",
+        "Tecfil": "PSL302",
+        "Mahle": "OC1042"
+      },
+      "WL10232": {
+        "Mann": "HU712/6X",
+        "Bosch": "0451103372",
+        "Tecfil": "PSL228",
+        "Mahle": "OC575"
+      }
     },
     "PUROLATOR": {
-      "L14459": {"Mann":"W712/75","Bosch":"0451103316","Tecfil":"PSL204","Fram":"PH4967","Mahle":"OC217","Wix":"WL7168"}
+      "L14459": {
+        "Mann": "W712/75",
+        "Bosch": "0451103316",
+        "Tecfil": "PSL204",
+        "Fram": "PH4967",
+        "Mahle": "OC217",
+        "Wix": "WL7168"
+      },
+      "L1078": {
+        "Mann": "W1323",
+        "Bosch": "0986B01016",
+        "Tecfil": "PSL340",
+        "Fram": "PH9503",
+        "Mahle": "OC404"
+      }
+    },
+    "WEGA": {
+      "WO540": {
+        "Mann": "W1323",
+        "Bosch": "0986B01016",
+        "Tecfil": "PSL340",
+        "Fram": "PH9503",
+        "Mahle": "OC404",
+        "Purolator": "L1078"
+      }
+    },
+    "VOX": {
+      "LB340": {
+        "Mann": "W1323",
+        "Bosch": "0986B01016",
+        "Tecfil": "PSL340",
+        "Fram": "PH9503",
+        "Mahle": "OC404",
+        "Purolator": "L1078"
+      },
+      "LB2435": {
+        "Tecfil": "PSL340"
+      }
+    },
+    "HENGST": {
+      "H90W02": {
+        "Mann": "W712/75",
+        "Bosch": "0451103316",
+        "Tecfil": "PSL204",
+        "Mahle": "OC217"
+      },
+      "H17W03": {
+        "Mann": "W7008",
+        "Bosch": "0451103372",
+        "Tecfil": "PSL228",
+        "Mahle": "OC575"
+      },
+      "H14W04": {
+        "Mann": "W940/25",
+        "Bosch": "0451103079",
+        "Tecfil": "PSL172",
+        "Mahle": "OC9"
+      },
+      "H14W02": {
+        "Mann": "W719/30",
+        "Bosch": "0451103141",
+        "Tecfil": "PSL154",
+        "Mahle": "OC53"
+      },
+      "H90W06": {
+        "Mann": "W6007",
+        "Bosch": "0451103370",
+        "Tecfil": "PSL195",
+        "Mahle": "OC530"
+      },
+      "H90W32": {
+        "Tecfil": "PSL244",
+        "Mahle": "OC613"
+      },
+      "H90W20": {
+        "Tecfil": "PSL254",
+        "Mahle": "OC1066"
+      }
     }
   },
   "ar": {
     "MANN": {
-      "C2422":    {"Bosch":"0986B02544","Tecfil":"ARS148","Fram":"CA10165","Mahle":"LX2956","Wix":"WA9665"},
-      "C31007":   {"Bosch":"1457433078","Tecfil":"ARS137","Fram":"CA11220","Mahle":"LX2184","Wix":"WA6769"},
-      "C25114/1": {"Bosch":"1457433523","Tecfil":"ARS183","Fram":"CA11564","Mahle":"LX3082"},
-      "C3698":    {"Bosch":"1457433524","Tecfil":"ARS095","Fram":"CA10168","Mahle":"LX769","Wix":"WA9600"},
-      "C24650/3": {"Bosch":"1457433578","Tecfil":"ARS192","Fram":"CA12522","Mahle":"LX3657"},
-      "C29012":   {"Bosch":"1457433310","Tecfil":"ARS156","Fram":"CA10755","Mahle":"LX2087"},
-      "C27032":   {"Bosch":"1457433564","Tecfil":"ARS189","Fram":"CA11723","Mahle":"LX3014"},
-      "C3281":    {"Bosch":"1457433550","Tecfil":"ARS177","Fram":"CA10752","Mahle":"LX914","Wix":"WA9622"},
-      "C1036":    {"Bosch":"1457433076","Tecfil":"ARS119","Fram":"CA8039","Mahle":"LX2049","Wix":"WA9434"},
-      "C13102/1": {"Bosch":"1457433577","Tecfil":"ARS191","Fram":"CA12522","Mahle":"LX3077"},
-      "C15200":   {"Bosch":"1457433564","Tecfil":"ARS189","Mahle":"LX3014"},
-      "C17137/1": {"Bosch":"1457433583","Tecfil":"ARS193","Mahle":"LX3728"},
-      "C19580":   {"Bosch":"1457433578","Tecfil":"ARS192","Mahle":"LX3657"},
-      "C20188/2": {"Tecfil":"ARS199","Mahle":"LX3728"},
-      "C21006/1": {"Bosch":"1457433578","Mahle":"LX3657"},
-      "C23440":   {"Bosch":"1457433550","Tecfil":"ARS177","Mahle":"LX914"},
-      "C25860":   {"Bosch":"1457433564","Tecfil":"ARS189","Mahle":"LX3014"},
-      "C27019/2": {"Bosch":"1457433578","Tecfil":"ARS192","Mahle":"LX3657"},
-      "C29063":   {"Tecfil":"ARS195","Mahle":"LX3840"},
-      "C30130":   {"Mahle":"LX4005"},
-      "C35154":   {"Mahle":"LX4254"}
+      "C2422": {
+        "Bosch": "0986B02544",
+        "Tecfil": "ARS148",
+        "Fram": "CA10165",
+        "Mahle": "LX2956",
+        "Wix": "WA9665",
+        "Hengst": "E610L"
+      },
+      "C31007": {
+        "Bosch": "1457433078",
+        "Tecfil": "ARS137",
+        "Fram": "CA11220",
+        "Mahle": "LX2184",
+        "Wix": "WA6769",
+        "Hengst": "E329L"
+      },
+      "C25114/1": {
+        "Bosch": "1457433523",
+        "Tecfil": "ARS183",
+        "Fram": "CA11564",
+        "Mahle": "LX3082",
+        "Hengst": "E463L"
+      },
+      "C3698": {
+        "Bosch": "1457433524",
+        "Tecfil": "ARS095",
+        "Fram": "CA10168",
+        "Mahle": "LX769",
+        "Wix": "WA9600",
+        "Hengst": "E415L"
+      },
+      "C24650/3": {
+        "Bosch": "1457433578",
+        "Tecfil": "ARS192",
+        "Fram": "CA12522",
+        "Mahle": "LX3657",
+        "Hengst": "E532L"
+      },
+      "C29012": {
+        "Bosch": "1457433310",
+        "Tecfil": "ARS156",
+        "Fram": "CA10755",
+        "Mahle": "LX2087",
+        "Hengst": "E445L"
+      },
+      "C27032": {
+        "Bosch": "1457433564",
+        "Tecfil": "ARS189",
+        "Fram": "CA11723",
+        "Mahle": "LX3014",
+        "Hengst": "E503L"
+      },
+      "C3281": {
+        "Bosch": "1457433550",
+        "Tecfil": "ARS177",
+        "Fram": "CA10752",
+        "Mahle": "LX914",
+        "Wix": "WA9622",
+        "Hengst": "E475L"
+      },
+      "C1036": {
+        "Bosch": "1457433076",
+        "Tecfil": "ARS119",
+        "Fram": "CA8039",
+        "Mahle": "LX2049",
+        "Wix": "WA9434"
+      },
+      "C13102/1": {
+        "Bosch": "1457433577",
+        "Tecfil": "ARS191",
+        "Mahle": "LX3077"
+      },
+      "C17137/1": {
+        "Bosch": "1457433583",
+        "Tecfil": "ARS193",
+        "Mahle": "LX3728",
+        "Hengst": "E543L"
+      },
+      "C29063": {
+        "Tecfil": "ARS195",
+        "Mahle": "LX3840"
+      },
+      "C30130": {
+        "Mahle": "LX4005",
+        "Hengst": "E582L"
+      },
+      "C35154": {
+        "Mahle": "LX4254"
+      },
+      "C20188/2": {
+        "Tecfil": "ARS199",
+        "Mahle": "LX3728"
+      },
+      "C19580": {
+        "Bosch": "1457433578",
+        "Tecfil": "ARS192",
+        "Mahle": "LX3657"
+      },
+      "C26168": {
+        "Tecfil": "ARS187",
+        "Mahle": "LX3013"
+      },
+      "C1652": {
+        "Bosch": "1457433076",
+        "Tecfil": "ARS119",
+        "Mahle": "LX2049"
+      },
+      "C23440": {
+        "Bosch": "1457433550",
+        "Tecfil": "ARS177",
+        "Mahle": "LX914"
+      },
+      "C35008": {
+        "Mahle": "LX4251"
+      },
+      "C36007": {
+        "Mahle": "LX4348"
+      },
+      "C15200": {
+        "Bosch": "1457433564",
+        "Tecfil": "ARS189",
+        "Mahle": "LX3014"
+      },
+      "C27019/2": {
+        "Bosch": "1457433578",
+        "Tecfil": "ARS192",
+        "Mahle": "LX3657"
+      },
+      "C2598": {
+        "Bosch": "1457433076",
+        "Tecfil": "ARS119",
+        "Mahle": "LX2049"
+      },
+      "C25860": {
+        "Bosch": "1457433564",
+        "Tecfil": "ARS189",
+        "Mahle": "LX3014"
+      },
+      "C33114": {
+        "Mahle": "LX4160"
+      },
+      "C39001": {
+        "Mahle": "LX4400"
+      },
+      "C40001": {
+        "Mahle": "LX4500"
+      }
     },
     "BOSCH": {
-      "0986B02544": {"Mann":"C2422","Tecfil":"ARS148","Fram":"CA10165","Mahle":"LX2956","Wix":"WA9665"},
-      "1457433078": {"Mann":"C31007","Tecfil":"ARS137","Fram":"CA11220","Mahle":"LX2184","Wix":"WA6769"},
-      "1457433523": {"Mann":"C25114/1","Tecfil":"ARS183","Fram":"CA11564","Mahle":"LX3082"},
-      "1457433524": {"Mann":"C3698","Tecfil":"ARS095","Fram":"CA10168","Mahle":"LX769","Wix":"WA9600"},
-      "1457433578": {"Mann":"C24650/3","Tecfil":"ARS192","Fram":"CA12522","Mahle":"LX3657"},
-      "1457433310": {"Mann":"C29012","Tecfil":"ARS156","Fram":"CA10755","Mahle":"LX2087"},
-      "1457433564": {"Mann":"C27032","Tecfil":"ARS189","Fram":"CA11723","Mahle":"LX3014"},
-      "1457433550": {"Mann":"C3281","Tecfil":"ARS177","Fram":"CA10752","Mahle":"LX914","Wix":"WA9622"},
-      "1457433076": {"Mann":"C1036","Tecfil":"ARS119","Fram":"CA8039","Mahle":"LX2049","Wix":"WA9434"},
-      "1457433577": {"Mann":"C13102/1","Tecfil":"ARS191","Mahle":"LX3077"},
-      "1457433583": {"Mann":"C17137/1","Tecfil":"ARS193","Mahle":"LX3728"},
-      "S0066":      {"Tecfil":"ARS139","Fram":"CA10018","Mahle":"LX573"},
-      "S3521":      {"Mahle":"LX3082"}
+      "0986B02544": {
+        "Mann": "C2422",
+        "Tecfil": "ARS148",
+        "Fram": "CA10165",
+        "Mahle": "LX2956",
+        "Wix": "WA9665"
+      },
+      "1457433078": {
+        "Mann": "C31007",
+        "Tecfil": "ARS137",
+        "Fram": "CA11220",
+        "Mahle": "LX2184",
+        "Wix": "WA6769"
+      },
+      "1457433523": {
+        "Mann": "C25114/1",
+        "Tecfil": "ARS183",
+        "Fram": "CA11564",
+        "Mahle": "LX3082"
+      },
+      "1457433524": {
+        "Mann": "C3698",
+        "Tecfil": "ARS095",
+        "Fram": "CA10168",
+        "Mahle": "LX769",
+        "Wix": "WA9600"
+      },
+      "1457433578": {
+        "Mann": "C24650/3",
+        "Tecfil": "ARS192",
+        "Fram": "CA12522",
+        "Mahle": "LX3657"
+      },
+      "1457433310": {
+        "Mann": "C29012",
+        "Tecfil": "ARS156",
+        "Fram": "CA10755",
+        "Mahle": "LX2087"
+      },
+      "1457433564": {
+        "Mann": "C27032",
+        "Tecfil": "ARS189",
+        "Fram": "CA11723",
+        "Mahle": "LX3014"
+      },
+      "1457433550": {
+        "Mann": "C3281",
+        "Tecfil": "ARS177",
+        "Fram": "CA10752",
+        "Mahle": "LX914",
+        "Wix": "WA9622"
+      },
+      "1457433076": {
+        "Mann": "C1036",
+        "Tecfil": "ARS119",
+        "Fram": "CA8039",
+        "Mahle": "LX2049",
+        "Wix": "WA9434"
+      },
+      "1457433577": {
+        "Mann": "C13102/1",
+        "Tecfil": "ARS191",
+        "Mahle": "LX3077"
+      },
+      "1457433583": {
+        "Mann": "C17137/1",
+        "Tecfil": "ARS193",
+        "Mahle": "LX3728"
+      },
+      "S0066": {
+        "Tecfil": "ARS139",
+        "Fram": "CA10018",
+        "Mahle": "LX573"
+      },
+      "1457433588": {
+        "Tecfil": "ARS195",
+        "Mahle": "LX3840"
+      },
+      "1987429186": {
+        "Tecfil": "ARS156",
+        "Mahle": "LX2087"
+      },
+      "1457433555": {
+        "Tecfil": "ARS183",
+        "Mahle": "LX3082"
+      }
     },
     "TECFIL": {
-      "ARS148": {"Mann":"C2422","Bosch":"0986B02544","Fram":"CA10165","Mahle":"LX2956","Wix":"WA9665"},
-      "ARS137": {"Mann":"C31007","Bosch":"1457433078","Fram":"CA11220","Mahle":"LX2184","Wix":"WA6769"},
-      "ARS183": {"Mann":"C25114/1","Bosch":"1457433523","Fram":"CA11564","Mahle":"LX3082"},
-      "ARS095": {"Mann":"C3698","Bosch":"1457433524","Fram":"CA10168","Mahle":"LX769","Wix":"WA9600"},
-      "ARS192": {"Mann":"C24650/3","Bosch":"1457433578","Fram":"CA12522","Mahle":"LX3657"},
-      "ARS156": {"Mann":"C29012","Bosch":"1457433310","Fram":"CA10755","Mahle":"LX2087"},
-      "ARS189": {"Mann":"C27032","Bosch":"1457433564","Fram":"CA11723","Mahle":"LX3014"},
-      "ARS177": {"Mann":"C3281","Bosch":"1457433550","Fram":"CA10752","Mahle":"LX914","Wix":"WA9622"},
-      "ARS119": {"Mann":"C1036","Bosch":"1457433076","Fram":"CA8039","Mahle":"LX2049","Wix":"WA9434"},
-      "ARS191": {"Mann":"C13102/1","Bosch":"1457433577","Mahle":"LX3077"},
-      "ARS193": {"Mann":"C17137/1","Bosch":"1457433583","Mahle":"LX3728"},
-      "ARS195": {"Mann":"C29063","Mahle":"LX3840"},
-      "ARS199": {"Mann":"C20188/2","Mahle":"LX3728"},
-      "ARS139": {"Bosch":"S0066","Fram":"CA10018","Mahle":"LX573"},
-      "ARS160": {"Mahle":"LX3100"},
-      "ARS172": {"Mahle":"LX2957"},
-      "ARS125": {"Mann":"C3698","Bosch":"1457433524","Mahle":"LX769"}
+      "ARS148": {
+        "Mann": "C2422",
+        "Bosch": "0986B02544",
+        "Fram": "CA10165",
+        "Mahle": "LX2956",
+        "Wix": "WA9665",
+        "Hengst": "E610L"
+      },
+      "ARS137": {
+        "Mann": "C31007",
+        "Bosch": "1457433078",
+        "Fram": "CA11220",
+        "Mahle": "LX2184",
+        "Wix": "WA6769",
+        "Hengst": "E329L"
+      },
+      "ARS183": {
+        "Mann": "C25114/1",
+        "Bosch": "1457433523",
+        "Fram": "CA11564",
+        "Mahle": "LX3082",
+        "Hengst": "E463L"
+      },
+      "ARS095": {
+        "Mann": "C3698",
+        "Bosch": "1457433524",
+        "Fram": "CA10168",
+        "Mahle": "LX769",
+        "Wix": "WA9600",
+        "Hengst": "E415L"
+      },
+      "ARS192": {
+        "Mann": "C24650/3",
+        "Bosch": "1457433578",
+        "Fram": "CA12522",
+        "Mahle": "LX3657",
+        "Hengst": "E532L"
+      },
+      "ARS156": {
+        "Mann": "C29012",
+        "Bosch": "1457433310",
+        "Fram": "CA10755",
+        "Mahle": "LX2087",
+        "Hengst": "E445L"
+      },
+      "ARS189": {
+        "Mann": "C27032",
+        "Bosch": "1457433564",
+        "Fram": "CA11723",
+        "Mahle": "LX3014",
+        "Hengst": "E503L"
+      },
+      "ARS177": {
+        "Mann": "C3281",
+        "Bosch": "1457433550",
+        "Fram": "CA10752",
+        "Mahle": "LX914",
+        "Wix": "WA9622",
+        "Hengst": "E475L"
+      },
+      "ARS119": {
+        "Mann": "C1036",
+        "Bosch": "1457433076",
+        "Fram": "CA8039",
+        "Mahle": "LX2049",
+        "Wix": "WA9434"
+      },
+      "ARS191": {
+        "Mann": "C13102/1",
+        "Bosch": "1457433577",
+        "Mahle": "LX3077"
+      },
+      "ARS193": {
+        "Mann": "C17137/1",
+        "Bosch": "1457433583",
+        "Mahle": "LX3728",
+        "Hengst": "E543L"
+      },
+      "ARS195": {
+        "Mann": "C29063",
+        "Mahle": "LX3840"
+      },
+      "ARS199": {
+        "Mann": "C20188/2",
+        "Mahle": "LX3728"
+      },
+      "ARS139": {
+        "Bosch": "S0066",
+        "Fram": "CA10018",
+        "Mahle": "LX573"
+      },
+      "ARS160": {
+        "Mahle": "LX3100"
+      },
+      "ARS172": {
+        "Mahle": "LX2957"
+      },
+      "ARS125": {
+        "Mann": "C3698",
+        "Bosch": "1457433524",
+        "Mahle": "LX769"
+      },
+      "ARS187": {
+        "Mann": "C26168",
+        "Mahle": "LX3013"
+      },
+      "ARS209": {
+        "Mahle": "LX4005"
+      },
+      "ARS215": {
+        "Mahle": "LX4160"
+      },
+      "ARS221": {
+        "Mahle": "LX4251"
+      },
+      "ARS230": {
+        "Mahle": "LX4348"
+      }
     },
     "FRAM": {
-      "CA10165": {"Mann":"C2422","Bosch":"0986B02544","Tecfil":"ARS148","Mahle":"LX2956","Wix":"WA9665"},
-      "CA11220": {"Mann":"C31007","Bosch":"1457433078","Tecfil":"ARS137","Mahle":"LX2184","Wix":"WA6769"},
-      "CA11564": {"Mann":"C25114/1","Bosch":"1457433523","Tecfil":"ARS183","Mahle":"LX3082"},
-      "CA10168": {"Mann":"C3698","Bosch":"1457433524","Tecfil":"ARS095","Mahle":"LX769","Wix":"WA9600"},
-      "CA12522": {"Mann":"C24650/3","Bosch":"1457433578","Tecfil":"ARS192","Mahle":"LX3657"},
-      "CA10755": {"Mann":"C29012","Bosch":"1457433310","Tecfil":"ARS156","Mahle":"LX2087"},
-      "CA11723": {"Mann":"C27032","Bosch":"1457433564","Tecfil":"ARS189","Mahle":"LX3014"},
-      "CA10752": {"Mann":"C3281","Bosch":"1457433550","Tecfil":"ARS177","Mahle":"LX914","Wix":"WA9622"},
-      "CA8039":  {"Mann":"C1036","Bosch":"1457433076","Tecfil":"ARS119","Mahle":"LX2049","Wix":"WA9434"},
-      "CA10018": {"Bosch":"S0066","Tecfil":"ARS139","Mahle":"LX573"},
-      "CA11454": {"Mann":"C3698","Tecfil":"ARS095","Mahle":"LX769"}
+      "CA10165": {
+        "Mann": "C2422",
+        "Bosch": "0986B02544",
+        "Tecfil": "ARS148",
+        "Mahle": "LX2956",
+        "Wix": "WA9665"
+      },
+      "CA11220": {
+        "Mann": "C31007",
+        "Bosch": "1457433078",
+        "Tecfil": "ARS137",
+        "Mahle": "LX2184",
+        "Wix": "WA6769"
+      },
+      "CA11564": {
+        "Mann": "C25114/1",
+        "Bosch": "1457433523",
+        "Tecfil": "ARS183",
+        "Mahle": "LX3082"
+      },
+      "CA10168": {
+        "Mann": "C3698",
+        "Bosch": "1457433524",
+        "Tecfil": "ARS095",
+        "Mahle": "LX769",
+        "Wix": "WA9600"
+      },
+      "CA12522": {
+        "Mann": "C24650/3",
+        "Bosch": "1457433578",
+        "Tecfil": "ARS192",
+        "Mahle": "LX3657"
+      },
+      "CA10755": {
+        "Mann": "C29012",
+        "Bosch": "1457433310",
+        "Tecfil": "ARS156",
+        "Mahle": "LX2087"
+      },
+      "CA11723": {
+        "Mann": "C27032",
+        "Bosch": "1457433564",
+        "Tecfil": "ARS189",
+        "Mahle": "LX3014"
+      },
+      "CA10752": {
+        "Mann": "C3281",
+        "Bosch": "1457433550",
+        "Tecfil": "ARS177",
+        "Mahle": "LX914",
+        "Wix": "WA9622"
+      },
+      "CA8039": {
+        "Mann": "C1036",
+        "Bosch": "1457433076",
+        "Tecfil": "ARS119",
+        "Mahle": "LX2049",
+        "Wix": "WA9434"
+      },
+      "CA10018": {
+        "Bosch": "S0066",
+        "Tecfil": "ARS139",
+        "Mahle": "LX573"
+      },
+      "CA11454": {
+        "Mann": "C3698",
+        "Tecfil": "ARS095",
+        "Mahle": "LX769"
+      },
+      "CA12031": {
+        "Tecfil": "ARS192",
+        "Mahle": "LX3657"
+      }
     },
     "MAHLE": {
-      "LX2956": {"Mann":"C2422","Bosch":"0986B02544","Tecfil":"ARS148","Fram":"CA10165","Wix":"WA9665"},
-      "LX2184": {"Mann":"C31007","Bosch":"1457433078","Tecfil":"ARS137","Fram":"CA11220","Wix":"WA6769"},
-      "LX3082": {"Mann":"C25114/1","Bosch":"1457433523","Tecfil":"ARS183","Fram":"CA11564"},
-      "LX769":  {"Mann":"C3698","Bosch":"1457433524","Tecfil":"ARS095","Fram":"CA10168","Wix":"WA9600"},
-      "LX3657": {"Mann":"C24650/3","Bosch":"1457433578","Tecfil":"ARS192","Fram":"CA12522"},
-      "LX2087": {"Mann":"C29012","Bosch":"1457433310","Tecfil":"ARS156","Fram":"CA10755"},
-      "LX3014": {"Mann":"C27032","Bosch":"1457433564","Tecfil":"ARS189","Fram":"CA11723"},
-      "LX914":  {"Mann":"C3281","Bosch":"1457433550","Tecfil":"ARS177","Fram":"CA10752","Wix":"WA9622"},
-      "LX2049": {"Mann":"C1036","Bosch":"1457433076","Tecfil":"ARS119","Fram":"CA8039","Wix":"WA9434"},
-      "LX3077": {"Mann":"C13102/1","Bosch":"1457433577","Tecfil":"ARS191"},
-      "LX3728": {"Mann":"C17137/1","Bosch":"1457433583","Tecfil":"ARS193"},
-      "LX3840": {"Mann":"C29063","Tecfil":"ARS195"},
-      "LX573":  {"Bosch":"S0066","Tecfil":"ARS139","Fram":"CA10018"},
-      "LX3100": {"Tecfil":"ARS160"},
-      "LX2957": {"Tecfil":"ARS172"},
-      "LX4005": {"Mann":"C30130"},
-      "LX4254": {"Mann":"C35154"}
+      "LX2956": {
+        "Mann": "C2422",
+        "Bosch": "0986B02544",
+        "Tecfil": "ARS148",
+        "Fram": "CA10165",
+        "Wix": "WA9665",
+        "Hengst": "E610L"
+      },
+      "LX2184": {
+        "Mann": "C31007",
+        "Bosch": "1457433078",
+        "Tecfil": "ARS137",
+        "Fram": "CA11220",
+        "Wix": "WA6769",
+        "Hengst": "E329L"
+      },
+      "LX3082": {
+        "Mann": "C25114/1",
+        "Bosch": "1457433523",
+        "Tecfil": "ARS183",
+        "Fram": "CA11564",
+        "Hengst": "E463L"
+      },
+      "LX769": {
+        "Mann": "C3698",
+        "Bosch": "1457433524",
+        "Tecfil": "ARS095",
+        "Fram": "CA10168",
+        "Wix": "WA9600",
+        "Hengst": "E415L"
+      },
+      "LX3657": {
+        "Mann": "C24650/3",
+        "Bosch": "1457433578",
+        "Tecfil": "ARS192",
+        "Fram": "CA12522",
+        "Hengst": "E532L"
+      },
+      "LX2087": {
+        "Mann": "C29012",
+        "Bosch": "1457433310",
+        "Tecfil": "ARS156",
+        "Fram": "CA10755",
+        "Hengst": "E445L"
+      },
+      "LX3014": {
+        "Mann": "C27032",
+        "Bosch": "1457433564",
+        "Tecfil": "ARS189",
+        "Fram": "CA11723",
+        "Hengst": "E503L"
+      },
+      "LX914": {
+        "Mann": "C3281",
+        "Bosch": "1457433550",
+        "Tecfil": "ARS177",
+        "Fram": "CA10752",
+        "Wix": "WA9622",
+        "Hengst": "E475L"
+      },
+      "LX2049": {
+        "Mann": "C1036",
+        "Bosch": "1457433076",
+        "Tecfil": "ARS119",
+        "Fram": "CA8039",
+        "Wix": "WA9434"
+      },
+      "LX3077": {
+        "Mann": "C13102/1",
+        "Bosch": "1457433577",
+        "Tecfil": "ARS191"
+      },
+      "LX3728": {
+        "Mann": "C17137/1",
+        "Bosch": "1457433583",
+        "Tecfil": "ARS193",
+        "Hengst": "E543L"
+      },
+      "LX3840": {
+        "Mann": "C29063",
+        "Tecfil": "ARS195"
+      },
+      "LX573": {
+        "Bosch": "S0066",
+        "Tecfil": "ARS139",
+        "Fram": "CA10018"
+      },
+      "LX3100": {
+        "Tecfil": "ARS160"
+      },
+      "LX2957": {
+        "Tecfil": "ARS172"
+      },
+      "LX4005": {
+        "Mann": "C30130",
+        "Tecfil": "ARS209",
+        "Hengst": "E582L"
+      },
+      "LX4254": {
+        "Mann": "C35154"
+      },
+      "LX3013": {
+        "Mann": "C26168",
+        "Tecfil": "ARS187"
+      },
+      "LX4160": {
+        "Mann": "C33114",
+        "Tecfil": "ARS215"
+      },
+      "LX4251": {
+        "Mann": "C35008",
+        "Tecfil": "ARS221"
+      },
+      "LX4348": {
+        "Mann": "C36007",
+        "Tecfil": "ARS230"
+      },
+      "LX4400": {
+        "Mann": "C39001"
+      },
+      "LX4500": {
+        "Mann": "C40001"
+      }
     },
     "WIX": {
-      "WA9665": {"Mann":"C2422","Bosch":"0986B02544","Tecfil":"ARS148","Fram":"CA10165","Mahle":"LX2956"},
-      "WA6769": {"Mann":"C31007","Bosch":"1457433078","Tecfil":"ARS137","Fram":"CA11220","Mahle":"LX2184"},
-      "WA9600": {"Mann":"C3698","Bosch":"1457433524","Tecfil":"ARS095","Fram":"CA10168","Mahle":"LX769"},
-      "WA9622": {"Mann":"C3281","Bosch":"1457433550","Tecfil":"ARS177","Fram":"CA10752","Mahle":"LX914"},
-      "WA9434": {"Mann":"C1036","Bosch":"1457433076","Tecfil":"ARS119","Fram":"CA8039","Mahle":"LX2049"}
+      "WA9665": {
+        "Mann": "C2422",
+        "Bosch": "0986B02544",
+        "Tecfil": "ARS148",
+        "Fram": "CA10165",
+        "Mahle": "LX2956"
+      },
+      "WA6769": {
+        "Mann": "C31007",
+        "Bosch": "1457433078",
+        "Tecfil": "ARS137",
+        "Fram": "CA11220",
+        "Mahle": "LX2184"
+      },
+      "WA9600": {
+        "Mann": "C3698",
+        "Bosch": "1457433524",
+        "Tecfil": "ARS095",
+        "Fram": "CA10168",
+        "Mahle": "LX769"
+      },
+      "WA9622": {
+        "Mann": "C3281",
+        "Bosch": "1457433550",
+        "Tecfil": "ARS177",
+        "Fram": "CA10752",
+        "Mahle": "LX914"
+      },
+      "WA9434": {
+        "Mann": "C1036",
+        "Bosch": "1457433076",
+        "Tecfil": "ARS119",
+        "Fram": "CA8039",
+        "Mahle": "LX2049"
+      }
+    },
+    "HENGST": {
+      "E610L": {
+        "Mann": "C2422",
+        "Bosch": "0986B02544",
+        "Tecfil": "ARS148",
+        "Mahle": "LX2956"
+      },
+      "E329L": {
+        "Mann": "C31007",
+        "Bosch": "1457433078",
+        "Tecfil": "ARS137",
+        "Mahle": "LX2184"
+      },
+      "E463L": {
+        "Mann": "C25114/1",
+        "Bosch": "1457433523",
+        "Tecfil": "ARS183",
+        "Mahle": "LX3082"
+      },
+      "E415L": {
+        "Mann": "C3698",
+        "Bosch": "1457433524",
+        "Tecfil": "ARS095",
+        "Mahle": "LX769"
+      },
+      "E532L": {
+        "Mann": "C24650/3",
+        "Bosch": "1457433578",
+        "Tecfil": "ARS192",
+        "Mahle": "LX3657"
+      },
+      "E445L": {
+        "Mann": "C29012",
+        "Bosch": "1457433310",
+        "Tecfil": "ARS156",
+        "Mahle": "LX2087"
+      },
+      "E503L": {
+        "Mann": "C27032",
+        "Bosch": "1457433564",
+        "Tecfil": "ARS189",
+        "Mahle": "LX3014"
+      },
+      "E475L": {
+        "Mann": "C3281",
+        "Bosch": "1457433550",
+        "Tecfil": "ARS177",
+        "Mahle": "LX914"
+      },
+      "E543L": {
+        "Mann": "C17137/1",
+        "Bosch": "1457433583",
+        "Tecfil": "ARS193",
+        "Mahle": "LX3728"
+      },
+      "E582L": {
+        "Mann": "C30130",
+        "Tecfil": "ARS209",
+        "Mahle": "LX4005"
+      }
     }
   },
   "combustivel": {
     "MANN": {
-      "WK853/3":  {"Bosch":"0450906314","Tecfil":"PSC302","Fram":"G3727","Mahle":"KL571"},
-      "WK820/16": {"Bosch":"0450906311","Tecfil":"PSC246","Fram":"G8028","Mahle":"KL514"},
-      "WK613/1":  {"Bosch":"0450906068","Tecfil":"PSC285","Fram":"G8139","Mahle":"KL471"},
-      "WK614/2":  {"Bosch":"0450906065","Tecfil":"PSC248","Fram":"G7372","Mahle":"KL481"},
-      "WK31":     {"Bosch":"0450905030","Tecfil":"PSC218","Fram":"G8153","Mahle":"KL147"},
-      "WK719/1":  {"Bosch":"0450906324","Tecfil":"PSC312","Fram":"G8028","Mahle":"KL582"},
-      "WK918/1":  {"Bosch":"0450906378","Tecfil":"PSC354","Mahle":"KL750"},
-      "WK939/7":  {"Bosch":"0450906434","Tecfil":"PSC376","Mahle":"KL827"},
-      "WK9001X":  {"Bosch":"0450906416","Tecfil":"PSC360","Mahle":"KL753"},
-      "WK853/3X": {"Bosch":"0450906314","Tecfil":"PSC302","Fram":"G3727","Mahle":"KL571"},
-      "WK599":    {"Bosch":"0450905276","Tecfil":"PSC211","Mahle":"KL90"},
-      "WK734/1":  {"Bosch":"0450906376","Tecfil":"PSC342","Mahle":"KL761"},
-      "WK932/7":  {"Bosch":"0450906430","Mahle":"KL776"},
-      "WK11001X": {"Bosch":"0450906458","Mahle":"KL912"}
+      "WK853/3": {
+        "Bosch": "0450906314",
+        "Tecfil": "PSC302",
+        "Fram": "G3727",
+        "Mahle": "KL571",
+        "Hengst": "H70WK02"
+      },
+      "WK820/16": {
+        "Bosch": "0450906311",
+        "Tecfil": "PSC246",
+        "Fram": "G8028",
+        "Mahle": "KL514",
+        "Hengst": "H197WK"
+      },
+      "WK613/1": {
+        "Bosch": "0450906068",
+        "Tecfil": "PSC285",
+        "Fram": "G8139",
+        "Mahle": "KL471",
+        "Hengst": "H158WK"
+      },
+      "WK614/2": {
+        "Bosch": "0450906065",
+        "Tecfil": "PSC248",
+        "Fram": "G7372",
+        "Mahle": "KL481",
+        "Hengst": "H159WK"
+      },
+      "WK31": {
+        "Bosch": "0450905030",
+        "Tecfil": "PSC218",
+        "Fram": "G8153",
+        "Mahle": "KL147",
+        "Hengst": "H70WK04"
+      },
+      "WK719/1": {
+        "Bosch": "0450906324",
+        "Tecfil": "PSC312",
+        "Mahle": "KL582"
+      },
+      "WK918/1": {
+        "Bosch": "0450906378",
+        "Tecfil": "PSC354",
+        "Mahle": "KL750"
+      },
+      "WK939/7": {
+        "Bosch": "0450906434",
+        "Tecfil": "PSC376",
+        "Mahle": "KL827"
+      },
+      "WK9001X": {
+        "Bosch": "0450906416",
+        "Tecfil": "PSC360",
+        "Mahle": "KL753"
+      },
+      "WK599": {
+        "Bosch": "0450905276",
+        "Tecfil": "PSC211",
+        "Mahle": "KL90"
+      },
+      "WK734/1": {
+        "Bosch": "0450906376",
+        "Tecfil": "PSC342",
+        "Mahle": "KL761"
+      },
+      "WK932/7": {
+        "Bosch": "0450906430",
+        "Mahle": "KL776"
+      },
+      "WK11001X": {
+        "Bosch": "0450906458",
+        "Mahle": "KL912"
+      },
+      "WK612/5": {
+        "Tecfil": "PSC223",
+        "Mahle": "KL400"
+      },
+      "WK820/18": {
+        "Bosch": "0450906311",
+        "Tecfil": "PSC246",
+        "Mahle": "KL514"
+      },
+      "WK719/5": {
+        "Bosch": "0450906324",
+        "Tecfil": "PSC312",
+        "Mahle": "KL582"
+      },
+      "WK8019": {
+        "Bosch": "0450906416",
+        "Tecfil": "PSC360",
+        "Mahle": "KL753"
+      },
+      "WK1060/1": {
+        "Bosch": "0450906461",
+        "Mahle": "KL987"
+      },
+      "WK842/24": {
+        "Tecfil": "PSC362",
+        "Mahle": "KL770"
+      },
+      "WK9054Z": {
+        "Tecfil": "PSC376",
+        "Mahle": "KL827"
+      },
+      "WK853/19": {
+        "Bosch": "0450906314",
+        "Tecfil": "PSC302",
+        "Mahle": "KL571"
+      }
     },
     "BOSCH": {
-      "0450906314": {"Mann":"WK853/3","Tecfil":"PSC302","Fram":"G3727","Mahle":"KL571"},
-      "0450906311": {"Mann":"WK820/16","Tecfil":"PSC246","Fram":"G8028","Mahle":"KL514"},
-      "0450906068": {"Mann":"WK613/1","Tecfil":"PSC285","Fram":"G8139","Mahle":"KL471"},
-      "0450906065": {"Mann":"WK614/2","Tecfil":"PSC248","Fram":"G7372","Mahle":"KL481"},
-      "0450905030": {"Mann":"WK31","Tecfil":"PSC218","Fram":"G8153","Mahle":"KL147"},
-      "0450906324": {"Mann":"WK719/1","Tecfil":"PSC312","Mahle":"KL582"},
-      "0450906378": {"Mann":"WK918/1","Tecfil":"PSC354","Mahle":"KL750"},
-      "0450906434": {"Mann":"WK939/7","Tecfil":"PSC376","Mahle":"KL827"},
-      "0450906416": {"Mann":"WK9001X","Tecfil":"PSC360","Mahle":"KL753"},
-      "0450905276": {"Mann":"WK599","Tecfil":"PSC211","Mahle":"KL90"},
-      "0450906376": {"Mann":"WK734/1","Tecfil":"PSC342","Mahle":"KL761"},
-      "0450906430": {"Mann":"WK932/7","Mahle":"KL776"},
-      "0450906458": {"Mann":"WK11001X","Mahle":"KL912"}
+      "0450906314": {
+        "Mann": "WK853/3",
+        "Tecfil": "PSC302",
+        "Fram": "G3727",
+        "Mahle": "KL571",
+        "Hengst": "H70WK02"
+      },
+      "0450906311": {
+        "Mann": "WK820/16",
+        "Tecfil": "PSC246",
+        "Fram": "G8028",
+        "Mahle": "KL514",
+        "Hengst": "H197WK"
+      },
+      "0450906068": {
+        "Mann": "WK613/1",
+        "Tecfil": "PSC285",
+        "Fram": "G8139",
+        "Mahle": "KL471",
+        "Hengst": "H158WK"
+      },
+      "0450906065": {
+        "Mann": "WK614/2",
+        "Tecfil": "PSC248",
+        "Fram": "G7372",
+        "Mahle": "KL481",
+        "Hengst": "H159WK"
+      },
+      "0450905030": {
+        "Mann": "WK31",
+        "Tecfil": "PSC218",
+        "Fram": "G8153",
+        "Mahle": "KL147",
+        "Hengst": "H70WK04"
+      },
+      "0450906324": {
+        "Mann": "WK719/1",
+        "Tecfil": "PSC312",
+        "Mahle": "KL582"
+      },
+      "0450906378": {
+        "Mann": "WK918/1",
+        "Tecfil": "PSC354",
+        "Mahle": "KL750"
+      },
+      "0450906434": {
+        "Mann": "WK939/7",
+        "Tecfil": "PSC376",
+        "Mahle": "KL827"
+      },
+      "0450906416": {
+        "Mann": "WK9001X",
+        "Tecfil": "PSC360",
+        "Mahle": "KL753"
+      },
+      "0450905276": {
+        "Mann": "WK599",
+        "Tecfil": "PSC211",
+        "Mahle": "KL90"
+      },
+      "0450906376": {
+        "Mann": "WK734/1",
+        "Tecfil": "PSC342",
+        "Mahle": "KL761"
+      },
+      "0450906430": {
+        "Mann": "WK932/7",
+        "Mahle": "KL776"
+      },
+      "0450906458": {
+        "Mann": "WK11001X",
+        "Mahle": "KL912"
+      },
+      "0450906461": {
+        "Mann": "WK1060/1",
+        "Mahle": "KL987"
+      },
+      "0450905028": {
+        "Tecfil": "PSC218",
+        "Mahle": "KL147"
+      }
     },
     "TECFIL": {
-      "PSC302": {"Mann":"WK853/3","Bosch":"0450906314","Fram":"G3727","Mahle":"KL571"},
-      "PSC246": {"Mann":"WK820/16","Bosch":"0450906311","Fram":"G8028","Mahle":"KL514"},
-      "PSC285": {"Mann":"WK613/1","Bosch":"0450906068","Fram":"G8139","Mahle":"KL471"},
-      "PSC248": {"Mann":"WK614/2","Bosch":"0450906065","Fram":"G7372","Mahle":"KL481"},
-      "PSC218": {"Mann":"WK31","Bosch":"0450905030","Fram":"G8153","Mahle":"KL147"},
-      "PSC312": {"Mann":"WK719/1","Bosch":"0450906324","Mahle":"KL582"},
-      "PSC354": {"Mann":"WK918/1","Bosch":"0450906378","Mahle":"KL750"},
-      "PSC376": {"Mann":"WK939/7","Bosch":"0450906434","Mahle":"KL827"},
-      "PSC360": {"Mann":"WK9001X","Bosch":"0450906416","Mahle":"KL753"},
-      "PSC211": {"Mann":"WK599","Bosch":"0450905276","Mahle":"KL90"},
-      "PSC342": {"Mann":"WK734/1","Bosch":"0450906376","Mahle":"KL761"},
-      "PSC191": {"Mahle":"KL392","Fram":"G5844"},
-      "PSC223": {"Mann":"WK612/5","Mahle":"KL400"}
+      "PSC302": {
+        "Mann": "WK853/3",
+        "Bosch": "0450906314",
+        "Fram": "G3727",
+        "Mahle": "KL571",
+        "Hengst": "H70WK02"
+      },
+      "PSC246": {
+        "Mann": "WK820/16",
+        "Bosch": "0450906311",
+        "Fram": "G8028",
+        "Mahle": "KL514",
+        "Hengst": "H197WK"
+      },
+      "PSC285": {
+        "Mann": "WK613/1",
+        "Bosch": "0450906068",
+        "Fram": "G8139",
+        "Mahle": "KL471",
+        "Hengst": "H158WK"
+      },
+      "PSC248": {
+        "Mann": "WK614/2",
+        "Bosch": "0450906065",
+        "Fram": "G7372",
+        "Mahle": "KL481",
+        "Hengst": "H159WK"
+      },
+      "PSC218": {
+        "Mann": "WK31",
+        "Bosch": "0450905030",
+        "Fram": "G8153",
+        "Mahle": "KL147",
+        "Hengst": "H70WK04"
+      },
+      "PSC312": {
+        "Mann": "WK719/1",
+        "Bosch": "0450906324",
+        "Mahle": "KL582"
+      },
+      "PSC354": {
+        "Mann": "WK918/1",
+        "Bosch": "0450906378",
+        "Mahle": "KL750"
+      },
+      "PSC376": {
+        "Mann": "WK939/7",
+        "Bosch": "0450906434",
+        "Mahle": "KL827"
+      },
+      "PSC360": {
+        "Mann": "WK9001X",
+        "Bosch": "0450906416",
+        "Mahle": "KL753"
+      },
+      "PSC211": {
+        "Mann": "WK599",
+        "Bosch": "0450905276",
+        "Mahle": "KL90"
+      },
+      "PSC342": {
+        "Mann": "WK734/1",
+        "Bosch": "0450906376",
+        "Mahle": "KL761"
+      },
+      "PSC191": {
+        "Mahle": "KL392",
+        "Fram": "G5844"
+      },
+      "PSC223": {
+        "Mann": "WK612/5",
+        "Mahle": "KL400"
+      },
+      "PSC362": {
+        "Mann": "WK842/24",
+        "Mahle": "KL770"
+      },
+      "PSC390": {
+        "Mahle": "KL912"
+      },
+      "PSC328": {
+        "Mahle": "KL685"
+      },
+      "PSC338": {
+        "Mahle": "KL727"
+      },
+      "PSC350": {
+        "Mahle": "KL734"
+      },
+      "PSC372": {
+        "Mahle": "KL776"
+      }
     },
     "FRAM": {
-      "G3727":  {"Mann":"WK853/3","Bosch":"0450906314","Tecfil":"PSC302","Mahle":"KL571"},
-      "G8028":  {"Mann":"WK820/16","Bosch":"0450906311","Tecfil":"PSC246","Mahle":"KL514"},
-      "G8139":  {"Mann":"WK613/1","Bosch":"0450906068","Tecfil":"PSC285","Mahle":"KL471"},
-      "G7372":  {"Mann":"WK614/2","Bosch":"0450906065","Tecfil":"PSC248","Mahle":"KL481"},
-      "G8153":  {"Mann":"WK31","Bosch":"0450905030","Tecfil":"PSC218","Mahle":"KL147"},
-      "G5844":  {"Tecfil":"PSC191","Mahle":"KL392"}
+      "G3727": {
+        "Mann": "WK853/3",
+        "Bosch": "0450906314",
+        "Tecfil": "PSC302",
+        "Mahle": "KL571"
+      },
+      "G8028": {
+        "Mann": "WK820/16",
+        "Bosch": "0450906311",
+        "Tecfil": "PSC246",
+        "Mahle": "KL514"
+      },
+      "G8139": {
+        "Mann": "WK613/1",
+        "Bosch": "0450906068",
+        "Tecfil": "PSC285",
+        "Mahle": "KL471"
+      },
+      "G7372": {
+        "Mann": "WK614/2",
+        "Bosch": "0450906065",
+        "Tecfil": "PSC248",
+        "Mahle": "KL481"
+      },
+      "G8153": {
+        "Mann": "WK31",
+        "Bosch": "0450905030",
+        "Tecfil": "PSC218",
+        "Mahle": "KL147"
+      },
+      "G5844": {
+        "Tecfil": "PSC191",
+        "Mahle": "KL392"
+      },
+      "G9176": {
+        "Tecfil": "PSC302",
+        "Mahle": "KL571"
+      },
+      "G3335": {
+        "Tecfil": "PSC211",
+        "Mahle": "KL90"
+      }
     },
     "MAHLE": {
-      "KL571": {"Mann":"WK853/3","Bosch":"0450906314","Tecfil":"PSC302","Fram":"G3727"},
-      "KL514": {"Mann":"WK820/16","Bosch":"0450906311","Tecfil":"PSC246","Fram":"G8028"},
-      "KL471": {"Mann":"WK613/1","Bosch":"0450906068","Tecfil":"PSC285","Fram":"G8139"},
-      "KL481": {"Mann":"WK614/2","Bosch":"0450906065","Tecfil":"PSC248","Fram":"G7372"},
-      "KL147": {"Mann":"WK31","Bosch":"0450905030","Tecfil":"PSC218","Fram":"G8153"},
-      "KL582": {"Mann":"WK719/1","Bosch":"0450906324","Tecfil":"PSC312"},
-      "KL750": {"Mann":"WK918/1","Bosch":"0450906378","Tecfil":"PSC354"},
-      "KL827": {"Mann":"WK939/7","Bosch":"0450906434","Tecfil":"PSC376"},
-      "KL753": {"Mann":"WK9001X","Bosch":"0450906416","Tecfil":"PSC360"},
-      "KL90":  {"Mann":"WK599","Bosch":"0450905276","Tecfil":"PSC211"},
-      "KL761": {"Mann":"WK734/1","Bosch":"0450906376","Tecfil":"PSC342"},
-      "KL776": {"Mann":"WK932/7","Bosch":"0450906430"},
-      "KL912": {"Mann":"WK11001X","Bosch":"0450906458"},
-      "KL392": {"Tecfil":"PSC191","Fram":"G5844"},
-      "KL400": {"Mann":"WK612/5","Tecfil":"PSC223"}
+      "KL571": {
+        "Mann": "WK853/3",
+        "Bosch": "0450906314",
+        "Tecfil": "PSC302",
+        "Fram": "G3727",
+        "Hengst": "H70WK02"
+      },
+      "KL514": {
+        "Mann": "WK820/16",
+        "Bosch": "0450906311",
+        "Tecfil": "PSC246",
+        "Fram": "G8028",
+        "Hengst": "H197WK"
+      },
+      "KL471": {
+        "Mann": "WK613/1",
+        "Bosch": "0450906068",
+        "Tecfil": "PSC285",
+        "Fram": "G8139",
+        "Hengst": "H158WK"
+      },
+      "KL481": {
+        "Mann": "WK614/2",
+        "Bosch": "0450906065",
+        "Tecfil": "PSC248",
+        "Fram": "G7372",
+        "Hengst": "H159WK"
+      },
+      "KL147": {
+        "Mann": "WK31",
+        "Bosch": "0450905030",
+        "Tecfil": "PSC218",
+        "Fram": "G8153",
+        "Hengst": "H70WK04"
+      },
+      "KL582": {
+        "Mann": "WK719/1",
+        "Bosch": "0450906324",
+        "Tecfil": "PSC312"
+      },
+      "KL750": {
+        "Mann": "WK918/1",
+        "Bosch": "0450906378",
+        "Tecfil": "PSC354"
+      },
+      "KL827": {
+        "Mann": "WK939/7",
+        "Bosch": "0450906434",
+        "Tecfil": "PSC376"
+      },
+      "KL753": {
+        "Mann": "WK9001X",
+        "Bosch": "0450906416",
+        "Tecfil": "PSC360"
+      },
+      "KL90": {
+        "Mann": "WK599",
+        "Bosch": "0450905276",
+        "Tecfil": "PSC211"
+      },
+      "KL761": {
+        "Mann": "WK734/1",
+        "Bosch": "0450906376",
+        "Tecfil": "PSC342"
+      },
+      "KL776": {
+        "Mann": "WK932/7",
+        "Bosch": "0450906430",
+        "Tecfil": "PSC372"
+      },
+      "KL912": {
+        "Mann": "WK11001X",
+        "Bosch": "0450906458",
+        "Tecfil": "PSC390"
+      },
+      "KL392": {
+        "Tecfil": "PSC191",
+        "Fram": "G5844"
+      },
+      "KL400": {
+        "Mann": "WK612/5",
+        "Tecfil": "PSC223"
+      },
+      "KL770": {
+        "Mann": "WK842/24",
+        "Tecfil": "PSC362"
+      },
+      "KL987": {
+        "Mann": "WK1060/1",
+        "Bosch": "0450906461"
+      },
+      "KL685": {
+        "Tecfil": "PSC328"
+      },
+      "KL727": {
+        "Tecfil": "PSC338"
+      },
+      "KL734": {
+        "Tecfil": "PSC350"
+      }
+    },
+    "HENGST": {
+      "H70WK02": {
+        "Mann": "WK853/3",
+        "Bosch": "0450906314",
+        "Tecfil": "PSC302",
+        "Mahle": "KL571"
+      },
+      "H197WK": {
+        "Mann": "WK820/16",
+        "Bosch": "0450906311",
+        "Tecfil": "PSC246",
+        "Mahle": "KL514"
+      },
+      "H158WK": {
+        "Mann": "WK613/1",
+        "Bosch": "0450906068",
+        "Tecfil": "PSC285",
+        "Mahle": "KL471"
+      },
+      "H159WK": {
+        "Mann": "WK614/2",
+        "Bosch": "0450906065",
+        "Tecfil": "PSC248",
+        "Mahle": "KL481"
+      },
+      "H70WK04": {
+        "Mann": "WK31",
+        "Bosch": "0450905030",
+        "Tecfil": "PSC218",
+        "Mahle": "KL147"
+      }
     }
   },
   "cabine": {
     "MANN": {
-      "CU2939":   {"Bosch":"1987432190","Tecfil":"ARC103","Fram":"CF10285","Mahle":"LAK372"},
-      "CU3461":   {"Bosch":"1987432388","Tecfil":"ARC135","Fram":"CF11966","Mahle":"LAK688"},
-      "CU2545":   {"Bosch":"1987432048","Tecfil":"ARC079","Fram":"CF8546","Mahle":"LAK234"},
-      "CU21003":  {"Bosch":"1987432394","Tecfil":"ARC147","Fram":"CF12013","Mahle":"LAK709"},
-      "CU2245":   {"Bosch":"1987431707","Tecfil":"ARC061","Fram":"CF8138","Mahle":"LAK157"},
-      "CU3337":   {"Bosch":"1987432218","Tecfil":"ARC121","Fram":"CF10369","Mahle":"LAK434"},
-      "CU2442":   {"Bosch":"1987432087","Tecfil":"ARC089","Mahle":"LAK295"},
-      "CU2949":   {"Bosch":"1987432196","Tecfil":"ARC107","Mahle":"LAK386"},
-      "CU3569":   {"Bosch":"1987432442","Tecfil":"ARC152","Mahle":"LAK730"},
-      "CU3731":   {"Bosch":"1987432457","Tecfil":"ARC154","Mahle":"LAK736"},
-      "CU4150":   {"Bosch":"1987432465","Tecfil":"ARC160","Mahle":"LAK784"},
-      "CU1919-2": {"Bosch":"1987431707","Tecfil":"ARC061","Mahle":"LAK157"},
-      "CU20006":  {"Bosch":"1987432388","Tecfil":"ARC135","Mahle":"LAK688"},
-      "CU25001":  {"Tecfil":"ARC165","Mahle":"LAK837"},
-      "CU3442":   {"Bosch":"1987432388","Tecfil":"ARC135","Mahle":"LAK688"}
+      "CU2939": {
+        "Bosch": "1987432190",
+        "Tecfil": "ARC103",
+        "Fram": "CF10285",
+        "Mahle": "LAK372",
+        "Hengst": "E3910LI"
+      },
+      "CU3461": {
+        "Bosch": "1987432388",
+        "Tecfil": "ARC135",
+        "Fram": "CF11966",
+        "Mahle": "LAK688",
+        "Hengst": "E3971LI"
+      },
+      "CU2545": {
+        "Bosch": "1987432048",
+        "Tecfil": "ARC079",
+        "Fram": "CF8546",
+        "Mahle": "LAK234",
+        "Hengst": "E3845LI"
+      },
+      "CU21003": {
+        "Bosch": "1987432394",
+        "Tecfil": "ARC147",
+        "Fram": "CF12013",
+        "Mahle": "LAK709",
+        "Hengst": "E3990LI"
+      },
+      "CU2245": {
+        "Bosch": "1987431707",
+        "Tecfil": "ARC061",
+        "Fram": "CF8138",
+        "Mahle": "LAK157",
+        "Hengst": "E3780LI"
+      },
+      "CU3337": {
+        "Bosch": "1987432218",
+        "Tecfil": "ARC121",
+        "Fram": "CF10369",
+        "Mahle": "LAK434",
+        "Hengst": "E3940LI"
+      },
+      "CU2442": {
+        "Bosch": "1987432087",
+        "Tecfil": "ARC089",
+        "Mahle": "LAK295",
+        "Hengst": "E3862LI"
+      },
+      "CU2949": {
+        "Bosch": "1987432196",
+        "Tecfil": "ARC107",
+        "Mahle": "LAK386",
+        "Hengst": "E3912LI"
+      },
+      "CU3569": {
+        "Bosch": "1987432442",
+        "Tecfil": "ARC152",
+        "Mahle": "LAK730",
+        "Hengst": "E3975LI"
+      },
+      "CU3731": {
+        "Bosch": "1987432457",
+        "Tecfil": "ARC154",
+        "Mahle": "LAK736",
+        "Hengst": "E3978LI"
+      },
+      "CU4150": {
+        "Bosch": "1987432465",
+        "Tecfil": "ARC160",
+        "Mahle": "LAK784"
+      },
+      "CU1919-2": {
+        "Bosch": "1987431707",
+        "Tecfil": "ARC061",
+        "Mahle": "LAK157"
+      },
+      "CU20006": {
+        "Bosch": "1987432388",
+        "Tecfil": "ARC135",
+        "Mahle": "LAK688"
+      },
+      "CU25001": {
+        "Tecfil": "ARC165",
+        "Mahle": "LAK837"
+      },
+      "CU3442": {
+        "Bosch": "1987432388",
+        "Tecfil": "ARC135",
+        "Mahle": "LAK688"
+      },
+      "CU4695": {
+        "Tecfil": "ARC169",
+        "Mahle": "LAK871"
+      },
+      "CU2834": {
+        "Bosch": "1987432190",
+        "Tecfil": "ARC103",
+        "Mahle": "LAK372"
+      },
+      "CU3815": {
+        "Tecfil": "ARC157",
+        "Mahle": "LAK748"
+      },
+      "CU3039": {
+        "Bosch": "1987432196",
+        "Tecfil": "ARC107",
+        "Mahle": "LAK386"
+      },
+      "CU3360": {
+        "Bosch": "1987432218",
+        "Tecfil": "ARC121",
+        "Mahle": "LAK434"
+      },
+      "CU31001": {
+        "Tecfil": "ARC170",
+        "Mahle": "LAK880"
+      },
+      "CU35001": {
+        "Tecfil": "ARC175",
+        "Mahle": "LAK910"
+      },
+      "CU4415": {
+        "Tecfil": "ARC167",
+        "Mahle": "LAK855"
+      },
+      "CU2532": {
+        "Bosch": "1987432048",
+        "Tecfil": "ARC079",
+        "Mahle": "LAK234"
+      },
+      "CU26002": {
+        "Tecfil": "ARC147",
+        "Mahle": "LAK709"
+      }
     },
     "BOSCH": {
-      "1987432190": {"Mann":"CU2939","Tecfil":"ARC103","Fram":"CF10285","Mahle":"LAK372"},
-      "1987432388": {"Mann":"CU3461","Tecfil":"ARC135","Fram":"CF11966","Mahle":"LAK688"},
-      "1987432048": {"Mann":"CU2545","Tecfil":"ARC079","Fram":"CF8546","Mahle":"LAK234"},
-      "1987432394": {"Mann":"CU21003","Tecfil":"ARC147","Fram":"CF12013","Mahle":"LAK709"},
-      "1987431707": {"Mann":"CU2245","Tecfil":"ARC061","Fram":"CF8138","Mahle":"LAK157"},
-      "1987432218": {"Mann":"CU3337","Tecfil":"ARC121","Fram":"CF10369","Mahle":"LAK434"},
-      "1987432087": {"Mann":"CU2442","Tecfil":"ARC089","Mahle":"LAK295"},
-      "1987432196": {"Mann":"CU2949","Tecfil":"ARC107","Mahle":"LAK386"},
-      "1987432442": {"Mann":"CU3569","Tecfil":"ARC152","Mahle":"LAK730"},
-      "1987432457": {"Mann":"CU3731","Tecfil":"ARC154","Mahle":"LAK736"},
-      "1987432465": {"Mann":"CU4150","Tecfil":"ARC160","Mahle":"LAK784"}
+      "1987432190": {
+        "Mann": "CU2939",
+        "Tecfil": "ARC103",
+        "Fram": "CF10285",
+        "Mahle": "LAK372",
+        "Hengst": "E3910LI"
+      },
+      "1987432388": {
+        "Mann": "CU3461",
+        "Tecfil": "ARC135",
+        "Fram": "CF11966",
+        "Mahle": "LAK688",
+        "Hengst": "E3971LI"
+      },
+      "1987432048": {
+        "Mann": "CU2545",
+        "Tecfil": "ARC079",
+        "Fram": "CF8546",
+        "Mahle": "LAK234",
+        "Hengst": "E3845LI"
+      },
+      "1987432394": {
+        "Mann": "CU21003",
+        "Tecfil": "ARC147",
+        "Fram": "CF12013",
+        "Mahle": "LAK709",
+        "Hengst": "E3990LI"
+      },
+      "1987431707": {
+        "Mann": "CU2245",
+        "Tecfil": "ARC061",
+        "Fram": "CF8138",
+        "Mahle": "LAK157",
+        "Hengst": "E3780LI"
+      },
+      "1987432218": {
+        "Mann": "CU3337",
+        "Tecfil": "ARC121",
+        "Fram": "CF10369",
+        "Mahle": "LAK434",
+        "Hengst": "E3940LI"
+      },
+      "1987432087": {
+        "Mann": "CU2442",
+        "Tecfil": "ARC089",
+        "Mahle": "LAK295",
+        "Hengst": "E3862LI"
+      },
+      "1987432196": {
+        "Mann": "CU2949",
+        "Tecfil": "ARC107",
+        "Mahle": "LAK386",
+        "Hengst": "E3912LI"
+      },
+      "1987432442": {
+        "Mann": "CU3569",
+        "Tecfil": "ARC152",
+        "Mahle": "LAK730",
+        "Hengst": "E3975LI"
+      },
+      "1987432457": {
+        "Mann": "CU3731",
+        "Tecfil": "ARC154",
+        "Mahle": "LAK736",
+        "Hengst": "E3978LI"
+      },
+      "1987432465": {
+        "Mann": "CU4150",
+        "Tecfil": "ARC160",
+        "Mahle": "LAK784"
+      }
     },
     "TECFIL": {
-      "ARC103": {"Mann":"CU2939","Bosch":"1987432190","Fram":"CF10285","Mahle":"LAK372"},
-      "ARC135": {"Mann":"CU3461","Bosch":"1987432388","Fram":"CF11966","Mahle":"LAK688"},
-      "ARC079": {"Mann":"CU2545","Bosch":"1987432048","Fram":"CF8546","Mahle":"LAK234"},
-      "ARC147": {"Mann":"CU21003","Bosch":"1987432394","Fram":"CF12013","Mahle":"LAK709"},
-      "ARC061": {"Mann":"CU2245","Bosch":"1987431707","Fram":"CF8138","Mahle":"LAK157"},
-      "ARC121": {"Mann":"CU3337","Bosch":"1987432218","Fram":"CF10369","Mahle":"LAK434"},
-      "ARC089": {"Mann":"CU2442","Bosch":"1987432087","Mahle":"LAK295"},
-      "ARC107": {"Mann":"CU2949","Bosch":"1987432196","Mahle":"LAK386"},
-      "ARC152": {"Mann":"CU3569","Bosch":"1987432442","Mahle":"LAK730"},
-      "ARC154": {"Mann":"CU3731","Bosch":"1987432457","Mahle":"LAK736"},
-      "ARC160": {"Mann":"CU4150","Bosch":"1987432465","Mahle":"LAK784"},
-      "ARC165": {"Mann":"CU25001","Mahle":"LAK837"}
+      "ARC103": {
+        "Mann": "CU2939",
+        "Bosch": "1987432190",
+        "Fram": "CF10285",
+        "Mahle": "LAK372",
+        "Hengst": "E3910LI"
+      },
+      "ARC135": {
+        "Mann": "CU3461",
+        "Bosch": "1987432388",
+        "Fram": "CF11966",
+        "Mahle": "LAK688",
+        "Hengst": "E3971LI"
+      },
+      "ARC079": {
+        "Mann": "CU2545",
+        "Bosch": "1987432048",
+        "Fram": "CF8546",
+        "Mahle": "LAK234",
+        "Hengst": "E3845LI"
+      },
+      "ARC147": {
+        "Mann": "CU21003",
+        "Bosch": "1987432394",
+        "Fram": "CF12013",
+        "Mahle": "LAK709",
+        "Hengst": "E3990LI"
+      },
+      "ARC061": {
+        "Mann": "CU2245",
+        "Bosch": "1987431707",
+        "Fram": "CF8138",
+        "Mahle": "LAK157",
+        "Hengst": "E3780LI"
+      },
+      "ARC121": {
+        "Mann": "CU3337",
+        "Bosch": "1987432218",
+        "Fram": "CF10369",
+        "Mahle": "LAK434",
+        "Hengst": "E3940LI"
+      },
+      "ARC089": {
+        "Mann": "CU2442",
+        "Bosch": "1987432087",
+        "Mahle": "LAK295",
+        "Hengst": "E3862LI"
+      },
+      "ARC107": {
+        "Mann": "CU2949",
+        "Bosch": "1987432196",
+        "Mahle": "LAK386",
+        "Hengst": "E3912LI"
+      },
+      "ARC152": {
+        "Mann": "CU3569",
+        "Bosch": "1987432442",
+        "Mahle": "LAK730",
+        "Hengst": "E3975LI"
+      },
+      "ARC154": {
+        "Mann": "CU3731",
+        "Bosch": "1987432457",
+        "Mahle": "LAK736",
+        "Hengst": "E3978LI"
+      },
+      "ARC160": {
+        "Mann": "CU4150",
+        "Bosch": "1987432465",
+        "Mahle": "LAK784"
+      },
+      "ARC165": {
+        "Mann": "CU25001",
+        "Mahle": "LAK837"
+      },
+      "ARC169": {
+        "Mann": "CU4695",
+        "Mahle": "LAK871"
+      },
+      "ARC157": {
+        "Mann": "CU3815",
+        "Mahle": "LAK748"
+      },
+      "ARC170": {
+        "Mann": "CU31001",
+        "Mahle": "LAK880"
+      },
+      "ARC175": {
+        "Mann": "CU35001",
+        "Mahle": "LAK910"
+      },
+      "ARC167": {
+        "Mann": "CU4415",
+        "Mahle": "LAK855"
+      }
     },
     "FRAM": {
-      "CF10285": {"Mann":"CU2939","Bosch":"1987432190","Tecfil":"ARC103","Mahle":"LAK372"},
-      "CF11966": {"Mann":"CU3461","Bosch":"1987432388","Tecfil":"ARC135","Mahle":"LAK688"},
-      "CF8546":  {"Mann":"CU2545","Bosch":"1987432048","Tecfil":"ARC079","Mahle":"LAK234"},
-      "CF12013": {"Mann":"CU21003","Bosch":"1987432394","Tecfil":"ARC147","Mahle":"LAK709"},
-      "CF8138":  {"Mann":"CU2245","Bosch":"1987431707","Tecfil":"ARC061","Mahle":"LAK157"},
-      "CF10369": {"Mann":"CU3337","Bosch":"1987432218","Tecfil":"ARC121","Mahle":"LAK434"}
+      "CF10285": {
+        "Mann": "CU2939",
+        "Bosch": "1987432190",
+        "Tecfil": "ARC103",
+        "Mahle": "LAK372"
+      },
+      "CF11966": {
+        "Mann": "CU3461",
+        "Bosch": "1987432388",
+        "Tecfil": "ARC135",
+        "Mahle": "LAK688"
+      },
+      "CF8546": {
+        "Mann": "CU2545",
+        "Bosch": "1987432048",
+        "Tecfil": "ARC079",
+        "Mahle": "LAK234"
+      },
+      "CF12013": {
+        "Mann": "CU21003",
+        "Bosch": "1987432394",
+        "Tecfil": "ARC147",
+        "Mahle": "LAK709"
+      },
+      "CF8138": {
+        "Mann": "CU2245",
+        "Bosch": "1987431707",
+        "Tecfil": "ARC061",
+        "Mahle": "LAK157"
+      },
+      "CF10369": {
+        "Mann": "CU3337",
+        "Bosch": "1987432218",
+        "Tecfil": "ARC121",
+        "Mahle": "LAK434"
+      },
+      "CF11783": {
+        "Tecfil": "ARC135",
+        "Mahle": "LAK688"
+      },
+      "CF9834": {
+        "Tecfil": "ARC103",
+        "Mahle": "LAK372"
+      }
     },
     "MAHLE": {
-      "LAK372": {"Mann":"CU2939","Bosch":"1987432190","Tecfil":"ARC103","Fram":"CF10285"},
-      "LAK688": {"Mann":"CU3461","Bosch":"1987432388","Tecfil":"ARC135","Fram":"CF11966"},
-      "LAK234": {"Mann":"CU2545","Bosch":"1987432048","Tecfil":"ARC079","Fram":"CF8546"},
-      "LAK709": {"Mann":"CU21003","Bosch":"1987432394","Tecfil":"ARC147","Fram":"CF12013"},
-      "LAK157": {"Mann":"CU2245","Bosch":"1987431707","Tecfil":"ARC061","Fram":"CF8138"},
-      "LAK434": {"Mann":"CU3337","Bosch":"1987432218","Tecfil":"ARC121","Fram":"CF10369"},
-      "LAK295": {"Mann":"CU2442","Bosch":"1987432087","Tecfil":"ARC089"},
-      "LAK386": {"Mann":"CU2949","Bosch":"1987432196","Tecfil":"ARC107"},
-      "LAK730": {"Mann":"CU3569","Bosch":"1987432442","Tecfil":"ARC152"},
-      "LAK736": {"Mann":"CU3731","Bosch":"1987432457","Tecfil":"ARC154"},
-      "LAK784": {"Mann":"CU4150","Bosch":"1987432465","Tecfil":"ARC160"},
-      "LAK837": {"Mann":"CU25001","Tecfil":"ARC165"}
+      "LAK372": {
+        "Mann": "CU2939",
+        "Bosch": "1987432190",
+        "Tecfil": "ARC103",
+        "Fram": "CF10285",
+        "Hengst": "E3910LI"
+      },
+      "LAK688": {
+        "Mann": "CU3461",
+        "Bosch": "1987432388",
+        "Tecfil": "ARC135",
+        "Fram": "CF11966",
+        "Hengst": "E3971LI"
+      },
+      "LAK234": {
+        "Mann": "CU2545",
+        "Bosch": "1987432048",
+        "Tecfil": "ARC079",
+        "Fram": "CF8546",
+        "Hengst": "E3845LI"
+      },
+      "LAK709": {
+        "Mann": "CU21003",
+        "Bosch": "1987432394",
+        "Tecfil": "ARC147",
+        "Fram": "CF12013",
+        "Hengst": "E3990LI"
+      },
+      "LAK157": {
+        "Mann": "CU2245",
+        "Bosch": "1987431707",
+        "Tecfil": "ARC061",
+        "Fram": "CF8138",
+        "Hengst": "E3780LI"
+      },
+      "LAK434": {
+        "Mann": "CU3337",
+        "Bosch": "1987432218",
+        "Tecfil": "ARC121",
+        "Fram": "CF10369",
+        "Hengst": "E3940LI"
+      },
+      "LAK295": {
+        "Mann": "CU2442",
+        "Bosch": "1987432087",
+        "Tecfil": "ARC089",
+        "Hengst": "E3862LI"
+      },
+      "LAK386": {
+        "Mann": "CU2949",
+        "Bosch": "1987432196",
+        "Tecfil": "ARC107",
+        "Hengst": "E3912LI"
+      },
+      "LAK730": {
+        "Mann": "CU3569",
+        "Bosch": "1987432442",
+        "Tecfil": "ARC152",
+        "Hengst": "E3975LI"
+      },
+      "LAK736": {
+        "Mann": "CU3731",
+        "Bosch": "1987432457",
+        "Tecfil": "ARC154",
+        "Hengst": "E3978LI"
+      },
+      "LAK784": {
+        "Mann": "CU4150",
+        "Bosch": "1987432465",
+        "Tecfil": "ARC160"
+      },
+      "LAK837": {
+        "Mann": "CU25001",
+        "Tecfil": "ARC165"
+      },
+      "LAK871": {
+        "Mann": "CU4695",
+        "Tecfil": "ARC169"
+      },
+      "LAK748": {
+        "Mann": "CU3815",
+        "Tecfil": "ARC157"
+      },
+      "LAK880": {
+        "Mann": "CU31001",
+        "Tecfil": "ARC170"
+      },
+      "LAK910": {
+        "Mann": "CU35001",
+        "Tecfil": "ARC175"
+      },
+      "LAK855": {
+        "Mann": "CU4415",
+        "Tecfil": "ARC167"
+      }
+    },
+    "HENGST": {
+      "E3910LI": {
+        "Mann": "CU2939",
+        "Bosch": "1987432190",
+        "Tecfil": "ARC103",
+        "Mahle": "LAK372"
+      },
+      "E3971LI": {
+        "Mann": "CU3461",
+        "Bosch": "1987432388",
+        "Tecfil": "ARC135",
+        "Mahle": "LAK688"
+      },
+      "E3845LI": {
+        "Mann": "CU2545",
+        "Bosch": "1987432048",
+        "Tecfil": "ARC079",
+        "Mahle": "LAK234"
+      },
+      "E3990LI": {
+        "Mann": "CU21003",
+        "Bosch": "1987432394",
+        "Tecfil": "ARC147",
+        "Mahle": "LAK709"
+      },
+      "E3780LI": {
+        "Mann": "CU2245",
+        "Bosch": "1987431707",
+        "Tecfil": "ARC061",
+        "Mahle": "LAK157"
+      },
+      "E3940LI": {
+        "Mann": "CU3337",
+        "Bosch": "1987432218",
+        "Tecfil": "ARC121",
+        "Mahle": "LAK434"
+      },
+      "E3862LI": {
+        "Mann": "CU2442",
+        "Bosch": "1987432087",
+        "Tecfil": "ARC089",
+        "Mahle": "LAK295"
+      },
+      "E3912LI": {
+        "Mann": "CU2949",
+        "Bosch": "1987432196",
+        "Tecfil": "ARC107",
+        "Mahle": "LAK386"
+      },
+      "E3975LI": {
+        "Mann": "CU3569",
+        "Bosch": "1987432442",
+        "Tecfil": "ARC152",
+        "Mahle": "LAK730"
+      },
+      "E3978LI": {
+        "Mann": "CU3731",
+        "Bosch": "1987432457",
+        "Tecfil": "ARC154",
+        "Mahle": "LAK736"
+      }
+    }
+  },
+  "hidraulico": {
+    "TECFIL": {
+      "PSH96": {
+        "VOX": "HIB96",
+        "UNIFILTER": "USH248",
+        "SEMERARO": "3521300961",
+        "MASSEY FERGUSON": "3176606M1",
+        "MAHLE": "HC84",
+        "MADAL": "341030",
+        "ILBARUS": "4450401000",
+        "IRLEMP": "PERI249",
+        "HDA": "11002",
+        "FRAM": "P4637",
+        "DONALDSON": "P172517",
+        "CBT": "2501207018",
+        "BOSCH": "9455085006",
+        "BALDAN": "60201100539",
+        "ALBARUS": "4450401000",
+        "VOX ANTIGO": "HIB5812",
+        "NEWTEC": "BR6010PH"
+      },
+      "PSH97": {
+        "VOX ANTIGO": "HIB5813",
+        "VOX": "HIB97",
+        "UNIFILTER": "USH248",
+        "HIDRAFIL": "114001",
+        "HDA": "011003"
+      },
+      "PSH766": {
+        "UCC": "UCMX1591410",
+        "RACOR": "PERI25010C",
+        "MAXION": "501308346",
+        "MANN": "W1374/2",
+        "KNECHT": "HC4",
+        "IRLEMP": "PERI250",
+        "INPECA": "SHB0766",
+        "HYDAC": "HBR01377",
+        "HIDRAFIL": "114030",
+        "HDA": "11304",
+        "FRAM": "P5158",
+        "FLEETGUARD": "HF6177",
+        "DEMAG": "501308346",
+        "CASE": "402146",
+        "BRASTOFT": "402146",
+        "BOSCH": "0986B01906",
+        "BALDWIN": "BT351",
+        "UNIFILTER": "USH250",
+        "VOX": "HIB766",
+        "VOX ANTIGO": "HIB5815",
+        "WIX": "W54070BR",
+        "NEW HOLLAND": "84239756",
+        "DONALDSON": "P550148",
+        "NEWTEC": "BR76010PH",
+        "PARKER": "PERI356",
+        "WEGA": "WOH205",
+        "TURBO FILTROS": "TBH351"
+      },
+      "PSH112": {
+        "UNIFILTER": "USH259P25",
+        "PARKER": "PERI34010C",
+        "MAXION": "034391T1",
+        "MAHLE": "HC82",
+        "INPECA": "SHB0391",
+        "DELPHI": "EFH101",
+        "BOSCH": "0986B01902",
+        "VOX": "HIB112",
+        "VOX ANTIGO": "HIB4409",
+        "FAM": "FH0391",
+        "FRAM": "P10301",
+        "WEGA": "WO767",
+        "MANN": "W1265",
+        "FLEETGUARD": "HF6136",
+        "PARTMO": "A91T1",
+        "SAKURA": "HC19060",
+        "AUTHOMIX": "FHI0112",
+        "TURBO FILTROS": "TBH340"
+      },
+      "PSH95": {
+        "VOX ANTIGO": "HIB5811",
+        "VOX": "HIB95",
+        "HIDRAFIL": "HFUS1004"
+      },
+      "PSH167": {
+        "UNIFILTER": "UST6337",
+        "NEW HOLLAND": "9969450",
+        "FLEETGUARD": "HF6337",
+        "FIAT ALLIS": "9968353",
+        "DAEWOO": "D140182",
+        "CATERPILLAR": "4717003",
+        "CASE": "181167A1",
+        "BOSCH": "0986B01002",
+        "BALDWIN": "BT8417",
+        "VOX": "HIB167",
+        "VOX ANTIGO": "HIB2818",
+        "SAKURA": "HC45050",
+        "JS ASAKASHI": "HC0007"
+      },
+      "PSH012": {
+        "MARCHESAN": "503010183",
+        "MAHLE": "HC86",
+        "LOGAN": "FH285US",
+        "HIDRAFIL": "114048",
+        "CROSS": "FB39/2",
+        "CBT": "2511207018",
+        "BOSCH": "9455085005",
+        "BALDAN": "PDL80",
+        "AGRALE": "8009108579007",
+        "VOX": "HIB012",
+        "VOX ANTIGO": "HIB5802",
+        "DELPHI": "EFH107",
+        "NEWTEC": "BR8010PH",
+        "WEGA": "WOH800",
+        "TURBO FILTROS": "TBH012"
+      },
+      "PSH421": {
+        "VOX ANTIGO": "HIB3214",
+        "VOX": "HIB421",
+        "VOLVO": "4184321",
+        "MANN": "W917",
+        "FRAM": "PH2861B",
+        "HENGST": "H10W22",
+        "FLEETGUARD": "LF3706",
+        "SAKURA": "C1122",
+        "DONALDSON": "P550939",
+        "DELKRAFT": "DL252",
+        "WEGA": "WO771",
+        "MAHLE": "OC204",
+        "JS ASAKASHI": "C103J",
+        "AUTHOMIX": "FHI0421",
+        "YALE": "150017200",
+        "BALDWIN": "B163",
+        "TURBO FILTROS": "TBH857"
+      },
+      "PSH306": {
+        "VOX": "HIB306",
+        "VALMET": "3060600032",
+        "UNIFILTER": "USH3468",
+        "TOP PARTS": "130015",
+        "ROMA": "HDS3060",
+        "NASA": "NS1041",
+        "MANN": "W950/6",
+        "MAHLE": "HC83",
+        "IRLEMP": "PERI318",
+        "INPECA": "SHB0428",
+        "FRAM": "P5573",
+        "FLEETGUARD": "LF3468",
+        "FIL FILTER": "ZP93C",
+        "DONALDSON": "P172899",
+        "DELPHI": "EFH103",
+        "BOSCH": "0986B01904",
+        "VOX ANTIGO": "HIB4808",
+        "DELKRAFT": "DHT602",
+        "WEGA": "WO768",
+        "AUTHOMIX": "FHI1306",
+        "TURBO FILTROS": "TBH306"
+      },
+      "PSH307": {
+        "VOX ANTIGO": "HIB4812",
+        "VOX": "HIB307",
+        "VALMET": "20410800",
+        "BOSCH": "0986B01905",
+        "AGCO": "836579590",
+        "BALDWIN": "BT9471",
+        "VALTRA": "V836536797",
+        "MANN": "W1126/5",
+        "TURBO FILTROS": "TBH307",
+        "WEGA": "WOH715"
+      },
+      "PSH582": {
+        "WIX": "W504807",
+        "UNIFILTER": "USH6582",
+        "RANDON": "319000751",
+        "FLEETGUARD": "HF35150",
+        "DONALDSON": "P179342",
+        "CASE": "181167A1",
+        "SAKURA": "HC7965",
+        "BALDWIN": "BT8439MPG",
+        "NEW HOLLAND": "84475948",
+        "AUTHOMIX": "FHI0582",
+        "WEGA": "WOH218",
+        "MANN": "WH10004"
+      },
+      "PSH743": {
+        "VOX ANTIGO": "HIB5806",
+        "VOX": "HIB743",
+        "UNIFILTER": "UST743",
+        "KOMATSU": "1225110H1",
+        "BOSCH": "0986B01909"
+      },
+      "PSH084": {
+        "VOX ANTIGO": "HIB4228",
+        "VOX": "HIB084",
+        "UNIFILTER": "USH6586",
+        "JOHN DEERE": "RE210857",
+        "INGERSOLL RAND": "51302214",
+        "HYSTER": "398754",
+        "FLEETGUARD": "HF6586",
+        "DONALDSON": "P165569",
+        "CLARK": "243622",
+        "CHAMPION": "37104",
+        "CATERPILLAR": "9T0973",
+        "BALDWIN": "BT8873",
+        "MANN": "WH1257",
+        "VOLVO": "965899",
+        "TURBO FILTROS": "TBH8876"
+      },
+      "PSH794": {
+        "VOLVO": "11037868",
+        "UNIFILTER": "USH6983",
+        "NEW HOLLAND": "8580279310B",
+        "FLEETGUARD": "HF6547",
+        "FIAT ALLIS": "8580279310B",
+        "SAKURA": "HC7001"
+      },
+      "PSH962": {
+        "SCHULZ": "700231",
+        "ROMA": "LUS771",
+        "NASA": "NS1024",
+        "MARCHESAN": "503010545",
+        "LOGAN": "FH284US",
+        "KS": "275OS",
+        "IRLEMP": "PERI262",
+        "INPECA": "J962E1",
+        "HIDRAFIL": "114021",
+        "FRAM": "PH4550",
+        "FLEETGUARD": "HF6205",
+        "CROSS": "FB39/1",
+        "DELPHI": "EFH109",
+        "CASE": "P00150521K",
+        "BOSCH": "9455085023",
+        "ATLAS-COPCO": "9712540104",
+        "UNIFILTER": "USH9621",
+        "VOX": "HIB962",
+        "VOX ANTIGO": "HIB5803",
+        "FAM": "FH0923",
+        "HENGST": "H18W04",
+        "KSPG": "50013275",
+        "MANN": "W962/14",
+        "SAKURA": "HC6802",
+        "DONALDSON": "P763577",
+        "MAHLE": "OC175",
+        "WEGA": "WOH900",
+        "AUTHOMIX": "FHI1962",
+        "BALDWIN": "B262"
+      },
+      "PSH211": {
+        "VOX": "HIB211",
+        "UNIFILTER": "USH260",
+        "PUROLATOR": "PER281H",
+        "MASSEY FERGUSON": "071334R1",
+        "MANN": "W1290",
+        "MAHLE": "HC85",
+        "LOGAN": "FH250US",
+        "IRLEMP": "PERI260",
+        "INPECA": "SHB0421",
+        "HIDRAFIL": "HFUS123",
+        "FRAM": "P3961",
+        "FLEETGUARD": "LFP725",
+        "DONALDSON": "P561183",
+        "DELPHI": "EFH102",
+        "CASE": "A45625",
+        "BRASIF": "B543",
+        "BOSCH": "0986B01903",
+        "BALDWIN": "BT38810",
+        "VOX ANTIGO": "HIB5202",
+        "WIX": "51758",
+        "FAM": "FH0543",
+        "PARKER": "927736",
+        "LUBERFINER": "PH725",
+        "GONHER": "GP34",
+        "SAKURA": "HC79331",
+        "NEWTEC": "BR21010PH",
+        "WEGA": "WO770",
+        "AUTHOMIX": "FHI1211",
+        "TURBO FILTROS": "TB421"
+      },
+      "PSH140": {
+        "PARKER": "921999",
+        "MICHIGAN": "201026",
+        "LOGAN": "PER20",
+        "IRLEMP": "PER20",
+        "GRESEN": "8057000",
+        "FLEETGUARD": "LF681",
+        "CASE": "4441544416",
+        "BALDWIN": "B236",
+        "UNIFILTER": "UST343B10",
+        "FRAM": "P1654A",
+        "KS": "50013233",
+        "RACOR": "RH34310B",
+        "SCANIA": "1301696",
+        "VOX ANTIGO": "HIB3417",
+        "WOODGATE": "WGH7535",
+        "DONALDSON": "P172507",
+        "WIX": "51249",
+        "LUBERFINER": "LFP1652",
+        "GONHER": "GP66",
+        "CNH": "47628830"
+      },
+      "PSH326": {
+        "RACOR": "PERI326",
+        "HYSTER": "1315621",
+        "FIAT HITACHI": "4285577",
+        "CLARK": "247052",
+        "WEGA": "HD13008"
+      },
+      "PSH793": {
+        "VOX": "HIB793",
+        "UNIFILTER": "USH6982",
+        "PARKER": "PERI705",
+        "INGERSOLL RAND": "36860336",
+        "FLEETGUARD": "HF6589",
+        "DYNAPAC": "196446",
+        "CLARK": "965899",
+        "VOX ANTIGO": "HIB5844",
+        "DONALDSON": "P165705",
+        "MANN": "WH1257/2",
+        "WEGA": "WOH709",
+        "BALDWIN": "BT8892MPG",
+        "TURBO FILTROS": "TBH8873"
+      },
+      "PSH319": {
+        "WIX": "W51623",
+        "VOX": "HIB319",
+        "UNIFILTER": "UST319",
+        "PARKER": "PERI319",
+        "FLEETGUARD": "HF6243",
+        "DONALDSON": "P550223",
+        "CLARK": "19922156",
+        "VOLVO": "11992156",
+        "BALDWIN": "BT359",
+        "WEGA": "WOH601"
+      },
+      "PSH235": {
+        "UNIFILTER": "UST325",
+        "PARKER": "PERI325",
+        "NAPA": "1474",
+        "IRLEMP": "PERI325",
+        "FRAM": "P7566",
+        "FLEETGUARD": "HF6420",
+        "FIAT ALLIS": "73118171",
+        "DONALDSON": "P174675",
+        "CLARK": "247050",
+        "CASE": "E158745",
+        "VOLVO": "2340990",
+        "BALDWIN": "BT8426MPG",
+        "WIX": "51474",
+        "LUBERFINER": "LFH8799",
+        "SAKURA": "HC7913",
+        "WEGA": "WOH600"
+      },
+      "PSH486": {
+        "SANTA MATILDE": "D4NNB486C",
+        "ROMA": "HDS486",
+        "RACINE": "4450401",
+        "NEW HOLLAND": "84465082",
+        "NASA": "NS1037",
+        "MANN": "W950/8",
+        "MAHLE": "HC76",
+        "LUCAS": "EFL243",
+        "LOGAN": "FH057US",
+        "KS": "274OS",
+        "KSPG": "50013274",
+        "IRLEMP": "PERI243",
+        "INPECA": "SB0604",
+        "IDEAL": "850009990140",
+        "FRAM": "P4637A",
+        "FORD": "D4NN486C",
+        "FLEETGUARD": "HF6188",
+        "CROSS": "FBH486",
+        "DONALDSON": "P172882",
+        "DELPHI": "EFL243",
+        "DAEWOO": "D144020",
+        "BOSCH": "9455085009",
+        "AGRALE": "8009108164008",
+        "SLC": "D4NNB486C",
+        "TUTELA": "LH324",
+        "VOX": "HIB486",
+        "VOX ANTIGO": "HIB2237",
+        "WIX": "W51712",
+        "YANMAR": "YB4148080",
+        "WEGA": "WOH769",
+        "AUTHOMIX": "FHI0486",
+        "TURBO FILTROS": "TB604"
+      },
+      "PSH693": {
+        "UNIFILTER": "USH6554",
+        "PARKER": "PERI381",
+        "NEW HOLLAND": "82003166",
+        "MANN": "WH945",
+        "KOMATSU": "1266751H2",
+        "JOHN DEERE": "AL221066",
+        "JCB": "32/905501",
+        "INGERSOLL RAND": "58887936",
+        "HENGST": "H17W26",
+        "FRAM": "P6882",
+        "FLEETGUARD": "HF6554",
+        "DONALDSON": "P764668",
+        "CATERPILLAR": "1031971",
+        "CASE": "47628831",
+        "BALDWIN": "BT8845",
+        "VOX": "HIB693",
+        "VOX ANTIGO": "HIB5222",
+        "HITACHI": "L71460631",
+        "SAKURA": "HC76080",
+        "WEGA": "WOH204",
+        "TURBO FILTROS": "TBH8841"
+      },
+      "PSH583": {
+        "UNIFILTER": "FOF4686",
+        "FLEETGUARD": "HF6580",
+        "DONALDSON": "P173738",
+        "CLARK": "2791199",
+        "WEGA": "WOH215"
+      },
+      "PSH581": {
+        "UNIFILTER": "UST65801",
+        "CLARK": "2799807",
+        "TURBO FILTROS": "TBH9807"
+      },
+      "PSH025": {
+        "VOX ANTIGO": "HIB5218",
+        "VOX": "HIB025",
+        "UNIFILTER": "USH6555",
+        "PARKER": "PERI384",
+        "NEW HOLLAND": "84226258",
+        "MANN": "WH980",
+        "JOHN DEERE": "RE34958",
+        "FLEETGUARD": "HF6555",
+        "DONALDSON": "P164384",
+        "CATERPILLAR": "9T5916",
+        "CASE": "84239751",
+        "BALDWIN": "BT8850MPG",
+        "FIAT": "73144499",
+        "SAKURA": "HC5508",
+        "FRAM": "P6871",
+        "WIX": "51495",
+        "LUBERFINER": "LFH4910",
+        "GONHER": "GP761H",
+        "WEGA": "WOH201",
+        "AUTHOMIX": "FHI0025",
+        "TURBO FILTROS": "TBH8850"
+      },
+      "PSH243": {
+        "VOX ANTIGO": "HIB5840",
+        "VOX": "HIB243",
+        "UNIFILTER": "USH6564",
+        "MICHIGAN": "6599543",
+        "FLEETGUARD": "HF6564",
+        "CLARK": "6599543",
+        "SAKURA": "HC7923"
+      },
+      "PSH236": {
+        "UNIFILTER": "UST326",
+        "PARKER": "PERI326",
+        "FLEETGUARD": "HF28857",
+        "FIAT ALLIS": "75286525",
+        "DONALDSON": "P550445"
+      },
+      "PSH480": {
+        "YANMAR": "YB4048050",
+        "MANN": "W928/2",
+        "BOSCH": "9455085008"
+      },
+      "PSH111": {
+        "DITCH WITCH": "155954",
+        "DYNAMIC": "1H1234",
+        "NEW HOLLAND": "86542664",
+        "MICHIGAN": "2000600",
+        "JOHN DEERE": "AT58368",
+        "CHAMPION": "13028",
+        "CASE": "87027972",
+        "CATERPILLAR": "4T6788",
+        "FRAM": "PH10299",
+        "VOX ANTIGO": "HIB4601",
+        "BALDWIN": "BT287",
+        "BOSCH": "9455085021",
+        "CHICAGO": "250000214",
+        "DYNAPAC": "928656",
+        "EMBEP": "250000214",
+        "FAM": "FH0440",
+        "HIDRAFIL": "US12210N",
+        "INPECA": "SHB0656",
+        "IRLEMP": "R2910M",
+        "KOMATSU": "D1224440H1",
+        "MAHLE": "HC81",
+        "MASSEY FERGUSON": "042285R1",
+        "NASA": "NS0656",
+        "RACOR": "R2910C",
+        "SULLAIR": "408242",
+        "UNIFILTER": "USH258",
+        "SAKURA": "C7602",
+        "DONALDSON": "P550388",
+        "CNH": "84465103",
+        "DELPHI": "EFL778",
+        "NEWTEC": "BR11010PH",
+        "WEGA": "WOH202",
+        "PARTMO": "AR29SP",
+        "AUTHOMIX": "FHI0111",
+        "TURBO FILTROS": "TB2910"
+      },
+      "PSH349": {
+        "UNIFILTER": "UST349",
+        "PARKER": "PERI349",
+        "JOHN DEERE": "DQ21803",
+        "FRAM": "P10122"
+      },
+      "PSH325": {
+        "CASE": "E158735",
+        "SAKURA": "HC7913"
+      },
+      "PSH607": {
+        "VOX ANTIGO": "HIB3219",
+        "VOX": "HIB607",
+        "VOLVO": "11448509",
+        "UNIFILTER": "USH6553",
+        "PARKER": "PERI378",
+        "NEW HOLLAND": "81863799",
+        "MANN": "WH980/3",
+        "JOHN DEERE": "T175002",
+        "FLEETGUARD": "HF6553",
+        "CATERPILLAR": "3416643",
+        "BALDWIN": "BT8861",
+        "SAKURA": "HC5508",
+        "DONALDSON": "P569401",
+        "FRAM": "P6893",
+        "WIX": "51494",
+        "LUBERFINER": "LFH4990",
+        "GONHER": "GP761H",
+        "HENGST": "H18W11",
+        "WEGA": "WOH500",
+        "TURBO FILTROS": "TBH8851"
+      },
+      "PSH242": {
+        "VOX ANTIGO": "HIB5221",
+        "VOX": "HIB242",
+        "UNIFILTER": "USH6569",
+        "PARKER": "900281C10C",
+        "FRAM": "P6893",
+        "FLEETGUARD": "HF6569",
+        "DONALDSON": "P165338",
+        "CASE": "L36242",
+        "MAHLE": "HC105",
+        "BALDWIN": "BT8312",
+        "WEGA": "WOH705",
+        "CNH": "84476010"
+      },
+      "PSH086": {
+        "VOX ANTIGO": "HIB5220",
+        "VOX": "HIB086",
+        "UNIFILTER": "USH6587",
+        "PARKER": "PERI659",
+        "NEW HOLLAND": "83972274",
+        "JOHN DEERE": "AT318160",
+        "FLEETGUARD": "HF6587",
+        "DONALDSON": "P165659",
+        "CASE": "84476643",
+        "BALDWIN": "BT8879MPG",
+        "SAKURA": "HC5506",
+        "CNH": "84406710",
+        "VOLVO": "11037868",
+        "TURBO FILTROS": "TBH8874"
+      },
+      "PSH173": {
+        "UNIFILTER": "UST343B10",
+        "SCANIA": "2002705",
+        "RACOR": "RH34310B",
+        "MANN": "W9023/1",
+        "KS": "50013233",
+        "FRAM": "PH8789",
+        "FLEETGUARD": "HF7535",
+        "VOX": "HIB173",
+        "VOX ANTIGO": "HIB3417",
+        "HENGST": "H24W05",
+        "BALDWIN": "BT9318",
+        "WOODGATE": "WGH7535",
+        "SAKURA": "HC7310",
+        "WIX": "WL57159",
+        "MAHLE": "HC96",
+        "DONSSON": "GS643",
+        "TRP": "915550",
+        "JAPANPARTS": "FOBR108S",
+        "DONALDSON": "P761108",
+        "DELKRAFT": "DHT612",
+        "DELPHI": "EFL774",
+        "WEGA": "WO762",
+        "AUTHOMIX": "FHI0173"
+      },
+      "PSH616": {
+        "UNIFILTER": "USH6552",
+        "PARKER": "PERI375",
+        "NEW HOLLAND": "82003166",
+        "JOHN DEERE": "AN203010",
+        "HENGST": "H20WD",
+        "DONALDSON": "P164375",
+        "CLARK": "6630977",
+        "VERMEER": "81902001",
+        "CATERPILLAR": "1446691",
+        "CASE": "A165029",
+        "BALDWIN": "BT8846",
+        "VOX": "HIB616",
+        "VOX ANTIGO": "HIB5843",
+        "BOB CAT": "6661248",
+        "FLEETGUARD": "HF6572",
+        "SAKURA": "HC5507",
+        "CLAAS": "5784640",
+        "MANN": "WH945/2",
+        "WEGA": "WOH210"
+      },
+      "PSH348": {
+        "UNIFILTER": "USH348",
+        "PARKER": "PERI348"
+      },
+      "PSH654": {
+        "RACOR": "RC2010C",
+        "WEGA": "WOH208"
+      },
+      "PSH295": {
+        "PARKER": "PERI337",
+        "JOHN DEERE": "AT129523",
+        "FIAT ALLIS": "76022296",
+        "UNIFILTER": "USL337",
+        "FLEETGUARD": "HF6802"
+      },
+      "PSH517": {
+        "VOX ANTIGO": "HIB5602",
+        "VOX": "HIB517",
+        "NEW HOLLAND": "5171457",
+        "BOSCH": "0986B01908",
+        "CNH": "47554376",
+        "MANN": "W1160/6",
+        "DELPHI": "EFH105",
+        "LS MTRON": "40007638",
+        "WEGA": "WOH203",
+        "AUTHOMIX": "FHI0517",
+        "TURBO FILTROS": "TBH517"
+      },
+      "PSH974": {
+        "VALMET": "806349",
+        "MANN": "W962/24",
+        "DELPHI": "EFH111",
+        "WEGA": "WOH213",
+        "AUTHOMIX": "FHI1974"
+      },
+      "PSH315": {
+        "MASSEY FERGUSON": "D45161300",
+        "MANN": "WD950/2",
+        "LIEBHERR": "7004209",
+        "HENGST": "H19WD02",
+        "FLEETGUARD": "HF28989",
+        "DONALDSON": "P550229",
+        "DEUTZ": "1211122522602",
+        "BALDWIN": "BT8512",
+        "MAXION": "2754362M1",
+        "NEW HOLLAND": "5137274",
+        "VALMET": "45161300",
+        "VOX": "HIB315",
+        "SAKURA": "HC62020",
+        "WEGA": "WOH200",
+        "TURBO FILTROS": "TBH8512"
+      },
+      "PSH367": {
+        "MASSEY FERGUSON": "3595175M1",
+        "PARKER": "RH367",
+        "UNIFILTER": "USH359",
+        "VOX": "HIB367",
+        "DONALDSON": "P574755",
+        "FLEETGUARD": "HF28812",
+        "INPECA": "SHB0300",
+        "WEGA": "WOH701",
+        "AUTHOMIX": "FHI1367",
+        "BALDWIN": "B7026MPG",
+        "TURBO FILTROS": "TBH30065"
+      },
+      "PSH212": {
+        "BALDWIN": "BT8886MPG",
+        "CATERPILLAR": "3772873",
+        "DONALDSON": "P170311"
+      },
+      "PSH713": {
+        "BALDWIN": "BT9454",
+        "DONALDSON": "P502577",
+        "KOMATSU": "7140728712",
+        "AUTHOMIX": "FHI0713"
+      },
+      "PSH797": {
+        "BALDWIN": "BT23542MPG",
+        "DONALDSON": "P170949",
+        "FLEETGUARD": "HF6684",
+        "JOHN DEERE": "RE51797",
+        "CASE": "84487937",
+        "WEGA": "WOH211",
+        "CATERPILLAR": "1526902"
+      },
+      "PSH867": {
+        "BALDWIN": "BT9464",
+        "CATERPILLAR": "5I8670X",
+        "DONALDSON": "P573481",
+        "FLEETGUARD": "HF35519",
+        "JAPANPARTS": "FOBR118S",
+        "CASE": "47635916",
+        "WEGA": "WOH302"
+      },
+      "PSH813": {
+        "BALDWIN": "BT9393MPG",
+        "CATERPILLAR": "1261813",
+        "DONALDSON": "P170308",
+        "FLEETGUARD": "HF35355"
+      },
+      "PSH533": {
+        "CNH": "47833564",
+        "NEW HOLLAND": "84278070",
+        "DONALDSON": "P569206",
+        "CASE": "47456328",
+        "FLEETGUARD": "HF9500",
+        "WEGA": "WOH402",
+        "AUTHOMIX": "FHI0533"
+      },
+      "PSH828": {
+        "NEW HOLLAND": "82824884",
+        "WEGA": "WOH207"
+      },
+      "PSH820": {
+        "BALDWIN": "BT8382",
+        "DONALDSON": "P502224",
+        "FLEETGUARD": "HF28885",
+        "NEW HOLLAND": "82005016",
+        "PARKER": "RH394",
+        "WEGA": "WOH206",
+        "CNH": "48023439"
+      },
+      "PSH944": {
+        "BALDWIN": "BT9440",
+        "FLEETGUARD": "HF35516",
+        "HITACHI": "4630525"
+      },
+      "PSH823": {
+        "BALDWIN": "BT334",
+        "DONALDSON": "P556005",
+        "FLEETGUARD": "HF6005",
+        "SAKURA": "HC7901",
+        "BOB CAT": "6653336",
+        "VOLVO": "14532687",
+        "KOBELCO": "2446U141S2",
+        "KOMATSU": "3ED6611330",
+        "FORD": "E7NN6714FA",
+        "CESSNA": "601876",
+        "TRINOVA VICKERS": "573083",
+        "MANN": "WD10004",
+        "JCB": "KNJ0288A",
+        "CATERPILLAR": "4T6915"
+      },
+      "PSH826": {
+        "BALDWIN": "BT8880MPG",
+        "DONALDSON": "P176207",
+        "FLEETGUARD": "HF6546",
+        "JOHN DEERE": "RE273801",
+        "VOLVO": "11882353",
+        "WEGA": "WOH714"
+      },
+      "PSH827": {
+        "BALDWIN": "BT9362MPG",
+        "CATERPILLAR": "6E6408",
+        "CNH": "84285044",
+        "DONALDSON": "P179343",
+        "HENGST": "H304W",
+        "FLEETGUARD": "HF35305",
+        "VOLVO": "11809003",
+        "MANN": "WH1263",
+        "CASE": "84226272",
+        "WEGA": "WOH224"
+      },
+      "PSH817": {
+        "CATERPILLAR": "4656505",
+        "DONALDSON": "P165675",
+        "FLEETGUARD": "HF6588",
+        "BALDWIN": "BT8878MPG",
+        "SAKURA": "HC5512",
+        "WEGA": "WOH216",
+        "TURBO FILTROS": "TBH8878"
+      },
+      "PSH840": {
+        "BALDWIN": "BT9347MPG",
+        "DONALDSON": "P574055",
+        "FLEETGUARD": "HF29034",
+        "JOHN DEERE": "AT310905"
+      },
+      "PSH936": {
+        "BALDWIN": "BT9360",
+        "KOMATSU": "4196035152",
+        "UNIFILTER": "UST9360",
+        "TURBO FILTROS": "TBH9360"
+      },
+      "PSH305": {
+        "BALDWIN": "BT305",
+        "CATERPILLAR": "937521X",
+        "DONALDSON": "P551348",
+        "FLEETGUARD": "HF35018",
+        "JAPANPARTS": "FOBR139S",
+        "KUBOTA": "5220015320",
+        "MITSUBISHI": "C45702411",
+        "SAKURA": "HC5801",
+        "WEGA": "WOH217"
+      },
+      "PSH422": {
+        "CNH": "84516422",
+        "BALDWIN": "BT8853MPG",
+        "FLEETGUARD": "HF6551",
+        "DONALDSON": "P165332",
+        "NEW HOLLAND": "87010592",
+        "CATERPILLAR": "1022828",
+        "CASE": "84475949",
+        "WEGA": "WOH706"
+      },
+      "PSH923": {
+        "DONALDSON": "P551757",
+        "SAKURA": "HC76110",
+        "BALDWIN": "BT8415",
+        "FLEETGUARD": "HF6316",
+        "WEGA": "WOH221"
+      },
+      "PSH377": {
+        "JOHN DEERE": "AT140030",
+        "DONALDSON": "P550416",
+        "HENGST": "H18WD03",
+        "FLEETGUARD": "HF6317",
+        "BALDWIN": "BT739",
+        "WEGA": "WOH708",
+        "TURBO FILTROS": "TBH962"
+      },
+      "PSH924": {
+        "DONALDSON": "P764729",
+        "BALDWIN": "BT9422",
+        "SAKURA": "HC76130",
+        "HENGST": "HG385W",
+        "FLEETGUARD": "HF35498",
+        "HYUNDAI": "ZGAQ2400",
+        "CASE": "47996857",
+        "ZF": "0501323154",
+        "WEGA": "WOH220"
+      },
+      "PSH210": {
+        "CNH": "47783743"
+      },
+      "PSH478": {
+        "VOLVO": "47879234",
+        "DONALDSON": "P550230",
+        "BALDWIN": "BT735",
+        "FLEETGUARD": "HF6141",
+        "MANN": "WD962",
+        "SAKURA": "HC6802",
+        "WEGA": "WOH222",
+        "TURBO FILTROS": "TBH735"
+      },
+      "PSH311": {
+        "DONALDSON": "P165876",
+        "BALDWIN": "BT8308MPG",
+        "HENGST": "H306W",
+        "CASE": "A177614",
+        "CATERPILLAR": "9U5870",
+        "MANN": "WD13006x",
+        "WEGA": "WOH716"
+      },
+      "PSH653": {
+        "JOHN DEERE": "AM39653",
+        "DONALDSON": "P550940",
+        "BALDWIN": "BT8301",
+        "FLEETGUARD": "HF6164",
+        "HENGST": "H10WD01"
+      },
+      "PSH133": {
+        "HYSTER": "1337159",
+        "BALDWIN": "PT8435MPG",
+        "UNIFILTER": "USH7159",
+        "CLARK": "YM1804193",
+        "YALE": "505973580"
+      },
+      "PSH651": {
+        "BOSCH-REXROTH": "7SL130P10",
+        "DONALDSON": "P171620",
+        "BALDWIN": "BT351",
+        "FLEETGUARD": "HF7971",
+        "UFI": "8001300",
+        "MANN": "W1268",
+        "TURBO FILTROS": "TBH7971"
+      },
+      "PSH723": {
+        "JOHN DEERE": "AM102723",
+        "DONALDSON": "P169078",
+        "BALDWIN": "BT8416",
+        "FLEETGUARD": "HF35006",
+        "HENGST": "HY406W",
+        "TURBO FILTROS": "TBH8416"
+      },
+      "PSH662": {
+        "UNIFILTER": "USH64",
+        "TURBO FILTROS": "TBH5662",
+        "CASE": "84257511",
+        "DONALDSON": "P765662",
+        "MANN": "W14005",
+        "NEW HOLLAND": "HC45070",
+        "WEGA": "WOH713"
+      },
+      "PSH825": {
+        "DONALDSON": "P551364",
+        "MANN": "WD11005",
+        "FLEETGUARD": "HF35518",
+        "NEW HOLLAND": "82983474",
+        "TURBO FILTROS": "TB9439"
+      },
+      "PSH2854": {
+        "VOLVO PENTA": "9122854"
+      }
+    },
+    "VOX": {
+      "HIB96": {
+        "TECFIL": "PSH96"
+      },
+      "HIB97": {
+        "TECFIL": "PSH97"
+      },
+      "HIB766": {
+        "TECFIL": "PSH766"
+      },
+      "HIB112": {
+        "TECFIL": "PSH112"
+      },
+      "HIB95": {
+        "TECFIL": "PSH95"
+      },
+      "HIB167": {
+        "TECFIL": "PSH167"
+      },
+      "HIB012": {
+        "TECFIL": "PSH012"
+      },
+      "HIB421": {
+        "TECFIL": "PSH421"
+      },
+      "HIB306": {
+        "TECFIL": "PSH306"
+      },
+      "HIB307": {
+        "TECFIL": "PSH307"
+      },
+      "HIB743": {
+        "TECFIL": "PSH743"
+      },
+      "HIB084": {
+        "TECFIL": "PSH084"
+      },
+      "HIB962": {
+        "TECFIL": "PSH962"
+      },
+      "HIB211": {
+        "TECFIL": "PSH211"
+      },
+      "HIB793": {
+        "TECFIL": "PSH793"
+      },
+      "HIB319": {
+        "TECFIL": "PSH319"
+      },
+      "HIB486": {
+        "TECFIL": "PSH486"
+      },
+      "HIB693": {
+        "TECFIL": "PSH693"
+      },
+      "HIB025": {
+        "TECFIL": "PSH025"
+      },
+      "HIB243": {
+        "TECFIL": "PSH243"
+      },
+      "HIB607": {
+        "TECFIL": "PSH607"
+      },
+      "HIB242": {
+        "TECFIL": "PSH242"
+      },
+      "HIB086": {
+        "TECFIL": "PSH086"
+      },
+      "HIB173": {
+        "TECFIL": "PSH173"
+      },
+      "HIB616": {
+        "TECFIL": "PSH616"
+      },
+      "HIB517": {
+        "TECFIL": "PSH517"
+      },
+      "HIB315": {
+        "TECFIL": "PSH315"
+      },
+      "HIB367": {
+        "TECFIL": "PSH367"
+      }
+    },
+    "UNIFILTER": {
+      "USH248": {
+        "TECFIL": "PSH97"
+      },
+      "USH250": {
+        "TECFIL": "PSH766"
+      },
+      "USH259P25": {
+        "TECFIL": "PSH112"
+      },
+      "UST6337": {
+        "TECFIL": "PSH167"
+      },
+      "USH3468": {
+        "TECFIL": "PSH306"
+      },
+      "USH6582": {
+        "TECFIL": "PSH582"
+      },
+      "UST743": {
+        "TECFIL": "PSH743"
+      },
+      "USH6586": {
+        "TECFIL": "PSH084"
+      },
+      "USH6983": {
+        "TECFIL": "PSH794"
+      },
+      "USH9621": {
+        "TECFIL": "PSH962"
+      },
+      "USH260": {
+        "TECFIL": "PSH211"
+      },
+      "UST343B10": {
+        "TECFIL": "PSH173"
+      },
+      "USH6982": {
+        "TECFIL": "PSH793"
+      },
+      "UST319": {
+        "TECFIL": "PSH319"
+      },
+      "UST325": {
+        "TECFIL": "PSH235"
+      },
+      "USH6554": {
+        "TECFIL": "PSH693"
+      },
+      "FOF4686": {
+        "TECFIL": "PSH583"
+      },
+      "UST65801": {
+        "TECFIL": "PSH581"
+      },
+      "USH6555": {
+        "TECFIL": "PSH025"
+      },
+      "USH6564": {
+        "TECFIL": "PSH243"
+      },
+      "UST326": {
+        "TECFIL": "PSH236"
+      },
+      "USH258": {
+        "TECFIL": "PSH111"
+      },
+      "UST349": {
+        "TECFIL": "PSH349"
+      },
+      "USH6553": {
+        "TECFIL": "PSH607"
+      },
+      "USH6569": {
+        "TECFIL": "PSH242"
+      },
+      "USH6587": {
+        "TECFIL": "PSH086"
+      },
+      "USH6552": {
+        "TECFIL": "PSH616"
+      },
+      "USH348": {
+        "TECFIL": "PSH348"
+      },
+      "USL337": {
+        "TECFIL": "PSH295"
+      },
+      "USH359": {
+        "TECFIL": "PSH367"
+      },
+      "UST9360": {
+        "TECFIL": "PSH936"
+      },
+      "USH7159": {
+        "TECFIL": "PSH133"
+      },
+      "USH64": {
+        "TECFIL": "PSH662"
+      }
+    },
+    "SEMERARO": {
+      "3521300961": {
+        "TECFIL": "PSH96"
+      }
+    },
+    "MASSEY FERGUSON": {
+      "3176606M1": {
+        "TECFIL": "PSH96"
+      },
+      "071334R1": {
+        "TECFIL": "PSH211"
+      },
+      "042285R1": {
+        "TECFIL": "PSH111"
+      },
+      "D45161300": {
+        "TECFIL": "PSH315"
+      },
+      "3595175M1": {
+        "TECFIL": "PSH367"
+      }
+    },
+    "MAHLE": {
+      "HC84": {
+        "TECFIL": "PSH96"
+      },
+      "HC82": {
+        "TECFIL": "PSH112"
+      },
+      "HC86": {
+        "TECFIL": "PSH012"
+      },
+      "OC204": {
+        "TECFIL": "PSH421"
+      },
+      "HC83": {
+        "TECFIL": "PSH306"
+      },
+      "OC175": {
+        "TECFIL": "PSH962"
+      },
+      "HC85": {
+        "TECFIL": "PSH211"
+      },
+      "HC76": {
+        "TECFIL": "PSH486"
+      },
+      "HC81": {
+        "TECFIL": "PSH111"
+      },
+      "HC105": {
+        "TECFIL": "PSH242"
+      },
+      "HC96": {
+        "TECFIL": "PSH173"
+      }
+    },
+    "MADAL": {
+      "341030": {
+        "TECFIL": "PSH96"
+      }
+    },
+    "ILBARUS": {
+      "4450401000": {
+        "TECFIL": "PSH96"
+      }
+    },
+    "IRLEMP": {
+      "PERI249": {
+        "TECFIL": "PSH96"
+      },
+      "PERI250": {
+        "TECFIL": "PSH766"
+      },
+      "PERI318": {
+        "TECFIL": "PSH306"
+      },
+      "PERI262": {
+        "TECFIL": "PSH962"
+      },
+      "PERI260": {
+        "TECFIL": "PSH211"
+      },
+      "PER20": {
+        "TECFIL": "PSH140"
+      },
+      "PERI325": {
+        "TECFIL": "PSH235"
+      },
+      "PERI243": {
+        "TECFIL": "PSH486"
+      },
+      "R2910M": {
+        "TECFIL": "PSH111"
+      }
+    },
+    "HDA": {
+      "11002": {
+        "TECFIL": "PSH96"
+      },
+      "011003": {
+        "TECFIL": "PSH97"
+      },
+      "11304": {
+        "TECFIL": "PSH766"
+      }
+    },
+    "FRAM": {
+      "P4637": {
+        "TECFIL": "PSH96"
+      },
+      "P5158": {
+        "TECFIL": "PSH766"
+      },
+      "P10301": {
+        "TECFIL": "PSH112"
+      },
+      "PH2861B": {
+        "TECFIL": "PSH421"
+      },
+      "P5573": {
+        "TECFIL": "PSH306"
+      },
+      "PH4550": {
+        "TECFIL": "PSH962"
+      },
+      "P3961": {
+        "TECFIL": "PSH211"
+      },
+      "P1654A": {
+        "TECFIL": "PSH140"
+      },
+      "P7566": {
+        "TECFIL": "PSH235"
+      },
+      "P4637A": {
+        "TECFIL": "PSH486"
+      },
+      "P6882": {
+        "TECFIL": "PSH693"
+      },
+      "P6871": {
+        "TECFIL": "PSH025"
+      },
+      "PH10299": {
+        "TECFIL": "PSH111"
+      },
+      "P10122": {
+        "TECFIL": "PSH349"
+      },
+      "P6893": {
+        "TECFIL": "PSH242"
+      },
+      "PH8789": {
+        "TECFIL": "PSH173"
+      }
+    },
+    "DONALDSON": {
+      "P172517": {
+        "TECFIL": "PSH96"
+      },
+      "P550148": {
+        "TECFIL": "PSH766"
+      },
+      "P550939": {
+        "TECFIL": "PSH421"
+      },
+      "P172899": {
+        "TECFIL": "PSH306"
+      },
+      "P179342": {
+        "TECFIL": "PSH582"
+      },
+      "P165569": {
+        "TECFIL": "PSH084"
+      },
+      "P763577": {
+        "TECFIL": "PSH962"
+      },
+      "P561183": {
+        "TECFIL": "PSH211"
+      },
+      "P172507": {
+        "TECFIL": "PSH140"
+      },
+      "P165705": {
+        "TECFIL": "PSH793"
+      },
+      "P550223": {
+        "TECFIL": "PSH319"
+      },
+      "P174675": {
+        "TECFIL": "PSH235"
+      },
+      "P172882": {
+        "TECFIL": "PSH486"
+      },
+      "P764668": {
+        "TECFIL": "PSH693"
+      },
+      "P173738": {
+        "TECFIL": "PSH583"
+      },
+      "P164384": {
+        "TECFIL": "PSH025"
+      },
+      "P550445": {
+        "TECFIL": "PSH236"
+      },
+      "P550388": {
+        "TECFIL": "PSH111"
+      },
+      "P569401": {
+        "TECFIL": "PSH607"
+      },
+      "P165338": {
+        "TECFIL": "PSH242"
+      },
+      "P165659": {
+        "TECFIL": "PSH086"
+      },
+      "P761108": {
+        "TECFIL": "PSH173"
+      },
+      "P164375": {
+        "TECFIL": "PSH616"
+      },
+      "P550229": {
+        "TECFIL": "PSH315"
+      },
+      "P574755": {
+        "TECFIL": "PSH367"
+      },
+      "P170311": {
+        "TECFIL": "PSH212"
+      },
+      "P502577": {
+        "TECFIL": "PSH713"
+      },
+      "P170949": {
+        "TECFIL": "PSH797"
+      },
+      "P573481": {
+        "TECFIL": "PSH867"
+      },
+      "P170308": {
+        "TECFIL": "PSH813"
+      },
+      "P569206": {
+        "TECFIL": "PSH533"
+      },
+      "P502224": {
+        "TECFIL": "PSH820"
+      },
+      "P556005": {
+        "TECFIL": "PSH823"
+      },
+      "P176207": {
+        "TECFIL": "PSH826"
+      },
+      "P179343": {
+        "TECFIL": "PSH827"
+      },
+      "P165675": {
+        "TECFIL": "PSH817"
+      },
+      "P574055": {
+        "TECFIL": "PSH840"
+      },
+      "P551348": {
+        "TECFIL": "PSH305"
+      },
+      "P165332": {
+        "TECFIL": "PSH422"
+      },
+      "P551757": {
+        "TECFIL": "PSH923"
+      },
+      "P550416": {
+        "TECFIL": "PSH377"
+      },
+      "P764729": {
+        "TECFIL": "PSH924"
+      },
+      "P550230": {
+        "TECFIL": "PSH478"
+      },
+      "P165876": {
+        "TECFIL": "PSH311"
+      },
+      "P550940": {
+        "TECFIL": "PSH653"
+      },
+      "P171620": {
+        "TECFIL": "PSH651"
+      },
+      "P169078": {
+        "TECFIL": "PSH723"
+      },
+      "P765662": {
+        "TECFIL": "PSH662"
+      },
+      "P551364": {
+        "TECFIL": "PSH825"
+      }
+    },
+    "CBT": {
+      "2501207018": {
+        "TECFIL": "PSH96"
+      },
+      "2511207018": {
+        "TECFIL": "PSH012"
+      }
+    },
+    "BOSCH": {
+      "9455085006": {
+        "TECFIL": "PSH96"
+      },
+      "0986B01906": {
+        "TECFIL": "PSH766"
+      },
+      "0986B01902": {
+        "TECFIL": "PSH112"
+      },
+      "0986B01002": {
+        "TECFIL": "PSH167"
+      },
+      "9455085005": {
+        "TECFIL": "PSH012"
+      },
+      "0986B01904": {
+        "TECFIL": "PSH306"
+      },
+      "0986B01905": {
+        "TECFIL": "PSH307"
+      },
+      "0986B01909": {
+        "TECFIL": "PSH743"
+      },
+      "9455085023": {
+        "TECFIL": "PSH962"
+      },
+      "0986B01903": {
+        "TECFIL": "PSH211"
+      },
+      "9455085009": {
+        "TECFIL": "PSH486"
+      },
+      "9455085008": {
+        "TECFIL": "PSH480"
+      },
+      "9455085021": {
+        "TECFIL": "PSH111"
+      },
+      "0986B01908": {
+        "TECFIL": "PSH517"
+      }
+    },
+    "BALDAN": {
+      "60201100539": {
+        "TECFIL": "PSH96"
+      },
+      "PDL80": {
+        "TECFIL": "PSH012"
+      }
+    },
+    "ALBARUS": {
+      "4450401000": {
+        "TECFIL": "PSH96"
+      }
+    },
+    "VOX ANTIGO": {
+      "HIB5812": {
+        "TECFIL": "PSH96"
+      },
+      "HIB5813": {
+        "TECFIL": "PSH97"
+      },
+      "HIB5815": {
+        "TECFIL": "PSH766"
+      },
+      "HIB4409": {
+        "TECFIL": "PSH112"
+      },
+      "HIB5811": {
+        "TECFIL": "PSH95"
+      },
+      "HIB2818": {
+        "TECFIL": "PSH167"
+      },
+      "HIB5802": {
+        "TECFIL": "PSH012"
+      },
+      "HIB3214": {
+        "TECFIL": "PSH421"
+      },
+      "HIB4808": {
+        "TECFIL": "PSH306"
+      },
+      "HIB4812": {
+        "TECFIL": "PSH307"
+      },
+      "HIB5806": {
+        "TECFIL": "PSH743"
+      },
+      "HIB4228": {
+        "TECFIL": "PSH084"
+      },
+      "HIB5803": {
+        "TECFIL": "PSH962"
+      },
+      "HIB5202": {
+        "TECFIL": "PSH211"
+      },
+      "HIB3417": {
+        "TECFIL": "PSH173"
+      },
+      "HIB5844": {
+        "TECFIL": "PSH793"
+      },
+      "HIB2237": {
+        "TECFIL": "PSH486"
+      },
+      "HIB5222": {
+        "TECFIL": "PSH693"
+      },
+      "HIB5218": {
+        "TECFIL": "PSH025"
+      },
+      "HIB5840": {
+        "TECFIL": "PSH243"
+      },
+      "HIB4601": {
+        "TECFIL": "PSH111"
+      },
+      "HIB3219": {
+        "TECFIL": "PSH607"
+      },
+      "HIB5221": {
+        "TECFIL": "PSH242"
+      },
+      "HIB5220": {
+        "TECFIL": "PSH086"
+      },
+      "HIB5843": {
+        "TECFIL": "PSH616"
+      },
+      "HIB5602": {
+        "TECFIL": "PSH517"
+      }
+    },
+    "NEWTEC": {
+      "BR6010PH": {
+        "TECFIL": "PSH96"
+      },
+      "BR76010PH": {
+        "TECFIL": "PSH766"
+      },
+      "BR8010PH": {
+        "TECFIL": "PSH012"
+      },
+      "BR21010PH": {
+        "TECFIL": "PSH211"
+      },
+      "BR11010PH": {
+        "TECFIL": "PSH111"
+      }
+    },
+    "HIDRAFIL": {
+      "114001": {
+        "TECFIL": "PSH97"
+      },
+      "114030": {
+        "TECFIL": "PSH766"
+      },
+      "HFUS1004": {
+        "TECFIL": "PSH95"
+      },
+      "114048": {
+        "TECFIL": "PSH012"
+      },
+      "114021": {
+        "TECFIL": "PSH962"
+      },
+      "HFUS123": {
+        "TECFIL": "PSH211"
+      },
+      "US12210N": {
+        "TECFIL": "PSH111"
+      }
+    },
+    "UCC": {
+      "UCMX1591410": {
+        "TECFIL": "PSH766"
+      }
+    },
+    "RACOR": {
+      "PERI25010C": {
+        "TECFIL": "PSH766"
+      },
+      "RH34310B": {
+        "TECFIL": "PSH173"
+      },
+      "PERI326": {
+        "TECFIL": "PSH326"
+      },
+      "R2910C": {
+        "TECFIL": "PSH111"
+      },
+      "RC2010C": {
+        "TECFIL": "PSH654"
+      }
+    },
+    "MAXION": {
+      "501308346": {
+        "TECFIL": "PSH766"
+      },
+      "034391T1": {
+        "TECFIL": "PSH112"
+      },
+      "2754362M1": {
+        "TECFIL": "PSH315"
+      }
+    },
+    "MANN": {
+      "W1374/2": {
+        "TECFIL": "PSH766"
+      },
+      "W1265": {
+        "TECFIL": "PSH112"
+      },
+      "W917": {
+        "TECFIL": "PSH421"
+      },
+      "W950/6": {
+        "TECFIL": "PSH306"
+      },
+      "W1126/5": {
+        "TECFIL": "PSH307"
+      },
+      "WH10004": {
+        "TECFIL": "PSH582"
+      },
+      "WH1257": {
+        "TECFIL": "PSH084"
+      },
+      "W962/14": {
+        "TECFIL": "PSH962"
+      },
+      "W1290": {
+        "TECFIL": "PSH211"
+      },
+      "WH1257/2": {
+        "TECFIL": "PSH793"
+      },
+      "W950/8": {
+        "TECFIL": "PSH486"
+      },
+      "WH945": {
+        "TECFIL": "PSH693"
+      },
+      "WH980": {
+        "TECFIL": "PSH025"
+      },
+      "W928/2": {
+        "TECFIL": "PSH480"
+      },
+      "WH980/3": {
+        "TECFIL": "PSH607"
+      },
+      "W9023/1": {
+        "TECFIL": "PSH173"
+      },
+      "WH945/2": {
+        "TECFIL": "PSH616"
+      },
+      "W1160/6": {
+        "TECFIL": "PSH517"
+      },
+      "W962/24": {
+        "TECFIL": "PSH974"
+      },
+      "WD950/2": {
+        "TECFIL": "PSH315"
+      },
+      "WD10004": {
+        "TECFIL": "PSH823"
+      },
+      "WH1263": {
+        "TECFIL": "PSH827"
+      },
+      "WD962": {
+        "TECFIL": "PSH478"
+      },
+      "WD13006x": {
+        "TECFIL": "PSH311"
+      },
+      "W1268": {
+        "TECFIL": "PSH651"
+      },
+      "W14005": {
+        "TECFIL": "PSH662"
+      },
+      "WD11005": {
+        "TECFIL": "PSH825"
+      }
+    },
+    "KNECHT": {
+      "HC4": {
+        "TECFIL": "PSH766"
+      }
+    },
+    "INPECA": {
+      "SHB0766": {
+        "TECFIL": "PSH766"
+      },
+      "SHB0391": {
+        "TECFIL": "PSH112"
+      },
+      "SHB0428": {
+        "TECFIL": "PSH306"
+      },
+      "J962E1": {
+        "TECFIL": "PSH962"
+      },
+      "SHB0421": {
+        "TECFIL": "PSH211"
+      },
+      "SB0604": {
+        "TECFIL": "PSH486"
+      },
+      "SHB0656": {
+        "TECFIL": "PSH111"
+      },
+      "SHB0300": {
+        "TECFIL": "PSH367"
+      }
+    },
+    "HYDAC": {
+      "HBR01377": {
+        "TECFIL": "PSH766"
+      }
+    },
+    "FLEETGUARD": {
+      "HF6177": {
+        "TECFIL": "PSH766"
+      },
+      "HF6136": {
+        "TECFIL": "PSH112"
+      },
+      "HF6337": {
+        "TECFIL": "PSH167"
+      },
+      "LF3706": {
+        "TECFIL": "PSH421"
+      },
+      "LF3468": {
+        "TECFIL": "PSH306"
+      },
+      "HF35150": {
+        "TECFIL": "PSH582"
+      },
+      "HF6586": {
+        "TECFIL": "PSH084"
+      },
+      "HF6547": {
+        "TECFIL": "PSH794"
+      },
+      "HF6205": {
+        "TECFIL": "PSH962"
+      },
+      "LFP725": {
+        "TECFIL": "PSH211"
+      },
+      "LF681": {
+        "TECFIL": "PSH140"
+      },
+      "HF6589": {
+        "TECFIL": "PSH793"
+      },
+      "HF6243": {
+        "TECFIL": "PSH319"
+      },
+      "HF6420": {
+        "TECFIL": "PSH235"
+      },
+      "HF6188": {
+        "TECFIL": "PSH486"
+      },
+      "HF6554": {
+        "TECFIL": "PSH693"
+      },
+      "HF6580": {
+        "TECFIL": "PSH583"
+      },
+      "HF6555": {
+        "TECFIL": "PSH025"
+      },
+      "HF6564": {
+        "TECFIL": "PSH243"
+      },
+      "HF28857": {
+        "TECFIL": "PSH236"
+      },
+      "HF6553": {
+        "TECFIL": "PSH607"
+      },
+      "HF6569": {
+        "TECFIL": "PSH242"
+      },
+      "HF6587": {
+        "TECFIL": "PSH086"
+      },
+      "HF7535": {
+        "TECFIL": "PSH173"
+      },
+      "HF6572": {
+        "TECFIL": "PSH616"
+      },
+      "HF6802": {
+        "TECFIL": "PSH295"
+      },
+      "HF28989": {
+        "TECFIL": "PSH315"
+      },
+      "HF28812": {
+        "TECFIL": "PSH367"
+      },
+      "HF6684": {
+        "TECFIL": "PSH797"
+      },
+      "HF35519": {
+        "TECFIL": "PSH867"
+      },
+      "HF35355": {
+        "TECFIL": "PSH813"
+      },
+      "HF9500": {
+        "TECFIL": "PSH533"
+      },
+      "HF28885": {
+        "TECFIL": "PSH820"
+      },
+      "HF35516": {
+        "TECFIL": "PSH944"
+      },
+      "HF6005": {
+        "TECFIL": "PSH823"
+      },
+      "HF6546": {
+        "TECFIL": "PSH826"
+      },
+      "HF35305": {
+        "TECFIL": "PSH827"
+      },
+      "HF6588": {
+        "TECFIL": "PSH817"
+      },
+      "HF29034": {
+        "TECFIL": "PSH840"
+      },
+      "HF35018": {
+        "TECFIL": "PSH305"
+      },
+      "HF6551": {
+        "TECFIL": "PSH422"
+      },
+      "HF6316": {
+        "TECFIL": "PSH923"
+      },
+      "HF6317": {
+        "TECFIL": "PSH377"
+      },
+      "HF35498": {
+        "TECFIL": "PSH924"
+      },
+      "HF6141": {
+        "TECFIL": "PSH478"
+      },
+      "HF6164": {
+        "TECFIL": "PSH653"
+      },
+      "HF7971": {
+        "TECFIL": "PSH651"
+      },
+      "HF35006": {
+        "TECFIL": "PSH723"
+      },
+      "HF35518": {
+        "TECFIL": "PSH825"
+      }
+    },
+    "DEMAG": {
+      "501308346": {
+        "TECFIL": "PSH766"
+      }
+    },
+    "CASE": {
+      "402146": {
+        "TECFIL": "PSH766"
+      },
+      "181167A1": {
+        "TECFIL": "PSH582"
+      },
+      "P00150521K": {
+        "TECFIL": "PSH962"
+      },
+      "A45625": {
+        "TECFIL": "PSH211"
+      },
+      "4441544416": {
+        "TECFIL": "PSH140"
+      },
+      "E158745": {
+        "TECFIL": "PSH235"
+      },
+      "47628831": {
+        "TECFIL": "PSH693"
+      },
+      "84239751": {
+        "TECFIL": "PSH025"
+      },
+      "87027972": {
+        "TECFIL": "PSH111"
+      },
+      "E158735": {
+        "TECFIL": "PSH325"
+      },
+      "L36242": {
+        "TECFIL": "PSH242"
+      },
+      "84476643": {
+        "TECFIL": "PSH086"
+      },
+      "A165029": {
+        "TECFIL": "PSH616"
+      },
+      "84487937": {
+        "TECFIL": "PSH797"
+      },
+      "47635916": {
+        "TECFIL": "PSH867"
+      },
+      "47456328": {
+        "TECFIL": "PSH533"
+      },
+      "84226272": {
+        "TECFIL": "PSH827"
+      },
+      "84475949": {
+        "TECFIL": "PSH422"
+      },
+      "47996857": {
+        "TECFIL": "PSH924"
+      },
+      "A177614": {
+        "TECFIL": "PSH311"
+      },
+      "84257511": {
+        "TECFIL": "PSH662"
+      }
+    },
+    "BRASTOFT": {
+      "402146": {
+        "TECFIL": "PSH766"
+      }
+    },
+    "BALDWIN": {
+      "BT351": {
+        "TECFIL": "PSH651"
+      },
+      "BT8417": {
+        "TECFIL": "PSH167"
+      },
+      "B163": {
+        "TECFIL": "PSH421"
+      },
+      "BT9471": {
+        "TECFIL": "PSH307"
+      },
+      "BT8439MPG": {
+        "TECFIL": "PSH582"
+      },
+      "BT8873": {
+        "TECFIL": "PSH084"
+      },
+      "B262": {
+        "TECFIL": "PSH962"
+      },
+      "BT38810": {
+        "TECFIL": "PSH211"
+      },
+      "B236": {
+        "TECFIL": "PSH140"
+      },
+      "BT8892MPG": {
+        "TECFIL": "PSH793"
+      },
+      "BT359": {
+        "TECFIL": "PSH319"
+      },
+      "BT8426MPG": {
+        "TECFIL": "PSH235"
+      },
+      "BT8845": {
+        "TECFIL": "PSH693"
+      },
+      "BT8850MPG": {
+        "TECFIL": "PSH025"
+      },
+      "BT287": {
+        "TECFIL": "PSH111"
+      },
+      "BT8861": {
+        "TECFIL": "PSH607"
+      },
+      "BT8312": {
+        "TECFIL": "PSH242"
+      },
+      "BT8879MPG": {
+        "TECFIL": "PSH086"
+      },
+      "BT9318": {
+        "TECFIL": "PSH173"
+      },
+      "BT8846": {
+        "TECFIL": "PSH616"
+      },
+      "BT8512": {
+        "TECFIL": "PSH315"
+      },
+      "B7026MPG": {
+        "TECFIL": "PSH367"
+      },
+      "BT8886MPG": {
+        "TECFIL": "PSH212"
+      },
+      "BT9454": {
+        "TECFIL": "PSH713"
+      },
+      "BT23542MPG": {
+        "TECFIL": "PSH797"
+      },
+      "BT9464": {
+        "TECFIL": "PSH867"
+      },
+      "BT9393MPG": {
+        "TECFIL": "PSH813"
+      },
+      "BT8382": {
+        "TECFIL": "PSH820"
+      },
+      "BT9440": {
+        "TECFIL": "PSH944"
+      },
+      "BT334": {
+        "TECFIL": "PSH823"
+      },
+      "BT8880MPG": {
+        "TECFIL": "PSH826"
+      },
+      "BT9362MPG": {
+        "TECFIL": "PSH827"
+      },
+      "BT8878MPG": {
+        "TECFIL": "PSH817"
+      },
+      "BT9347MPG": {
+        "TECFIL": "PSH840"
+      },
+      "BT9360": {
+        "TECFIL": "PSH936"
+      },
+      "BT305": {
+        "TECFIL": "PSH305"
+      },
+      "BT8853MPG": {
+        "TECFIL": "PSH422"
+      },
+      "BT8415": {
+        "TECFIL": "PSH923"
+      },
+      "BT739": {
+        "TECFIL": "PSH377"
+      },
+      "BT9422": {
+        "TECFIL": "PSH924"
+      },
+      "BT735": {
+        "TECFIL": "PSH478"
+      },
+      "BT8308MPG": {
+        "TECFIL": "PSH311"
+      },
+      "BT8301": {
+        "TECFIL": "PSH653"
+      },
+      "PT8435MPG": {
+        "TECFIL": "PSH133"
+      },
+      "BT8416": {
+        "TECFIL": "PSH723"
+      }
+    },
+    "WIX": {
+      "W54070BR": {
+        "TECFIL": "PSH766"
+      },
+      "W504807": {
+        "TECFIL": "PSH582"
+      },
+      "51758": {
+        "TECFIL": "PSH211"
+      },
+      "51249": {
+        "TECFIL": "PSH140"
+      },
+      "W51623": {
+        "TECFIL": "PSH319"
+      },
+      "51474": {
+        "TECFIL": "PSH235"
+      },
+      "W51712": {
+        "TECFIL": "PSH486"
+      },
+      "51495": {
+        "TECFIL": "PSH025"
+      },
+      "51494": {
+        "TECFIL": "PSH607"
+      },
+      "WL57159": {
+        "TECFIL": "PSH173"
+      }
+    },
+    "NEW HOLLAND": {
+      "84239756": {
+        "TECFIL": "PSH766"
+      },
+      "9969450": {
+        "TECFIL": "PSH167"
+      },
+      "84475948": {
+        "TECFIL": "PSH582"
+      },
+      "8580279310B": {
+        "TECFIL": "PSH794"
+      },
+      "84465082": {
+        "TECFIL": "PSH486"
+      },
+      "82003166": {
+        "TECFIL": "PSH616"
+      },
+      "84226258": {
+        "TECFIL": "PSH025"
+      },
+      "86542664": {
+        "TECFIL": "PSH111"
+      },
+      "81863799": {
+        "TECFIL": "PSH607"
+      },
+      "83972274": {
+        "TECFIL": "PSH086"
+      },
+      "5171457": {
+        "TECFIL": "PSH517"
+      },
+      "5137274": {
+        "TECFIL": "PSH315"
+      },
+      "84278070": {
+        "TECFIL": "PSH533"
+      },
+      "82824884": {
+        "TECFIL": "PSH828"
+      },
+      "82005016": {
+        "TECFIL": "PSH820"
+      },
+      "87010592": {
+        "TECFIL": "PSH422"
+      },
+      "HC45070": {
+        "TECFIL": "PSH662"
+      },
+      "82983474": {
+        "TECFIL": "PSH825"
+      }
+    },
+    "PARKER": {
+      "PERI356": {
+        "TECFIL": "PSH766"
+      },
+      "PERI34010C": {
+        "TECFIL": "PSH112"
+      },
+      "927736": {
+        "TECFIL": "PSH211"
+      },
+      "921999": {
+        "TECFIL": "PSH140"
+      },
+      "PERI705": {
+        "TECFIL": "PSH793"
+      },
+      "PERI319": {
+        "TECFIL": "PSH319"
+      },
+      "PERI325": {
+        "TECFIL": "PSH235"
+      },
+      "PERI381": {
+        "TECFIL": "PSH693"
+      },
+      "PERI384": {
+        "TECFIL": "PSH025"
+      },
+      "PERI326": {
+        "TECFIL": "PSH236"
+      },
+      "PERI349": {
+        "TECFIL": "PSH349"
+      },
+      "PERI378": {
+        "TECFIL": "PSH607"
+      },
+      "900281C10C": {
+        "TECFIL": "PSH242"
+      },
+      "PERI659": {
+        "TECFIL": "PSH086"
+      },
+      "PERI375": {
+        "TECFIL": "PSH616"
+      },
+      "PERI348": {
+        "TECFIL": "PSH348"
+      },
+      "PERI337": {
+        "TECFIL": "PSH295"
+      },
+      "RH367": {
+        "TECFIL": "PSH367"
+      },
+      "RH394": {
+        "TECFIL": "PSH820"
+      }
+    },
+    "WEGA": {
+      "WOH205": {
+        "TECFIL": "PSH766"
+      },
+      "WO767": {
+        "TECFIL": "PSH112"
+      },
+      "WOH800": {
+        "TECFIL": "PSH012"
+      },
+      "WO771": {
+        "TECFIL": "PSH421"
+      },
+      "WO768": {
+        "TECFIL": "PSH306"
+      },
+      "WOH715": {
+        "TECFIL": "PSH307"
+      },
+      "WOH218": {
+        "TECFIL": "PSH582"
+      },
+      "WOH900": {
+        "TECFIL": "PSH962"
+      },
+      "WO770": {
+        "TECFIL": "PSH211"
+      },
+      "HD13008": {
+        "TECFIL": "PSH326"
+      },
+      "WOH709": {
+        "TECFIL": "PSH793"
+      },
+      "WOH601": {
+        "TECFIL": "PSH319"
+      },
+      "WOH600": {
+        "TECFIL": "PSH235"
+      },
+      "WOH769": {
+        "TECFIL": "PSH486"
+      },
+      "WOH204": {
+        "TECFIL": "PSH693"
+      },
+      "WOH215": {
+        "TECFIL": "PSH583"
+      },
+      "WOH201": {
+        "TECFIL": "PSH025"
+      },
+      "WOH202": {
+        "TECFIL": "PSH111"
+      },
+      "WOH500": {
+        "TECFIL": "PSH607"
+      },
+      "WOH705": {
+        "TECFIL": "PSH242"
+      },
+      "WO762": {
+        "TECFIL": "PSH173"
+      },
+      "WOH210": {
+        "TECFIL": "PSH616"
+      },
+      "WOH208": {
+        "TECFIL": "PSH654"
+      },
+      "WOH203": {
+        "TECFIL": "PSH517"
+      },
+      "WOH213": {
+        "TECFIL": "PSH974"
+      },
+      "WOH200": {
+        "TECFIL": "PSH315"
+      },
+      "WOH701": {
+        "TECFIL": "PSH367"
+      },
+      "WOH211": {
+        "TECFIL": "PSH797"
+      },
+      "WOH302": {
+        "TECFIL": "PSH867"
+      },
+      "WOH402": {
+        "TECFIL": "PSH533"
+      },
+      "WOH207": {
+        "TECFIL": "PSH828"
+      },
+      "WOH206": {
+        "TECFIL": "PSH820"
+      },
+      "WOH714": {
+        "TECFIL": "PSH826"
+      },
+      "WOH224": {
+        "TECFIL": "PSH827"
+      },
+      "WOH216": {
+        "TECFIL": "PSH817"
+      },
+      "WOH217": {
+        "TECFIL": "PSH305"
+      },
+      "WOH706": {
+        "TECFIL": "PSH422"
+      },
+      "WOH221": {
+        "TECFIL": "PSH923"
+      },
+      "WOH708": {
+        "TECFIL": "PSH377"
+      },
+      "WOH220": {
+        "TECFIL": "PSH924"
+      },
+      "WOH222": {
+        "TECFIL": "PSH478"
+      },
+      "WOH716": {
+        "TECFIL": "PSH311"
+      },
+      "WOH713": {
+        "TECFIL": "PSH662"
+      }
+    },
+    "TURBO FILTROS": {
+      "TBH351": {
+        "TECFIL": "PSH766"
+      },
+      "TBH340": {
+        "TECFIL": "PSH112"
+      },
+      "TBH012": {
+        "TECFIL": "PSH012"
+      },
+      "TBH857": {
+        "TECFIL": "PSH421"
+      },
+      "TBH306": {
+        "TECFIL": "PSH306"
+      },
+      "TBH307": {
+        "TECFIL": "PSH307"
+      },
+      "TBH8876": {
+        "TECFIL": "PSH084"
+      },
+      "TB421": {
+        "TECFIL": "PSH211"
+      },
+      "TBH8873": {
+        "TECFIL": "PSH793"
+      },
+      "TB604": {
+        "TECFIL": "PSH486"
+      },
+      "TBH8841": {
+        "TECFIL": "PSH693"
+      },
+      "TBH9807": {
+        "TECFIL": "PSH581"
+      },
+      "TBH8850": {
+        "TECFIL": "PSH025"
+      },
+      "TB2910": {
+        "TECFIL": "PSH111"
+      },
+      "TBH8851": {
+        "TECFIL": "PSH607"
+      },
+      "TBH8874": {
+        "TECFIL": "PSH086"
+      },
+      "TBH517": {
+        "TECFIL": "PSH517"
+      },
+      "TBH8512": {
+        "TECFIL": "PSH315"
+      },
+      "TBH30065": {
+        "TECFIL": "PSH367"
+      },
+      "TBH8878": {
+        "TECFIL": "PSH817"
+      },
+      "TBH9360": {
+        "TECFIL": "PSH936"
+      },
+      "TBH962": {
+        "TECFIL": "PSH377"
+      },
+      "TBH735": {
+        "TECFIL": "PSH478"
+      },
+      "TBH7971": {
+        "TECFIL": "PSH651"
+      },
+      "TBH8416": {
+        "TECFIL": "PSH723"
+      },
+      "TBH5662": {
+        "TECFIL": "PSH662"
+      },
+      "TB9439": {
+        "TECFIL": "PSH825"
+      }
+    },
+    "DELPHI": {
+      "EFH101": {
+        "TECFIL": "PSH112"
+      },
+      "EFH107": {
+        "TECFIL": "PSH012"
+      },
+      "EFH103": {
+        "TECFIL": "PSH306"
+      },
+      "EFH109": {
+        "TECFIL": "PSH962"
+      },
+      "EFH102": {
+        "TECFIL": "PSH211"
+      },
+      "EFL243": {
+        "TECFIL": "PSH486"
+      },
+      "EFL778": {
+        "TECFIL": "PSH111"
+      },
+      "EFL774": {
+        "TECFIL": "PSH173"
+      },
+      "EFH105": {
+        "TECFIL": "PSH517"
+      },
+      "EFH111": {
+        "TECFIL": "PSH974"
+      }
+    },
+    "FAM": {
+      "FH0391": {
+        "TECFIL": "PSH112"
+      },
+      "FH0923": {
+        "TECFIL": "PSH962"
+      },
+      "FH0543": {
+        "TECFIL": "PSH211"
+      },
+      "FH0440": {
+        "TECFIL": "PSH111"
+      }
+    },
+    "PARTMO": {
+      "A91T1": {
+        "TECFIL": "PSH112"
+      },
+      "AR29SP": {
+        "TECFIL": "PSH111"
+      }
+    },
+    "SAKURA": {
+      "HC19060": {
+        "TECFIL": "PSH112"
+      },
+      "HC45050": {
+        "TECFIL": "PSH167"
+      },
+      "C1122": {
+        "TECFIL": "PSH421"
+      },
+      "HC7965": {
+        "TECFIL": "PSH582"
+      },
+      "HC7001": {
+        "TECFIL": "PSH794"
+      },
+      "HC6802": {
+        "TECFIL": "PSH478"
+      },
+      "HC79331": {
+        "TECFIL": "PSH211"
+      },
+      "HC7913": {
+        "TECFIL": "PSH325"
+      },
+      "HC76080": {
+        "TECFIL": "PSH693"
+      },
+      "HC5508": {
+        "TECFIL": "PSH607"
+      },
+      "HC7923": {
+        "TECFIL": "PSH243"
+      },
+      "C7602": {
+        "TECFIL": "PSH111"
+      },
+      "HC5506": {
+        "TECFIL": "PSH086"
+      },
+      "HC7310": {
+        "TECFIL": "PSH173"
+      },
+      "HC5507": {
+        "TECFIL": "PSH616"
+      },
+      "HC62020": {
+        "TECFIL": "PSH315"
+      },
+      "HC7901": {
+        "TECFIL": "PSH823"
+      },
+      "HC5512": {
+        "TECFIL": "PSH817"
+      },
+      "HC5801": {
+        "TECFIL": "PSH305"
+      },
+      "HC76110": {
+        "TECFIL": "PSH923"
+      },
+      "HC76130": {
+        "TECFIL": "PSH924"
+      }
+    },
+    "AUTHOMIX": {
+      "FHI0112": {
+        "TECFIL": "PSH112"
+      },
+      "FHI0421": {
+        "TECFIL": "PSH421"
+      },
+      "FHI1306": {
+        "TECFIL": "PSH306"
+      },
+      "FHI0582": {
+        "TECFIL": "PSH582"
+      },
+      "FHI1962": {
+        "TECFIL": "PSH962"
+      },
+      "FHI1211": {
+        "TECFIL": "PSH211"
+      },
+      "FHI0486": {
+        "TECFIL": "PSH486"
+      },
+      "FHI0025": {
+        "TECFIL": "PSH025"
+      },
+      "FHI0111": {
+        "TECFIL": "PSH111"
+      },
+      "FHI0173": {
+        "TECFIL": "PSH173"
+      },
+      "FHI0517": {
+        "TECFIL": "PSH517"
+      },
+      "FHI1974": {
+        "TECFIL": "PSH974"
+      },
+      "FHI1367": {
+        "TECFIL": "PSH367"
+      },
+      "FHI0713": {
+        "TECFIL": "PSH713"
+      },
+      "FHI0533": {
+        "TECFIL": "PSH533"
+      }
+    },
+    "FIAT ALLIS": {
+      "9968353": {
+        "TECFIL": "PSH167"
+      },
+      "8580279310B": {
+        "TECFIL": "PSH794"
+      },
+      "73118171": {
+        "TECFIL": "PSH235"
+      },
+      "75286525": {
+        "TECFIL": "PSH236"
+      },
+      "76022296": {
+        "TECFIL": "PSH295"
+      }
+    },
+    "DAEWOO": {
+      "D140182": {
+        "TECFIL": "PSH167"
+      },
+      "D144020": {
+        "TECFIL": "PSH486"
+      }
+    },
+    "CATERPILLAR": {
+      "4717003": {
+        "TECFIL": "PSH167"
+      },
+      "9T0973": {
+        "TECFIL": "PSH084"
+      },
+      "1031971": {
+        "TECFIL": "PSH693"
+      },
+      "9T5916": {
+        "TECFIL": "PSH025"
+      },
+      "4T6788": {
+        "TECFIL": "PSH111"
+      },
+      "3416643": {
+        "TECFIL": "PSH607"
+      },
+      "1446691": {
+        "TECFIL": "PSH616"
+      },
+      "3772873": {
+        "TECFIL": "PSH212"
+      },
+      "1526902": {
+        "TECFIL": "PSH797"
+      },
+      "5I8670X": {
+        "TECFIL": "PSH867"
+      },
+      "1261813": {
+        "TECFIL": "PSH813"
+      },
+      "4T6915": {
+        "TECFIL": "PSH823"
+      },
+      "6E6408": {
+        "TECFIL": "PSH827"
+      },
+      "4656505": {
+        "TECFIL": "PSH817"
+      },
+      "937521X": {
+        "TECFIL": "PSH305"
+      },
+      "1022828": {
+        "TECFIL": "PSH422"
+      },
+      "9U5870": {
+        "TECFIL": "PSH311"
+      }
+    },
+    "JS ASAKASHI": {
+      "HC0007": {
+        "TECFIL": "PSH167"
+      },
+      "C103J": {
+        "TECFIL": "PSH421"
+      }
+    },
+    "MARCHESAN": {
+      "503010183": {
+        "TECFIL": "PSH012"
+      },
+      "503010545": {
+        "TECFIL": "PSH962"
+      }
+    },
+    "LOGAN": {
+      "FH285US": {
+        "TECFIL": "PSH012"
+      },
+      "FH284US": {
+        "TECFIL": "PSH962"
+      },
+      "FH250US": {
+        "TECFIL": "PSH211"
+      },
+      "PER20": {
+        "TECFIL": "PSH140"
+      },
+      "FH057US": {
+        "TECFIL": "PSH486"
+      }
+    },
+    "CROSS": {
+      "FB39/2": {
+        "TECFIL": "PSH012"
+      },
+      "FB39/1": {
+        "TECFIL": "PSH962"
+      },
+      "FBH486": {
+        "TECFIL": "PSH486"
+      }
+    },
+    "AGRALE": {
+      "8009108579007": {
+        "TECFIL": "PSH012"
+      },
+      "8009108164008": {
+        "TECFIL": "PSH486"
+      }
+    },
+    "VOLVO": {
+      "4184321": {
+        "TECFIL": "PSH421"
+      },
+      "965899": {
+        "TECFIL": "PSH084"
+      },
+      "11037868": {
+        "TECFIL": "PSH086"
+      },
+      "11992156": {
+        "TECFIL": "PSH319"
+      },
+      "2340990": {
+        "TECFIL": "PSH235"
+      },
+      "11448509": {
+        "TECFIL": "PSH607"
+      },
+      "14532687": {
+        "TECFIL": "PSH823"
+      },
+      "11882353": {
+        "TECFIL": "PSH826"
+      },
+      "11809003": {
+        "TECFIL": "PSH827"
+      },
+      "47879234": {
+        "TECFIL": "PSH478"
+      }
+    },
+    "HENGST": {
+      "H10W22": {
+        "TECFIL": "PSH421"
+      },
+      "H18W04": {
+        "TECFIL": "PSH962"
+      },
+      "H17W26": {
+        "TECFIL": "PSH693"
+      },
+      "H18W11": {
+        "TECFIL": "PSH607"
+      },
+      "H24W05": {
+        "TECFIL": "PSH173"
+      },
+      "H20WD": {
+        "TECFIL": "PSH616"
+      },
+      "H19WD02": {
+        "TECFIL": "PSH315"
+      },
+      "H304W": {
+        "TECFIL": "PSH827"
+      },
+      "H18WD03": {
+        "TECFIL": "PSH377"
+      },
+      "HG385W": {
+        "TECFIL": "PSH924"
+      },
+      "H306W": {
+        "TECFIL": "PSH311"
+      },
+      "H10WD01": {
+        "TECFIL": "PSH653"
+      },
+      "HY406W": {
+        "TECFIL": "PSH723"
+      }
+    },
+    "DELKRAFT": {
+      "DL252": {
+        "TECFIL": "PSH421"
+      },
+      "DHT602": {
+        "TECFIL": "PSH306"
+      },
+      "DHT612": {
+        "TECFIL": "PSH173"
+      }
+    },
+    "YALE": {
+      "150017200": {
+        "TECFIL": "PSH421"
+      },
+      "505973580": {
+        "TECFIL": "PSH133"
+      }
+    },
+    "VALMET": {
+      "3060600032": {
+        "TECFIL": "PSH306"
+      },
+      "20410800": {
+        "TECFIL": "PSH307"
+      },
+      "806349": {
+        "TECFIL": "PSH974"
+      },
+      "45161300": {
+        "TECFIL": "PSH315"
+      }
+    },
+    "TOP PARTS": {
+      "130015": {
+        "TECFIL": "PSH306"
+      }
+    },
+    "ROMA": {
+      "HDS3060": {
+        "TECFIL": "PSH306"
+      },
+      "LUS771": {
+        "TECFIL": "PSH962"
+      },
+      "HDS486": {
+        "TECFIL": "PSH486"
+      }
+    },
+    "NASA": {
+      "NS1041": {
+        "TECFIL": "PSH306"
+      },
+      "NS1024": {
+        "TECFIL": "PSH962"
+      },
+      "NS1037": {
+        "TECFIL": "PSH486"
+      },
+      "NS0656": {
+        "TECFIL": "PSH111"
+      }
+    },
+    "FIL FILTER": {
+      "ZP93C": {
+        "TECFIL": "PSH306"
+      }
+    },
+    "AGCO": {
+      "836579590": {
+        "TECFIL": "PSH307"
+      }
+    },
+    "VALTRA": {
+      "V836536797": {
+        "TECFIL": "PSH307"
+      }
+    },
+    "RANDON": {
+      "319000751": {
+        "TECFIL": "PSH582"
+      }
+    },
+    "KOMATSU": {
+      "1225110H1": {
+        "TECFIL": "PSH743"
+      },
+      "1266751H2": {
+        "TECFIL": "PSH693"
+      },
+      "D1224440H1": {
+        "TECFIL": "PSH111"
+      },
+      "7140728712": {
+        "TECFIL": "PSH713"
+      },
+      "3ED6611330": {
+        "TECFIL": "PSH823"
+      },
+      "4196035152": {
+        "TECFIL": "PSH936"
+      }
+    },
+    "JOHN DEERE": {
+      "RE210857": {
+        "TECFIL": "PSH084"
+      },
+      "AL221066": {
+        "TECFIL": "PSH693"
+      },
+      "RE34958": {
+        "TECFIL": "PSH025"
+      },
+      "AT58368": {
+        "TECFIL": "PSH111"
+      },
+      "DQ21803": {
+        "TECFIL": "PSH349"
+      },
+      "T175002": {
+        "TECFIL": "PSH607"
+      },
+      "AT318160": {
+        "TECFIL": "PSH086"
+      },
+      "AN203010": {
+        "TECFIL": "PSH616"
+      },
+      "AT129523": {
+        "TECFIL": "PSH295"
+      },
+      "RE51797": {
+        "TECFIL": "PSH797"
+      },
+      "RE273801": {
+        "TECFIL": "PSH826"
+      },
+      "AT310905": {
+        "TECFIL": "PSH840"
+      },
+      "AT140030": {
+        "TECFIL": "PSH377"
+      },
+      "AM39653": {
+        "TECFIL": "PSH653"
+      },
+      "AM102723": {
+        "TECFIL": "PSH723"
+      }
+    },
+    "INGERSOLL RAND": {
+      "51302214": {
+        "TECFIL": "PSH084"
+      },
+      "36860336": {
+        "TECFIL": "PSH793"
+      },
+      "58887936": {
+        "TECFIL": "PSH693"
+      }
+    },
+    "HYSTER": {
+      "398754": {
+        "TECFIL": "PSH084"
+      },
+      "1315621": {
+        "TECFIL": "PSH326"
+      },
+      "1337159": {
+        "TECFIL": "PSH133"
+      }
+    },
+    "CLARK": {
+      "243622": {
+        "TECFIL": "PSH084"
+      },
+      "247052": {
+        "TECFIL": "PSH326"
+      },
+      "965899": {
+        "TECFIL": "PSH793"
+      },
+      "19922156": {
+        "TECFIL": "PSH319"
+      },
+      "247050": {
+        "TECFIL": "PSH235"
+      },
+      "2791199": {
+        "TECFIL": "PSH583"
+      },
+      "2799807": {
+        "TECFIL": "PSH581"
+      },
+      "6599543": {
+        "TECFIL": "PSH243"
+      },
+      "6630977": {
+        "TECFIL": "PSH616"
+      },
+      "YM1804193": {
+        "TECFIL": "PSH133"
+      }
+    },
+    "CHAMPION": {
+      "37104": {
+        "TECFIL": "PSH084"
+      },
+      "13028": {
+        "TECFIL": "PSH111"
+      }
+    },
+    "SCHULZ": {
+      "700231": {
+        "TECFIL": "PSH962"
+      }
+    },
+    "KS": {
+      "275OS": {
+        "TECFIL": "PSH962"
+      },
+      "50013233": {
+        "TECFIL": "PSH173"
+      },
+      "274OS": {
+        "TECFIL": "PSH486"
+      }
+    },
+    "ATLAS-COPCO": {
+      "9712540104": {
+        "TECFIL": "PSH962"
+      }
+    },
+    "KSPG": {
+      "50013275": {
+        "TECFIL": "PSH962"
+      },
+      "50013274": {
+        "TECFIL": "PSH486"
+      }
+    },
+    "PUROLATOR": {
+      "PER281H": {
+        "TECFIL": "PSH211"
+      }
+    },
+    "BRASIF": {
+      "B543": {
+        "TECFIL": "PSH211"
+      }
+    },
+    "LUBERFINER": {
+      "PH725": {
+        "TECFIL": "PSH211"
+      },
+      "LFP1652": {
+        "TECFIL": "PSH140"
+      },
+      "LFH8799": {
+        "TECFIL": "PSH235"
+      },
+      "LFH4910": {
+        "TECFIL": "PSH025"
+      },
+      "LFH4990": {
+        "TECFIL": "PSH607"
+      }
+    },
+    "GONHER": {
+      "GP34": {
+        "TECFIL": "PSH211"
+      },
+      "GP66": {
+        "TECFIL": "PSH140"
+      },
+      "GP761H": {
+        "TECFIL": "PSH607"
+      }
+    },
+    "MICHIGAN": {
+      "201026": {
+        "TECFIL": "PSH140"
+      },
+      "6599543": {
+        "TECFIL": "PSH243"
+      },
+      "2000600": {
+        "TECFIL": "PSH111"
+      }
+    },
+    "GRESEN": {
+      "8057000": {
+        "TECFIL": "PSH140"
+      }
+    },
+    "SCANIA": {
+      "1301696": {
+        "TECFIL": "PSH140"
+      },
+      "2002705": {
+        "TECFIL": "PSH173"
+      }
+    },
+    "WOODGATE": {
+      "WGH7535": {
+        "TECFIL": "PSH173"
+      }
+    },
+    "CNH": {
+      "47628830": {
+        "TECFIL": "PSH140"
+      },
+      "84465103": {
+        "TECFIL": "PSH111"
+      },
+      "84476010": {
+        "TECFIL": "PSH242"
+      },
+      "84406710": {
+        "TECFIL": "PSH086"
+      },
+      "47554376": {
+        "TECFIL": "PSH517"
+      },
+      "47833564": {
+        "TECFIL": "PSH533"
+      },
+      "48023439": {
+        "TECFIL": "PSH820"
+      },
+      "84285044": {
+        "TECFIL": "PSH827"
+      },
+      "84516422": {
+        "TECFIL": "PSH422"
+      },
+      "47783743": {
+        "TECFIL": "PSH210"
+      }
+    },
+    "FIAT HITACHI": {
+      "4285577": {
+        "TECFIL": "PSH326"
+      }
+    },
+    "DYNAPAC": {
+      "196446": {
+        "TECFIL": "PSH793"
+      },
+      "928656": {
+        "TECFIL": "PSH111"
+      }
+    },
+    "NAPA": {
+      "1474": {
+        "TECFIL": "PSH235"
+      }
+    },
+    "SANTA MATILDE": {
+      "D4NNB486C": {
+        "TECFIL": "PSH486"
+      }
+    },
+    "RACINE": {
+      "4450401": {
+        "TECFIL": "PSH486"
+      }
+    },
+    "LUCAS": {
+      "EFL243": {
+        "TECFIL": "PSH486"
+      }
+    },
+    "IDEAL": {
+      "850009990140": {
+        "TECFIL": "PSH486"
+      }
+    },
+    "FORD": {
+      "D4NN486C": {
+        "TECFIL": "PSH486"
+      },
+      "E7NN6714FA": {
+        "TECFIL": "PSH823"
+      }
+    },
+    "SLC": {
+      "D4NNB486C": {
+        "TECFIL": "PSH486"
+      }
+    },
+    "TUTELA": {
+      "LH324": {
+        "TECFIL": "PSH486"
+      }
+    },
+    "YANMAR": {
+      "YB4148080": {
+        "TECFIL": "PSH486"
+      },
+      "YB4048050": {
+        "TECFIL": "PSH480"
+      }
+    },
+    "JCB": {
+      "32/905501": {
+        "TECFIL": "PSH693"
+      },
+      "KNJ0288A": {
+        "TECFIL": "PSH823"
+      }
+    },
+    "HITACHI": {
+      "L71460631": {
+        "TECFIL": "PSH693"
+      },
+      "4630525": {
+        "TECFIL": "PSH944"
+      }
+    },
+    "FIAT": {
+      "73144499": {
+        "TECFIL": "PSH025"
+      }
+    },
+    "DITCH WITCH": {
+      "155954": {
+        "TECFIL": "PSH111"
+      }
+    },
+    "DYNAMIC": {
+      "1H1234": {
+        "TECFIL": "PSH111"
+      }
+    },
+    "CHICAGO": {
+      "250000214": {
+        "TECFIL": "PSH111"
+      }
+    },
+    "EMBEP": {
+      "250000214": {
+        "TECFIL": "PSH111"
+      }
+    },
+    "SULLAIR": {
+      "408242": {
+        "TECFIL": "PSH111"
+      }
+    },
+    "DONSSON": {
+      "GS643": {
+        "TECFIL": "PSH173"
+      }
+    },
+    "TRP": {
+      "915550": {
+        "TECFIL": "PSH173"
+      }
+    },
+    "JAPANPARTS": {
+      "FOBR108S": {
+        "TECFIL": "PSH173"
+      },
+      "FOBR118S": {
+        "TECFIL": "PSH867"
+      },
+      "FOBR139S": {
+        "TECFIL": "PSH305"
+      }
+    },
+    "VERMEER": {
+      "81902001": {
+        "TECFIL": "PSH616"
+      }
+    },
+    "BOB CAT": {
+      "6661248": {
+        "TECFIL": "PSH616"
+      },
+      "6653336": {
+        "TECFIL": "PSH823"
+      }
+    },
+    "CLAAS": {
+      "5784640": {
+        "TECFIL": "PSH616"
+      }
+    },
+    "LS MTRON": {
+      "40007638": {
+        "TECFIL": "PSH517"
+      }
+    },
+    "LIEBHERR": {
+      "7004209": {
+        "TECFIL": "PSH315"
+      }
+    },
+    "DEUTZ": {
+      "1211122522602": {
+        "TECFIL": "PSH315"
+      }
+    },
+    "KOBELCO": {
+      "2446U141S2": {
+        "TECFIL": "PSH823"
+      }
+    },
+    "CESSNA": {
+      "601876": {
+        "TECFIL": "PSH823"
+      }
+    },
+    "TRINOVA VICKERS": {
+      "573083": {
+        "TECFIL": "PSH823"
+      }
+    },
+    "KUBOTA": {
+      "5220015320": {
+        "TECFIL": "PSH305"
+      }
+    },
+    "MITSUBISHI": {
+      "C45702411": {
+        "TECFIL": "PSH305"
+      }
+    },
+    "HYUNDAI": {
+      "ZGAQ2400": {
+        "TECFIL": "PSH924"
+      }
+    },
+    "ZF": {
+      "0501323154": {
+        "TECFIL": "PSH924"
+      }
+    },
+    "BOSCH-REXROTH": {
+      "7SL130P10": {
+        "TECFIL": "PSH651"
+      }
+    },
+    "UFI": {
+      "8001300": {
+        "TECFIL": "PSH651"
+      }
+    },
+    "VOLVO PENTA": {
+      "9122854": {
+        "TECFIL": "PSH2854"
+      }
     }
   }
 }

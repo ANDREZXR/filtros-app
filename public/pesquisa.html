@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <meta name="theme-color" content="#1a1a2e"/>
+  <title>ADAMANTO — Pesquisa Inteligente</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+    body{font-family:'Segoe UI',system-ui,sans-serif;background:#f0f2f5;min-height:100dvh}
+    header{background:#1a1a2e;color:#fff;padding:14px 16px;display:flex;align-items:center;gap:10px;position:sticky;top:0;z-index:10}
+    header a{color:#fff;text-decoration:none;font-size:1.3rem;padding:4px 8px}
+    header h1{font-size:0.95rem;font-weight:700;letter-spacing:1px;flex:1}
+    header span{font-size:0.72rem;color:#9ab;white-space:nowrap}
+
+    .container{max-width:700px;margin:0 auto;padding:14px 12px 40px}
+    .card{background:#fff;border-radius:16px;padding:18px;box-shadow:0 2px 16px rgba(0,0,0,0.07);margin-bottom:14px}
+
+    /* Abas */
+    .abas{display:flex;gap:6px;margin-bottom:14px}
+    .aba{flex:1;padding:10px 6px;border-radius:10px;border:2px solid #e2e8f0;background:#fff;font-size:0.8rem;font-weight:700;color:#666;cursor:pointer;text-align:center;transition:all .2s}
+    .aba.ativa{background:#1a1a2e;color:#fff;border-color:#1a1a2e}
+
+    label{display:block;font-size:0.72rem;font-weight:700;color:#888;text-transform:uppercase;margin-bottom:5px;margin-top:12px}
+    label:first-of-type{margin-top:0}
+    input,select{width:100%;border:1.5px solid #e2e8f0;border-radius:10px;padding:11px 12px;font-size:0.95rem;outline:none;transition:border-color .2s;background:#fff}
+    input:focus,select:focus{border-color:#1a1a2e}
+
+    .row-medidas{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    .row-medidas-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}
+
+    .btn-buscar{width:100%;background:#e63946;color:#fff;border:none;border-radius:12px;padding:14px;font-size:1rem;font-weight:700;cursor:pointer;margin-top:12px;letter-spacing:0.5px}
+    .btn-buscar:hover{background:#c0303b}
+
+    /* Resultados */
+    .loading{display:none;text-align:center;padding:24px;color:#888}
+    .spinner{width:32px;height:32px;border:3px solid #e2e8f0;border-top-color:#1a1a2e;border-radius:50%;animation:spin .7s linear infinite;margin:0 auto 10px}
+    @keyframes spin{to{transform:rotate(360deg)}}
+
+    .aviso{border-radius:10px;padding:12px 14px;font-size:0.88rem;margin-bottom:12px;font-weight:600}
+    .aviso.ok{background:#d1fae5;color:#065f46}
+    .aviso.warn{background:#fef3c7;color:#92400e}
+    .aviso.err{background:#fee2e2;color:#991b1b}
+
+    .resultado-header{display:flex;align-items:center;gap:10px;margin-bottom:14px;flex-wrap:wrap}
+    .codigo-grande{font-size:1.6rem;font-family:monospace;font-weight:900;color:#1a1a2e}
+    .marca-badge{background:#1a1a2e;color:#fff;border-radius:99px;padding:3px 12px;font-size:0.8rem;font-weight:700}
+    .tipo-badge{background:#e63946;color:#fff;border-radius:99px;padding:3px 12px;font-size:0.8rem;font-weight:700}
+
+    .medidas-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:14px}
+    @media(min-width:500px){.medidas-grid{grid-template-columns:repeat(3,1fr)}}
+    .medida-item{background:#f8f9fc;border-radius:10px;padding:10px 12px}
+    .medida-label{font-size:0.68rem;color:#888;font-weight:700;text-transform:uppercase;margin-bottom:2px}
+    .medida-valor{font-size:1rem;font-weight:700;color:#1a1a2e}
+
+    .aplicacao-box{background:#f0f2f5;border-radius:10px;padding:10px 12px;font-size:0.85rem;color:#444;margin-bottom:14px}
+    .aplicacao-box strong{font-size:0.7rem;color:#888;text-transform:uppercase;display:block;margin-bottom:3px}
+
+    h3{font-size:0.85rem;color:#1a1a2e;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px;margin-top:16px}
+    h3:first-child{margin-top:0}
+
+    table{width:100%;border-collapse:collapse;font-size:0.85rem}
+    th{background:#f8f9fc;padding:9px 10px;text-align:left;font-size:0.72rem;color:#888;font-weight:700;text-transform:uppercase}
+    th:first-child{border-radius:8px 0 0 8px}
+    th:last-child{border-radius:0 8px 8px 0}
+    td{padding:10px 10px;border-bottom:1px solid #f2f2f2;vertical-align:middle}
+    tr:last-child td{border-bottom:none}
+    .cod-cell{font-family:monospace;font-weight:700;color:#e63946;font-size:0.95rem}
+    .btn-ver{background:#eef2ff;color:#4f46e5;border:none;border-radius:8px;padding:5px 10px;font-size:0.78rem;font-weight:700;cursor:pointer;white-space:nowrap}
+    .btn-ver:hover{background:#e0e7ff}
+
+    .compat-card{border:1.5px solid #e2e8f0;border-radius:12px;padding:12px 14px;margin-bottom:8px;cursor:pointer;transition:border-color .2s}
+    .compat-card:hover{border-color:#6366f1;background:#fafbff}
+    .compat-top{display:flex;align-items:center;gap:8px;margin-bottom:4px}
+    .compat-cod{font-family:monospace;font-weight:700;color:#e63946;font-size:1rem}
+    .compat-marca{font-size:0.8rem;color:#666;font-weight:600}
+    .compat-medidas{font-size:0.75rem;color:#888}
+    .match-badge{margin-left:auto;background:#d1fae5;color:#065f46;border-radius:99px;padding:2px 8px;font-size:0.72rem;font-weight:700}
+
+    #painelVazia{display:none;text-align:center;padding:32px 16px;color:#aaa}
+    #painelVazia .ico{font-size:2.5rem;margin-bottom:8px}
+
+    /* Resultado identificação de rosca */
+    .rosca-resultado{border-radius:12px;padding:12px 14px;margin-top:6px}
+    .rosca-resultado.encontrado{background:#d1fae5;border:1.5px solid #6ee7b7}
+    .rosca-resultado.multiplo{background:#fef3c7;border:1.5px solid #fcd34d}
+    .rosca-resultado.nao-encontrado{background:#fee2e2;border:1.5px solid #fca5a5}
+    .rosca-nome{font-size:1.2rem;font-weight:900;color:#1a1a2e;font-family:monospace}
+    .rosca-detalhe{font-size:0.8rem;color:#555;margin-top:3px}
+    .btn-usar-rosca{margin-top:8px;background:#1a1a2e;color:#fff;border:none;border-radius:8px;padding:8px 16px;font-size:0.82rem;font-weight:700;cursor:pointer}
+
+    /* Resultado conversor */
+    .conv-card{border-radius:14px;padding:16px;margin-bottom:10px}
+    .conv-card.exato{background:#d1fae5;border:2px solid #6ee7b7}
+    .conv-card.proximo{background:#fef3c7;border:2px solid #fcd34d}
+    .conv-card.nao{background:#fee2e2;border:2px solid #fca5a5}
+    .conv-rosca{font-size:1.5rem;font-weight:900;font-family:monospace;color:#1a1a2e}
+    .conv-info{font-size:0.82rem;color:#444;margin-top:4px;line-height:1.6}
+    .conv-info b{color:#1a1a2e}
+    .conv-badge{display:inline-block;background:#1a1a2e;color:#fff;border-radius:99px;padding:2px 10px;font-size:0.72rem;font-weight:700;margin-right:6px;margin-top:6px}
+    .conv-badge.alt{background:#6366f1}
+
+    /* Botões de rosca rápida */
+    .rosca-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-bottom:4px}
+    @media(min-width:400px){.rosca-grid{grid-template-columns:repeat(3,1fr)}}
+    .btn-rosca{border:2px solid #e2e8f0;background:#fff;border-radius:10px;padding:10px 6px;font-size:0.82rem;font-weight:700;cursor:pointer;text-align:center;color:#333;transition:all .15s;line-height:1.3}
+    .btn-rosca .sub{font-size:0.68rem;font-weight:500;color:#999;display:block}
+    .btn-rosca.sel{background:#1a1a2e;color:#fff;border-color:#1a1a2e}
+    .btn-rosca.sel .sub{color:#aac}
+    .rosca-outro{margin-top:8px}
+    .secao-label{font-size:0.72rem;font-weight:700;color:#888;text-transform:uppercase;margin-bottom:8px;margin-top:16px;display:block}
+    .secao-label:first-child{margin-top:0}
+  </style>
+</head>
+<body>
+<header>
+  <a href="/">←</a>
+  <h1>Pesquisa Inteligente de Filtros</h1>
+  <span>ADAMANTO</span>
+</header>
+
+<div class="container">
+
+  <!-- Abas -->
+  <div class="abas">
+    <button class="aba ativa" onclick="trocarAba('codigo',this)">Por código</button>
+    <button class="aba" onclick="trocarAba('medidas',this)">Por medidas</button>
+    <button class="aba" onclick="trocarAba('converter',this)">Converter polegadas</button>
+  </div>
+
+  <!-- ABA: Busca por código -->
+  <div id="abaCodigo" class="card">
+    <label>Código do filtro</label>
+    <input type="text" id="inputCodigo" placeholder="ex: PSL340, W712/75, OC217..."
+           autocomplete="off" autocorrect="off" spellcheck="false"
+           onkeydown="if(event.key==='Enter')buscarPorCodigo()"/>
+    <button class="btn-buscar" onclick="buscarPorCodigo()">Pesquisar</button>
+  </div>
+
+  <!-- ABA: Busca por medidas -->
+  <div id="abaMedidas" class="card" style="display:none">
+
+    <!-- Identificador de rosca por diâmetro -->
+    <span class="secao-label">Identificar rosca pelo diâmetro</span>
+    <div style="display:flex;gap:8px;align-items:flex-end;margin-bottom:4px">
+      <div style="flex:1">
+        <label style="margin-top:0">Diâmetro medido (mm)</label>
+        <input type="number" id="diamRosca" placeholder="ex: 20" min="1" max="80" step="0.5"
+               autocomplete="off" oninput="identificarRosca()" style="font-size:1.1rem;font-weight:700"/>
+      </div>
+      <button onclick="document.getElementById('diamRosca').value='';document.getElementById('resultRosca').innerHTML=''"
+              style="background:#f0f2f5;border:none;border-radius:10px;padding:11px 14px;cursor:pointer;font-size:0.85rem;color:#666;margin-bottom:0;white-space:nowrap">Limpar</button>
+    </div>
+    <div id="resultRosca"></div>
+    <hr style="border:none;border-top:1.5px solid #f0f2f5;margin:16px 0 4px"/>
+
+    <span class="secao-label">Rosca (toque para selecionar)</span>
+    <div class="rosca-grid">
+      <button class="btn-rosca" onclick="selecionarRosca(this,'3/4-16 UN')">3/4" - 16 UN<span class="sub">mais comum</span></button>
+      <button class="btn-rosca" onclick="selecionarRosca(this,'M20x1.5')">M20 x 1,5<span class="sub">comum</span></button>
+      <button class="btn-rosca" onclick="selecionarRosca(this,'1-14 UN')">1" - 14 UN<span class="sub">comum</span></button>
+      <button class="btn-rosca" onclick="selecionarRosca(this,'1-12 UN')">1" - 12 UN<span class="sub">pesado</span></button>
+      <button class="btn-rosca" onclick="selecionarRosca(this,'M16x1.5')">M16 x 1,5<span class="sub">moto/leve</span></button>
+      <button class="btn-rosca" onclick="selecionarRosca(this,'1 1/8-16 UN')">1"1/8 - 16 UN<span class="sub">caminhão</span></button>
+      <button class="btn-rosca" onclick="selecionarRosca(this,'1 1/2-16 UN')">1"1/2 - 16 UN<span class="sub">pesado</span></button>
+      <button class="btn-rosca" onclick="selecionarRosca(this,'M22x1.5')">M22 x 1,5<span class="sub">hidráulico</span></button>
+      <button class="btn-rosca" onclick="selecionarRosca(this,'M24x1.5')">M24 x 1,5<span class="sub">hidráulico</span></button>
+      <button class="btn-rosca" onclick="selecionarRosca(this,'M18x1.5')">M18 x 1,5<span class="sub">agrícola</span></button>
+      <button class="btn-rosca" onclick="selecionarRosca(this,'7/8-14 UN')">7/8" - 14 UN<span class="sub">moto</span></button>
+      <button class="btn-rosca" onclick="selecionarRosca(this,'M26x1.5')">M26 x 1,5<span class="sub"></span></button>
+    </div>
+    <div class="rosca-outro">
+      <input type="text" id="rosca" placeholder="Outra rosca — digite aqui" autocomplete="off" autocorrect="off" spellcheck="false" oninput="limparSelecaoRosca()"/>
+    </div>
+
+    <span class="secao-label">Medidas (opcional)</span>
+    <div class="row-medidas">
+      <div>
+        <label>Altura (mm)</label>
+        <input type="number" id="alturaM" placeholder="ex: 93"/>
+      </div>
+      <div>
+        <label>Diâmetro ext. (mm)</label>
+        <input type="number" id="diamExtM" placeholder="ex: 76"/>
+      </div>
+    </div>
+
+    <span class="secao-label">Tipo de filtro</span>
+    <select id="tipoMedida">
+      <option value="">Todos</option>
+      <option value="oleo">Óleo</option>
+      <option value="ar">Ar</option>
+      <option value="combustivel">Combustível</option>
+      <option value="cabine">Cabine</option>
+      <option value="hidraulico">Hidráulico</option>
+    </select>
+
+    <label>Tolerância (mm)</label>
+    <select id="tolerancia">
+      <option value="3">± 3 mm (preciso)</option>
+      <option value="5" selected>± 5 mm (padrão)</option>
+      <option value="10">± 10 mm (amplo)</option>
+    </select>
+
+    <button class="btn-buscar" onclick="buscarPorMedidas()">Buscar por medidas</button>
+  </div>
+
+  <!-- ABA: Converter polegadas -->
+  <div id="abaConverter" class="card" style="display:none">
+
+    <span class="secao-label">Diâmetro interno da rosca</span>
+    <div style="display:flex;align-items:center;gap:8px">
+      <input type="number" id="convDiam" placeholder="ex: 19" min="1" max="80" step="0.1"
+             oninput="converterRosca()" style="font-size:1.1rem;font-weight:700"/>
+      <span style="font-size:0.9rem;font-weight:700;color:#888;white-space:nowrap">mm</span>
+    </div>
+
+    <span class="secao-label" style="margin-top:14px">Quantidade de fios por polegada (TPI)</span>
+    <div style="display:flex;align-items:center;gap:8px">
+      <input type="number" id="convTPI" placeholder="ex: 16" min="4" max="64" step="1"
+             oninput="converterRosca()" style="font-size:1.1rem;font-weight:700"/>
+      <span style="font-size:0.9rem;font-weight:700;color:#888;white-space:nowrap">fios/pol.</span>
+    </div>
+
+    <div style="background:#f0f2f5;border-radius:10px;padding:10px 12px;margin-top:10px;font-size:0.78rem;color:#666;line-height:1.5">
+      <b>Como contar os fios:</b> encoste uma régua na rosca e conte quantos fios cabem em 25,4 mm (1 polegada). Ou use um gabarito de passo de rosca.
+    </div>
+
+    <div id="convResultado" style="margin-top:14px"></div>
+  </div>
+
+  <!-- Loading -->
+  <div class="loading" id="loading">
+    <div class="spinner"></div>
+    <p>Pesquisando...</p>
+  </div>
+
+  <!-- Resultado vazio -->
+  <div id="painelVazia">
+    <div class="ico"></div>
+    <p>Nenhum filtro encontrado</p>
+    <p style="font-size:0.8rem;margin-top:4px">Tente buscar por medidas ou pelo conversor de polegadas</p>
+  </div>
+
+  <!-- Resultado principal -->
+  <div id="painelResultado" style="display:none">
+
+    <div class="card">
+      <div class="resultado-header">
+        <span class="codigo-grande" id="resCodigo">—</span>
+        <span class="marca-badge" id="resMarca">—</span>
+        <span class="tipo-badge" id="resTipo">—</span>
+      </div>
+
+      <div id="resMedidasGrid" class="medidas-grid"></div>
+
+      <div id="resAplicacao" class="aplicacao-box" style="display:none">
+        <strong>Aplicação</strong>
+        <span id="resAplicacaoTexto"></span>
+      </div>
+
+      <div id="secaoEquiv" style="display:none">
+        <h3>Equivalências em outras marcas</h3>
+        <table>
+          <thead><tr><th>Marca</th><th>Código</th><th></th></tr></thead>
+          <tbody id="tbodyEquiv"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Compatíveis por medida -->
+    <div id="secaoCompat" style="display:none" class="card">
+      <div class="aviso warn" id="avisoCompat">
+        Filtros com medidas compatíveis encontrados.
+      </div>
+      <h3>Compatíveis por medida</h3>
+      <div id="listaCompat"></div>
+    </div>
+
+  </div>
+
+  <!-- Resultado busca por medidas -->
+  <div id="painelMedidas" style="display:none" class="card">
+    <h3 id="tituloMedidas">Resultados</h3>
+    <div id="listaMedidas"></div>
+  </div>
+
+</div>
+
+<script>
+function trocarAba(aba, btn) {
+  document.querySelectorAll('.aba').forEach(b => b.classList.remove('ativa'));
+  btn.classList.add('ativa');
+  document.getElementById('abaCodigo').style.display   = aba === 'codigo'    ? 'block' : 'none';
+  document.getElementById('abaMedidas').style.display  = aba === 'medidas'   ? 'block' : 'none';
+  document.getElementById('abaConverter').style.display= aba === 'converter' ? 'block' : 'none';
+  esconderResultados();
+}
+
+function esconderResultados() {
+  document.getElementById('painelResultado').style.display = 'none';
+  document.getElementById('painelMedidas').style.display   = 'none';
+  document.getElementById('painelVazia').style.display     = 'none';
+  document.getElementById('loading').style.display         = 'none';
+}
+
+async function buscarPorCodigo() {
+  const codigo = document.getElementById('inputCodigo').value.trim();
+  if (!codigo) return;
+  esconderResultados();
+  document.getElementById('loading').style.display = 'block';
+
+  try {
+    const resp = await fetch('/pesquisa/buscar', {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({codigo})
+    });
+    const data = await resp.json();
+    document.getElementById('loading').style.display = 'none';
+
+    if (data.modo === 'nao_encontrado') {
+      document.getElementById('painelVazia').style.display = 'block';
+      return;
+    }
+    if (data.modo === 'variantes') {
+      mostrarVariantes(data);
+      return;
+    }
+    mostrarResultado(data);
+  } catch(e) {
+    document.getElementById('loading').style.display = 'none';
+    document.getElementById('painelVazia').style.display = 'block';
+  }
+}
+
+function mostrarVariantes(data) {
+  const painel = document.getElementById('painelVazia');
+  painel.style.display = 'block';
+  painel.innerHTML = `<div style="font-weight:700;margin-bottom:10px">Variantes encontradas para <span style="color:#1a1a2e">${data.codigo}</span> — selecione:</div>` +
+    data.variantes.map(v => {
+      const fn = v.funcao || '';
+      const h  = v.altura_mm ? v.altura_mm + 'mm' : '';
+      const r  = v.rosca && v.rosca !== 'Não' ? v.rosca : '';
+      return `<button onclick="buscarDeEquiv('${v.codigo}')" style="display:block;width:100%;text-align:left;background:#f0f2f5;border:1.5px solid #e2e8f0;border-radius:10px;padding:10px 14px;margin-bottom:8px;cursor:pointer;font-size:0.95rem">
+        <strong>${v.codigo}</strong> &nbsp;${fn}${h?' · '+h:''}${r?' · '+r:''}
+      </button>`;
+    }).join('');
+}
+
+function mostrarResultado(data) {
+  document.getElementById('resCodigo').textContent = data.codigo || '—';
+  document.getElementById('resMarca').textContent  = data.marca  || '—';
+
+  const TIPOS = {oleo:'Óleo',ar:'Ar',combustivel:'Combustível',cabine:'Cabine',hidraulico:'Hidráulico'};
+  document.getElementById('resTipo').textContent = TIPOS[data.tipo] || data.tipo || '—';
+
+  // Medidas
+  const grid = document.getElementById('resMedidasGrid');
+  grid.innerHTML = '';
+  const m = data.medidas;
+  if (m) {
+    const campos = [
+      ['Altura',       m.altura_mm      ? m.altura_mm + ' mm'    : '—'],
+      ['Ø externo',    m.diametro_ext_mm? m.diametro_ext_mm+' mm': '—'],
+      ['Ø interno',    m.diametro_int_mm? m.diametro_int_mm+' mm': '—'],
+      ['Rosca',        m.rosca || '—'],
+    ];
+    campos.forEach(([label, val]) => {
+      grid.innerHTML += `<div class="medida-item"><div class="medida-label">${label}</div><div class="medida-valor">${val}</div></div>`;
+    });
+
+    if (m.aplicacao) {
+      document.getElementById('resAplicacaoTexto').textContent = m.aplicacao;
+      document.getElementById('resAplicacao').style.display = 'block';
+    } else {
+      document.getElementById('resAplicacao').style.display = 'none';
+    }
+  } else {
+    document.getElementById('resAplicacao').style.display = 'none';
+  }
+
+  // Equivalências
+  const tbody = document.getElementById('tbodyEquiv');
+  const secaoEquiv = document.getElementById('secaoEquiv');
+  tbody.innerHTML = '';
+  if (data.equivalentes && data.equivalentes.length > 0) {
+    data.equivalentes.forEach(eq => {
+      tbody.innerHTML += `<tr>
+        <td><b>${eq.marca}</b></td>
+        <td class="cod-cell">${eq.codigo}</td>
+        <td><button class="btn-ver" onclick="buscarDeEquiv('${eq.codigo}')">Ver</button></td>
+      </tr>`;
+    });
+    secaoEquiv.style.display = 'block';
+  } else {
+    secaoEquiv.style.display = 'none';
+  }
+
+  // Compatíveis por medida
+  const secaoCompat = document.getElementById('secaoCompat');
+  const listaCompat = document.getElementById('listaCompat');
+  if (data['compatíveis_medida'] && data['compatíveis_medida'].length > 0) {
+    listaCompat.innerHTML = '';
+    data['compatíveis_medida'].forEach(c => {
+      const TIPOS = {oleo:'Óleo',ar:'Ar',combustivel:'Combustível',cabine:'Cabine',hidraulico:'Hidráulico'};
+      listaCompat.innerHTML += `
+        <div class="compat-card" onclick="buscarDeEquiv('${c.codigo}')">
+          <div class="compat-top">
+            <span class="compat-cod">${c.codigo}</span>
+            <span class="compat-marca">${c.marca || ''}</span>
+            <span class="match-badge">Compatível</span>
+          </div>
+          <div class="compat-medidas">
+            ${c.altura_mm ? '↕ '+c.altura_mm+'mm' : ''}
+            ${c.diametro_ext_mm ? ' · Ø '+c.diametro_ext_mm+'mm' : ''}
+            ${c.rosca ? ' · '+c.rosca : ''}
+            ${c.aplicacao ? ' — '+c.aplicacao.substring(0,50) : ''}
+          </div>
+        </div>`;
+    });
+    document.getElementById('avisoCompat').style.display = m ? 'none' : 'block';
+    secaoCompat.style.display = 'block';
+  } else {
+    secaoCompat.style.display = 'none';
+  }
+
+  document.getElementById('painelResultado').style.display = 'block';
+  document.getElementById('painelResultado').scrollIntoView({behavior:'smooth', block:'start'});
+}
+
+// ── CONVERSOR DE ROSCA ──────────────────────────────────────────────
+// Frações de polegada padrão UNF/UNC para filtros automotivos
+const FRACOES_POL = [
+  { pol: '1/4',    mm: 6.35  },
+  { pol: '5/16',   mm: 7.94  },
+  { pol: '3/8',    mm: 9.53  },
+  { pol: '7/16',   mm: 11.11 },
+  { pol: '1/2',    mm: 12.70 },
+  { pol: '9/16',   mm: 14.29 },
+  { pol: '5/8',    mm: 15.88 },
+  { pol: '11/16',  mm: 17.46 },
+  { pol: '3/4',    mm: 19.05 },
+  { pol: '13/16',  mm: 20.64 },
+  { pol: '7/8',    mm: 22.23 },
+  { pol: '15/16',  mm: 23.81 },
+  { pol: '1',      mm: 25.40 },
+  { pol: '1 1/16', mm: 26.99 },
+  { pol: '1 1/8',  mm: 28.58 },
+  { pol: '1 3/16', mm: 30.16 },
+  { pol: '1 1/4',  mm: 31.75 },
+  { pol: '1 3/8',  mm: 34.93 },
+  { pol: '1 1/2',  mm: 38.10 },
+  { pol: '1 5/8',  mm: 41.28 },
+  { pol: '1 3/4',  mm: 44.45 },
+  { pol: '2',      mm: 50.80 },
+];
+
+function converterRosca() {
+  const diam = parseFloat(document.getElementById('convDiam').value);
+  const tpi  = parseFloat(document.getElementById('convTPI').value);
+  const el   = document.getElementById('convResultado');
+
+  if (!diam && !tpi) { el.innerHTML = ''; return; }
+
+  let html = '';
+
+  // ── 1. Diâmetro em polegadas ────────────────────────────────
+  if (diam) {
+    const polDecimal = diam / 25.4;
+    // Encontra a fração mais próxima
+    const closest = FRACOES_POL.reduce((best, f) =>
+      Math.abs(f.mm - diam) < Math.abs(best.mm - diam) ? f : best
+    );
+    const diff = Math.abs(closest.mm - diam);
+    const exato = diff <= 0.3;
+
+    const passoMm = tpi ? (25.4 / tpi).toFixed(2) : null;
+    const tpiLabel = tpi ? ` - ${tpi} fios` : '';
+    const roscaPolegadas = tpi ? `${closest.pol}"${tpiLabel} UN` : `${closest.pol}" (${polDecimal.toFixed(3)}")`;
+
+    html += `<div class="conv-card ${exato ? 'exato' : 'proximo'}">
+      <div style="font-size:0.75rem;font-weight:700;color:${exato?'#065f46':'#92400e'};margin-bottom:6px">
+        ${exato ? 'Correspondência exata' : `Mais próximo (diferença: ${diff.toFixed(1)} mm)`}
+      </div>
+      <div class="conv-rosca">${roscaPolegadas}</div>
+      <div class="conv-info">
+        <b>Diâmetro:</b> ${diam} mm = ${polDecimal.toFixed(4)}" ≈ <b>${closest.pol}"</b> (${closest.mm} mm)<br>
+        ${tpi ? `<b>Passo:</b> ${passoMm} mm (${tpi} fios por polegada)` : ''}
+      </div>
+      ${tpi ? `<span class="conv-badge">Polegadas: ${closest.pol}"-${tpi} UN</span>` : ''}
+    </div>`;
+  }
+
+  // ── 2. Equivalente métrico ──────────────────────────────────
+  if (diam || tpi) {
+    // Diâmetro métrico: arredonda para inteiro (M[n])
+    const diamMetrico = diam ? Math.round(diam) : null;
+    // Passo métrico: 25.4/TPI, arredondado para padrão mais comum
+    const PASSOS_METRICOS = [0.75, 1.0, 1.25, 1.5, 1.75, 2.0, 2.5, 3.0];
+    let passoMetrico = null;
+    if (tpi) {
+      const passoCalc = 25.4 / tpi;
+      passoMetrico = PASSOS_METRICOS.reduce((best, p) =>
+        Math.abs(p - passoCalc) < Math.abs(best - passoCalc) ? p : best
+      );
+    }
+
+    if (diamMetrico || passoMetrico) {
+      const metrica = diamMetrico && passoMetrico
+        ? `M${diamMetrico}x${passoMetrico}`
+        : diamMetrico ? `M${diamMetrico}` : `passo ${passoMetrico} mm`;
+
+      const passoCalc = tpi ? (25.4 / tpi).toFixed(2) : null;
+      html += `<div class="conv-card proximo" style="border-color:#c4b5fd;background:#f5f3ff">
+        <div style="font-size:0.75rem;font-weight:700;color:#5b21b6;margin-bottom:6px">Equivalente métrico aproximado</div>
+        <div class="conv-rosca" style="color:#4c1d95">${metrica}</div>
+        <div class="conv-info">
+          ${diamMetrico ? `<b>Diâmetro:</b> M${diamMetrico} (nominal ${diamMetrico} mm)<br>` : ''}
+          ${passoCalc && passoMetrico ? `<b>Passo calculado:</b> ${passoCalc} mm → padrão mais próximo: <b>${passoMetrico} mm</b>` : ''}
+        </div>
+        <span class="conv-badge alt">Métrica: ${metrica}</span>
+      </div>`;
+    }
+  }
+
+  // ── 3. Tabela de referência de TPI ─────────────────────────
+  if (tpi && !diam) {
+    const passo = (25.4 / tpi).toFixed(3);
+    html += `<div class="conv-card proximo" style="border-color:#bae6fd;background:#f0f9ff">
+      <div style="font-size:0.75rem;font-weight:700;color:#0369a1;margin-bottom:6px">Passo calculado</div>
+      <div class="conv-rosca" style="color:#0c4a6e">${tpi} fios/pol. = ${passo} mm por fio</div>
+      <div class="conv-info">Informe também o diâmetro para identificar a rosca completa.</div>
+    </div>`;
+  }
+
+  el.innerHTML = html || `<div class="conv-card nao"><div class="conv-info">Informe o diâmetro e/ou a quantidade de fios.</div></div>`;
+}
+
+// Tabela: diâmetro nominal (mm) → rosca
+const TABELA_ROSCAS = [
+  { diam: 12,    rosca: 'M12x1.5',      desc: 'Filtros pequenos / moto leve' },
+  { diam: 14,    rosca: 'M14x1.5',      desc: 'Moto / filtros compactos' },
+  { diam: 16,    rosca: 'M16x1.5',      desc: 'Moto / veículos leves' },
+  { diam: 18,    rosca: 'M18x1.5',      desc: 'Agrícola / tratores' },
+  { diam: 19.05, rosca: '3/4-16 UN',    desc: '3/4" — a mais comum do mercado' },
+  { diam: 20,    rosca: 'M20x1.5',      desc: 'Veículos leves — muito comum' },
+  { diam: 20.6,  rosca: '13/16-16 UN',  desc: '13/16" — alguns VW/Ford' },
+  { diam: 22,    rosca: 'M22x1.5',      desc: 'Hidráulico / caminhões' },
+  { diam: 22.2,  rosca: '7/8-14 UN',    desc: '7/8" — moto / importados' },
+  { diam: 24,    rosca: 'M24x1.5',      desc: 'Hidráulico / pesados' },
+  { diam: 25.4,  rosca: '1-12 UN',      desc: '1" / 12 fios — pesados' },
+  { diam: 25.4,  rosca: '1-14 UN',      desc: '1" / 14 fios — caminhões' },
+  { diam: 26,    rosca: 'M26x1.5',      desc: 'Hidráulico' },
+  { diam: 27,    rosca: 'M27x2',        desc: 'Pesados / hidráulico' },
+  { diam: 28.6,  rosca: '1 1/8-16 UN',  desc: '1"1/8 — caminhões / ônibus' },
+  { diam: 30,    rosca: 'M30x2',        desc: 'Pesados / industrial' },
+  { diam: 34.9,  rosca: '1 3/8-12 UN',  desc: '1"3/8 — caminhões pesados' },
+  { diam: 38.1,  rosca: '1 1/2-16 UN',  desc: '1"1/2 — caminhões / tratores' },
+  { diam: 44.5,  rosca: '1 3/4-12 UN',  desc: '1"3/4 — equipamentos pesados' },
+];
+
+function identificarRosca() {
+  const val = parseFloat(document.getElementById('diamRosca').value);
+  const el = document.getElementById('resultRosca');
+  if (!val || val < 8 || val > 80) { el.innerHTML = ''; return; }
+
+  const TOLERANCIA = 1.5; // mm
+  const matches = TABELA_ROSCAS.filter(r => Math.abs(r.diam - val) <= TOLERANCIA)
+    .sort((a, b) => Math.abs(a.diam - val) - Math.abs(b.diam - val));
+
+  if (matches.length === 0) {
+    el.innerHTML = `<div class="rosca-resultado nao-encontrado">
+      <div class="rosca-nome">Não identificado</div>
+      <div class="rosca-detalhe">Nenhuma rosca padrão conhecida para ${val} mm. Verifique a medida.</div>
+    </div>`;
+    return;
+  }
+
+  if (matches.length === 1) {
+    const m = matches[0];
+    el.innerHTML = `<div class="rosca-resultado encontrado">
+      <div class="rosca-nome">${m.rosca}</div>
+      <div class="rosca-detalhe">${m.desc} — diâmetro nominal ${m.diam} mm</div>
+      <button class="btn-usar-rosca" onclick="usarRoscaIdentificada('${m.rosca}')">Buscar filtros com esta rosca</button>
+    </div>`;
+  } else {
+    const itens = matches.map(m => `
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:8px 0;border-bottom:1px solid #fde68a">
+        <div>
+          <span class="rosca-nome" style="font-size:1rem">${m.rosca}</span>
+          <div class="rosca-detalhe">${m.desc} — ${m.diam} mm</div>
+        </div>
+        <button class="btn-usar-rosca" style="margin-top:0" onclick="usarRoscaIdentificada('${m.rosca}')">Buscar</button>
+      </div>`).join('');
+    el.innerHTML = `<div class="rosca-resultado multiplo">
+      <div style="font-size:0.8rem;font-weight:700;color:#92400e;margin-bottom:6px">${matches.length} roscas possíveis para ${val} mm:</div>
+      ${itens}
+    </div>`;
+  }
+}
+
+function usarRoscaIdentificada(rosca) {
+  // Seleciona o botão correspondente ou preenche o campo manual
+  let encontrou = false;
+  document.querySelectorAll('.btn-rosca').forEach(btn => {
+    btn.classList.remove('sel');
+  });
+  document.querySelectorAll('.btn-rosca').forEach(btn => {
+    const btnOnclick = btn.getAttribute('onclick') || '';
+    const m = btnOnclick.match(/'([^']+)'\)/);
+    if (m) {
+      const norm = s => s.toUpperCase().replace(/\s+/g,'').replace(',','.').replace(/"/g,'');
+      if (norm(m[1]) === norm(rosca)) {
+        btn.classList.add('sel');
+        _roscaSelecionada = m[1];
+        encontrou = true;
+      }
+    }
+  });
+  if (!encontrou) {
+    _roscaSelecionada = rosca;
+    document.getElementById('rosca').value = rosca;
+  }
+  buscarPorMedidas();
+}
+
+let _roscaSelecionada = '';
+
+function selecionarRosca(btn, valor) {
+  document.querySelectorAll('.btn-rosca').forEach(b => b.classList.remove('sel'));
+  btn.classList.add('sel');
+  _roscaSelecionada = valor;
+  document.getElementById('rosca').value = '';
+  // Busca automaticamente ao tocar na rosca
+  buscarPorMedidas();
+}
+
+function limparSelecaoRosca() {
+  document.querySelectorAll('.btn-rosca').forEach(b => b.classList.remove('sel'));
+  _roscaSelecionada = '';
+}
+
+function buscarDeEquiv(codigo) {
+  document.getElementById('inputCodigo').value = codigo;
+  const abaBtn = document.querySelector('.aba.ativa');
+  // Muda para aba código se necessário
+  document.querySelectorAll('.aba').forEach((b,i) => { if(i===0) b.classList.add('ativa'); else b.classList.remove('ativa'); });
+  document.getElementById('abaCodigo').style.display    = 'block';
+  document.getElementById('abaMedidas').style.display   = 'none';
+  document.getElementById('abaCadastrar').style.display = 'none';
+  buscarPorCodigo();
+}
+
+async function buscarPorMedidas() {
+  const tipo     = document.getElementById('tipoMedida').value;
+  const rosca    = _roscaSelecionada || document.getElementById('rosca').value.trim();
+  const altura   = document.getElementById('alturaM').value;
+  const diamExt  = document.getElementById('diamExtM').value;
+  const toler    = document.getElementById('tolerancia').value;
+
+  if (!tipo && !rosca && !altura && !diamExt) {
+    alert('Informe pelo menos um critério de busca.');
+    return;
+  }
+  esconderResultados();
+  document.getElementById('loading').style.display = 'block';
+
+  const resp = await fetch('/pesquisa/por-medidas', {
+    method: 'POST',
+    headers: {'Content-Type':'application/json'},
+    body: JSON.stringify({
+      tipo, rosca,
+      altura_mm:         altura   ? parseFloat(altura)  : null,
+      diametro_ext_mm:   diamExt  ? parseFloat(diamExt) : null,
+      tolerancia_mm:     parseInt(toler)
+    })
+  });
+  const data = await resp.json();
+  document.getElementById('loading').style.display = 'none';
+
+  const lista = data.resultados || [];
+  if (lista.length === 0) {
+    document.getElementById('painelVazia').style.display = 'block';
+    return;
+  }
+
+  const TIPOS = {oleo:'Óleo',ar:'Ar',combustivel:'Combustível',cabine:'Cabine',hidraulico:'Hidráulico'};
+  document.getElementById('tituloMedidas').textContent = `${lista.length} filtro(s) encontrado(s)`;
+  const container = document.getElementById('listaMedidas');
+  container.innerHTML = '';
+  lista.forEach(c => {
+    container.innerHTML += `
+      <div class="compat-card" onclick="buscarDeEquiv('${c.codigo}')">
+        <div class="compat-top">
+          <span class="compat-cod">${c.codigo}</span>
+          <span class="compat-marca">${c.marca || ''}</span>
+          <span style="background:#eef2ff;color:#4f46e5;border-radius:99px;padding:2px 8px;font-size:0.72rem;font-weight:700;margin-left:auto">${TIPOS[c.tipo]||c.tipo}</span>
+        </div>
+        <div class="compat-medidas">
+          ${c.altura_mm ? '↕ '+c.altura_mm+'mm' : ''}
+          ${c.diametro_ext_mm ? ' · Ø '+c.diametro_ext_mm+'mm' : ''}
+          ${c.rosca ? ' · '+c.rosca : ''}
+        </div>
+        ${c.aplicacao ? `<div style="font-size:0.78rem;color:#555;margin-top:4px">${c.aplicacao}</div>` : ''}
+        ${c.equivalentes && c.equivalentes.length > 0 ? `<div style="font-size:0.75rem;color:#888;margin-top:4px">
+          Equiv: ${c.equivalentes.slice(0,4).map(e=>`<b>${e.marca}</b> ${e.codigo}`).join(' · ')}
+        </div>` : ''}
+      </div>`;
+  });
+
+  document.getElementById('painelMedidas').style.display = 'block';
+  document.getElementById('painelMedidas').scrollIntoView({behavior:'smooth', block:'start'});
+}
+
+async function cadastrarMedidas() {
+  const codigo = document.getElementById('cadCodigo').value.trim().toUpperCase();
+  if (!codigo) { alert('Informe o código.'); return; }
+
+  const body = {
+    codigo,
+    marca:           document.getElementById('cadMarca').value.trim().toUpperCase(),
+    tipo:            document.getElementById('cadTipo').value,
+    altura_mm:       parseFloat(document.getElementById('cadAltura').value) || null,
+    diametro_ext_mm: parseFloat(document.getElementById('cadDiamExt').value) || null,
+    diametro_int_mm: parseFloat(document.getElementById('cadDiamInt').value) || null,
+    rosca:           document.getElementById('cadRosca').value.trim().toUpperCase(),
+    aplicacao:       document.getElementById('cadAplicacao').value.trim(),
+  };
+
+  const resp = await fetch('/pesquisa/salvar-medidas', {
+    method: 'POST',
+    headers: {'Content-Type':'application/json'},
+    body: JSON.stringify(body)
+  });
+  const data = await resp.json();
+  const msg = document.getElementById('cadMsg');
+  msg.style.display = 'block';
+  if (data.ok) {
+    msg.className = 'aviso ok';
+    msg.textContent = 'Medidas salvas com sucesso!';
+    document.getElementById('cadCodigo').value = '';
+    setTimeout(() => msg.style.display = 'none', 3000);
+  } else {
+    msg.className = 'aviso err';
+    msg.textContent = data.erro || 'Erro ao salvar.';
+  }
+}
+</script>
+</body>
+</html>

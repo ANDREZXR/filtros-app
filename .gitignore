@@ -2,3 +2,12 @@ __pycache__/
 *.pyc
 .env
 filtros.service
+tecfil_raw/
+vox_raw/
+medidas_scraped.json
+ADAMANTO_Filtros.xlsx
+scraper_medidas.py
+scraper_psh.py
+importar_pdf.py
+importar_psh.py
+gerar_planilha.py
